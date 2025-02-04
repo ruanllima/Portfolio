@@ -15,6 +15,8 @@
   --animate-fade-in-x: fade-in-x 800ms ease-in-out;
   --animate-fade-in-x-i: fade-in-x-i 800ms ease-in-out;
   --animate-fade-in-scale: fade-in-scale 600ms ease-in-out;
+  --animate-fade-in-y: fade-in-y 1s ease-in-out;
+  --animate-fade-catchau: fade-catchau 600ms ease-in-out;
 
   @keyframes wiggle {
     0%,
@@ -67,7 +69,6 @@
       height: 22px;
     }
   }
-
 
   @keyframes fade-in-y-down {
     0% {
@@ -142,9 +143,28 @@
         opacity: 1;
         transform: scale(1);
       }
-    }
+    } 
 
     
+  @keyframes fade-in-y {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-catchau {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 @keyframes typewriter {
@@ -204,8 +224,9 @@
 }
 
 
+
 .transition_button{
-    @apply transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105;
+    @apply transition ease-in-out  hover:scale-105;
 }
 
 .alert{
@@ -222,9 +243,6 @@
 .cor_red{
     @apply text-2xl text-red-500;
 }
-
-
-
 
 
 .teste{

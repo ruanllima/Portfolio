@@ -119,7 +119,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, { threshold: 0.2 });
 
-    const observer_cursos1 = new IntersectionObserver((entries) => {
+    const observer_cursos = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fade-in-y");
+                console.log("entrou");
+                entry.target.classList.remove("opacity-0");
+            }
+            else{
+                console.log("saiu");
+                entry.target.classList.remove("animate-fade-in-y");
+                entry.target.classList.add("opacity-0");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    const observer_title = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animate-fade-in-fast");
@@ -132,7 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.target.classList.add("opacity-0");
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.4 });
+
+    
 
     document.querySelectorAll('[id="img"]').forEach(el => observer_img.observe(el));
     document.querySelectorAll('[id="txt"]').forEach(el => observer_txt.observe(el));
@@ -141,5 +158,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="intro1"]').forEach(el => observer_intro1.observe(el));
     document.querySelectorAll('[id="intro2"]').forEach(el => observer_intro2.observe(el));
     document.querySelectorAll('[id="intro3"]').forEach(el => observer_intro3.observe(el));
+    document.querySelectorAll('[id="curso1"]').forEach(el => observer_cursos.observe(el));
+    document.querySelectorAll('[id="curso2"]').forEach(el => observer_cursos.observe(el));
+    document.querySelectorAll('[id="curso3"]').forEach(el => observer_cursos.observe(el));
+    document.querySelectorAll('[id="curso4"]').forEach(el => observer_cursos.observe(el));
+    document.querySelectorAll('[id="title"]').forEach(el => observer_title.observe(el));
     
 });

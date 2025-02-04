@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/css/output.css">
 </head>
 <style>
     .rotate-24{
@@ -16,7 +16,7 @@
         <img src="/src//media/BACK.jpg" alt="" class="absolute bottom-0 h-full min-h-screen w-screen opacity-24 parallax">
         <div class="pt-4">
             <div class="inline-flex gap-4 absolute right-7 items-center">
-                <a href="" class="header_text text_shadow">Sobre Mim</a>
+                <a href="" clascatchau 600ms ease-in-out;er_text text_shadow">Sobre Mim</a>
                 <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text text_shadow">Git Hub</a>
                 <a href="" class="header_text text_shadow">Linkedin</a>
         </div>
@@ -99,28 +99,30 @@
         
 
         <div class="flex place-content-center text-center">
-            <h1 class="absolute font-black text-6xl text-[#ff6f00] w-[60rem] top-20">Formação Acadêmica</h1>
+            <h1 id="title" class="absolute font-black text-6xl text-[#ff6f00] w-[60rem] top-20 opacity-0">Formação Acadêmica</h1>
         </div>
 
+
+        </div>
         <div class="mt-56 px-8 md:px-16 lg:px-32 xl:px-24">
 
             <!--Cursos-->
-            <div id="cursos1" class="flex flex-wrap gap-4 justify-center">
-                <div class="bg-white rounded-md rounded-br-sm rounded-tl-3xl w-[32rem] h-[10rem] px-4 grid grid-cols-3 items-center mx-[1px]">
+            <div class="grid grid-cols-2 gap-4 place-content-center w-[64rem] h-[20rem] mx-auto">
+                <div id="curso1" class="bg-white rounded-md rounded-br-sm rounded-tl-3xl px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl">
                     <div class="col-span-2">
-                        <h1 class="font-semibold text-lg text-slate-900">Programação Básica</h1>
+                        <h1 class="font-semibold text-lg text-slate-900 w-60">Programação Básica</h1>
                         <ul class="list-disc pl-6">
                             <li class="pt-1 font-light text-md text-slate-600">UFAL - Novo Ensino Suplementar</li>
                             <li class="pt-1 font-light text-md text-slate-600">400 Horas</li>
                             <li class="pt-1 font-light text-md text-slate-600">Presencial</li>
                         </ul>
                     </div>
-                    <button type="button" style="cursor: pointer;" onclick="view('certificado_nes')" class="bg-indigo-600 text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">
+                    <button type="button" style="cursor: pointer;" onclick="view('certificado_nes')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">
                         Ver certificado
                     </button>
                 </div>
-                
-                <div class="bg-white rounded-md rounded-bl-sm rounded-tr-3xl w-[32rem] h-[10rem] px-4 grid grid-cols-3 items-center mx-[1px]">
+
+                <div id="curso2" class="bg-white rounded-md rounded-bl-sm rounded-tr-3xl px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl">
                     <div class="col-span-2">
                         <h1 class="font-semibold text-lg text-slate-900 w-60">Modelagem de Dados e Projetos Lógicos com SQL</h1>
                         <ul class="list-disc pl-6">
@@ -129,15 +131,10 @@
                             <li class="pt-1 font-light text-md text-slate-600">Online</li>
                         </ul>
                     </div>
-                    <button type="button" style="cursor: pointer;" onclick="view('certificado_SQL1')" class="bg-indigo-600 text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
+                    <button type="button" style="cursor: pointer;" onclick="view('certificado_SQL1')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
                 </div>
-            </div>
-            <div class="flex items-center place-content-center">
-                <hr class="text-transparent w-[66rem] mt-2 mb-2">
-            </div>
-        
-            <div id="cursos2" class="flex flex-wrap gap-4 justify-center">
-                <div class="bg-white rounded-md rounded-bl-3xl rounded-tr-sm w-[32rem] h-[10rem] px-4 grid grid-cols-3 items-center mx-[1px]">
+
+                <div id="curso3" class="bg-white rounded-md rounded-bl-3xl rounded-tr-sm px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl">
                     <div class="col-span-2">
                         <h1 class="font-semibold text-lg text-slate-900 w-60">Bootcamp | Python Ciência de Dados</h1>
                         <ul class="list-disc pl-6">
@@ -146,9 +143,10 @@
                             <li class="pt-1 font-light text-md text-slate-600">Online</li>
                         </ul>
                     </div>
-                    <button type="button" style="cursor: pointer;" onclick="view('certificado_python')" class="bg-indigo-600 text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
+                    <button type="button" style="cursor: pointer;" onclick="view('certificado_python')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
                 </div>
-                <div class="bg-white rounded-md rounded-br-3xl rounded-tl-sm w-[32rem] h-[10rem] px-4 grid grid-cols-3 items-center mx-[1px]">
+
+                <div id="curso4" class="bg-white rounded-md rounded-br-3xl rounded-tl-sm px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl">
                     <div class="col-span-2">
                         <h1 class="font-semibold text-lg text-slate-900 w-60">MySQL</h1>
                         <ul class="list-disc pl-6">
@@ -157,51 +155,54 @@
                             <li class="pt-1 font-light text-md text-slate-600">Online</li>
                         </ul>
                     </div>
-                    <button type="button" style="cursor: pointer;" onclick="view('certificado_SQL2')" class="bg-indigo-600 text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
+                    <button type="button" style="cursor: pointer;" onclick="view('certificado_SQL2')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
                 </div>
 
+            </div>
+
                 <!-- Certificados ocultos -->
-                <div style="display: none;" id="certificado_nes">
-                    <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
-                    <div class="absolute top-16 left-72">
-                        <img src="/src/media/cert_nes.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                        <button style="cursor: pointer;" onclick="view('certificado_nes')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                 <div>
+                    <div style="display: none;" id="certificado_nes">
+                        <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
+                        <div class="absolute top-16 left-72">
+                            <img src="/src/media/cert_nes.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                            <button style="cursor: pointer;" onclick="view('certificado_nes')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                        </div>
                     </div>
-                </div>
-                <div style="display: none;" id="certificado_SQL1">
-                    <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
-                    <div class="absolute top-16 left-72">
-                        <img src="/src/media/cert_sql1.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                        <button style="cursor: pointer;" onclick="view('certificado_SQL1')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                    <div style="display: none;" id="certificado_SQL1">
+                        <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
+                        <div class="absolute top-16 left-72">
+                            <img src="/src/media/cert_sql1.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                            <button style="cursor: pointer;" onclick="view('certificado_SQL1')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                        </div>
                     </div>
-                </div>
-                <div style="display: none;" id="certificado_SQL2">
-                    <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
-                    <div class="absolute top-16 left-72">
-                        <img src="/src/media/cert_sql2.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                        <button style="cursor: pointer;" onclick="view('certificado_SQL2')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                    <div style="display: none;" id="certificado_SQL2">
+                        <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
+                        <div class="absolute top-16 left-72">
+                            <img src="/src/media/cert_sql2.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                            <button style="cursor: pointer;" onclick="view('certificado_SQL2')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                        </div>
                     </div>
-                </div>
-                <div style="display: none;" id="certificado_python">
-                    <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
-                    <div class="absolute top-16 left-72">
-                        <img src="/src/media/cert_python.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                        <button style="cursor: pointer;" onclick="view('certificado_python')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                    <div style="display: none;" id="certificado_python">
+                        <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
+                        <div class="absolute top-16 left-72">
+                            <img src="/src/media/cert_python.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                            <button style="cursor: pointer;" onclick="view('certificado_python')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                        </div>
                     </div>
-                </div>
+                 </div>
+                
                 
             </div>
 
+        </div>
             
-        
 
-            
-        
     </section>
     
     
-    <script src="/src/JS/observer.js"></script>
-    <script src="/src/JS/view.js"></script>
+    <script src="/src/js/observer.js"></script>
+    <script src="/src/js/view.js"></script>
     <script>
         document.addEventListener("scroll", function () {
         let scrollPosition = window.scrollY;
