@@ -223,7 +223,9 @@
   @apply bg-slate-100 rounded-tr-3xl rounded-br-xl rounded-tl-sm rounded-bl-4xl px-4 pl-5 text-slate-700 font-medium text-base shadow-lg
 }
 
-
+.certificado{
+  @apply rounded-md shadow-md;
+}
 
 .transition_button{
     @apply transition ease-in-out  hover:scale-105;
