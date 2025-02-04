@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ruan Lima</title>
     <link rel="stylesheet" href="/src/css/output.css">
 </head>
 <style>
@@ -168,56 +168,60 @@
             <div style="display: none;" id="certificado_nes">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
-                    <img src="/src/media/cert_nes.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                    <img src="/src/media/certificados/cert_nes.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
                     <button style="cursor: pointer;" onclick="view('certificado_nes')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             <div style="display: none;" id="certificado_SQL1">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
-                    <img src="/src/media/cert_sql1.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                    <img src="/src/media/certificados/cert_sql1.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
                     <button style="cursor: pointer;" onclick="view('certificado_SQL1')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             <div style="display: none;" id="certificado_SQL2">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
-                    <img src="/src/media/cert_sql2.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                    <img src="/src/media/certificados/cert_sql2.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
                     <button style="cursor: pointer;" onclick="view('certificado_SQL2')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             <div style="display: none;" id="certificado_python">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
-                    <img src="/src/media/cert_python.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
+                    <img src="/src/media/certificados/cert_python.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
                     <button style="cursor: pointer;" onclick="view('certificado_python')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             </div>
 
             <div class="flex place-content-center mt-14">
-                <button type="button" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-lg rounded-md p-1 px-3">
+                <button type="button" onclick="view('certificados')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-lg rounded-md p-1 px-3">
                     Visualizar todos os certificados</button>
             </div>
 
-            <div class="flex place-content-center">
+            <div id="certificados" class="flex place-content-center">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
-                <div class="bg-slate-100 top-10 h-auto w-auto absolute grid grid-cols-4 gap-8 mx-16 mt-6 px-16 py-12 rounded-xl">
-                    <img src="/src/media/cert_nes.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_sql1.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_python.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_sql2.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_mandacaru.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_obmep1.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_obmep2.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_obmep3.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_oamep.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_logica1.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_logica2.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_fgv.jpg" alt="" class="certificado">
-                    <img src="/src/media/cert_python.jpg" alt="" class="certificado">
+                <div class="bg-slate-100 top-10 max-h-screen overflow-y-auto h-auto w-auto absolute grid grid-cols-4 gap-8 mx-16 mt-6 px-16 py-12 rounded-xl">
+                    <img src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado" class="certificado">
+                    <img src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
+                    <img src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
+                    <img src="/src/media/certificados/cert_sql2.jpg" alt="Certificado MySQL" class="certificado">
+                    <img src="/src/media/certificados/cert_mandacaru.jpg" alt="Prata Olimpíada Mandacaru de Matemática" class="certificado">
+                    <img src="/src/media/certificados/cert_obmep1.jpg" alt="Menção Honrosa OBMEP 2019" class="certificado">
+                    <img src="/src/media/certificados/cert_obmep2.jpg" alt="Menção Honrosa OBMEP 2021" class="certificado">
+                    <img src="/src/media/certificados/cert_obmep3.jpg" alt="Menção Honrosa OBMEP 2022" class="certificado">
+                    <img src="/src/media/certificados/cert_oamep.jpg" alt="Bronze OAMEP" class="certificado">
+                    <img src="/src/media/certificados/cert_logica1.jpg" alt="Bronze Maratona de Lógica" class="certificado">
+                    <img src="/src/media/certificados/cert_logica2.jpg" alt="Prata Maratona de Lógica" class="certificado">
+                    <img src="/src/media/certificados/cert_fgv.jpg" alt="Seleção de Talentos FGV" class="certificado">
+                    <img src="/src/media/certificados/cert_startup.jpg" alt="SEBRAE Startup Day" class="certificado">
+                    <img src="/src/media/certificados/cert_campus.jpg" alt="Campus Party Nordeste 2024" class="certificado">
+                    <img src="/src/media/certificados/cert_dlj.jpg" alt="Desafio Liga Jovem 2024" class="certificado">
+                    <img src="/src/media/certificados/cert_eba.jpg" alt="EBA 2024" class="certificado">
+                    <img src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado">
                 </div>
-                <button onclick="view('certificado_nes')" class=" absolute top-10 right-8 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                <button onclick="view('certificados')" class=" absolute top-20 left-20 transition_button "><img src="/src/media/voltar.png" alt="" class="h-8 opacity-20"></button>
             </div>
             
                 
