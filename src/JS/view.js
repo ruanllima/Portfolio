@@ -12,3 +12,35 @@ function view(id){
       
     }
 }
+
+function view_certificate(id) {
+
+    const div = document.getElementById("certificados");
+    const view = document.getElementById('view');
+    const selected = document.getElementById(id);
+    
+    document.getElementById('certificados').style.display = "none";
+    document.getElementById('view_container').style.display = ""; // ou ""
+
+    view.src = selected.src;
+
+    return id;
+}
+
+function change_certificate(id){
+    const div = document.getElementById("certificados");
+    const certificados = div.querySelectorAll('[id]');
+    const array_cert = Array.from(certificados).map(cert => cert.id);
+    const currentSrc = document.getElementById("view").src;
+    const currentCert = array_cert.find(cert => document.getElementById(cert).src === currentSrc);
+    const index = array_cert.indexOf(currentCert);
+    
+
+    if(id === 'left' && index > 0){
+        view_certificate(array_cert[index - 1]);
+    }
+
+    if(id === 'right' && index < array_cert.length - 1){
+        view_certificate(array_cert[index + 1]);
+    }
+}
