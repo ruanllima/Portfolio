@@ -3,6 +3,7 @@
 @theme {
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   --animate-fade-in: fade-in 2s ease-in-out;
+  --animate-fade-in-fast: fade-in 800ms ease-in-out;
   --animate-fade-in-y-down: fade-in-y-down 800ms ease-in-out;
   --animate-fade-in-y-i-down: fade-in-y-i-down 800ms ease-in-out;
   --animate-fade-in-y-up: fade-in-y-up 800ms ease-in-out;
@@ -66,6 +67,7 @@
       height: 22px;
     }
   }
+
 
   @keyframes fade-in-y-down {
     0% {

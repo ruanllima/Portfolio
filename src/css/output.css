@@ -379,6 +379,7 @@
     );
     --animate-wiggle: wiggle 1s ease-in-out infinite;
     --animate-fade-in: fade-in 2s ease-in-out;
+    --animate-fade-in-fast: fade-in 800ms ease-in-out;
     --animate-fade-in-y-down: fade-in-y-down 800ms ease-in-out;
     --animate-fade-in-y-i-down: fade-in-y-i-down 800ms ease-in-out;
     --animate-fade-in-y-up: fade-in-y-up 800ms ease-in-out;
@@ -645,12 +646,6 @@
   .isolation-auto {
     isolation: auto;
   }
-  .z-1 {
-    z-index: 1;
-  }
-  .z-4 {
-    z-index: 4;
-  }
   .z-auto {
     z-index: auto;
   }
@@ -759,9 +754,6 @@
       max-width: 96rem !important;
     }
   }
-  .m-9 {
-    margin: calc(var(--spacing) * 9);
-  }
   .mx-\[1px\] {
     margin-inline: 1px;
   }
@@ -785,9 +777,6 @@
   }
   .mt-36 {
     margin-top: calc(var(--spacing) * 36);
-  }
-  .mt-48 {
-    margin-top: calc(var(--spacing) * 48);
   }
   .mt-56 {
     margin-top: calc(var(--spacing) * 56);
@@ -888,17 +877,17 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
-  .h-9 {
-    height: calc(var(--spacing) * 9);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
+  }
+  .h-\[28rem\] {
+    height: 28rem;
+  }
+  .h-\[29rem\] {
+    height: 29rem;
   }
   .h-\[100vh\] {
     height: 100vh;
@@ -908,12 +897,6 @@
   }
   .h-\[10rem\] {
     height: 10rem;
-  }
-  .h-\[28rem\] {
-    height: 28rem;
-  }
-  .h-\[29rem\] {
-    height: 29rem;
   }
   .h-\[30rem\] {
     height: 30rem;
@@ -942,14 +925,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-60 {
     width: calc(var(--spacing) * 60);
@@ -1111,6 +1088,9 @@
   }
   .transform-none {
     transform: none;
+  }
+  .animate-fade-in-fast {
+    animation: var(--animate-fade-in-fast);
   }
   .animate-fade-in-x {
     animation: var(--animate-fade-in-x);
@@ -1671,9 +1651,6 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/70 {
     background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
@@ -3388,4 +3365,6 @@
   inherits: false;
 }
 @property --tw-duration {
-  synta
+  syntax: "*";
+  inherits: false;
+}

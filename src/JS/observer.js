@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     let lastScrollY = window.scrollY;
 
     const observer_img = new IntersectionObserver((entries) => {
@@ -119,6 +118,21 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, { threshold: 0.2 });
+
+    const observer_cursos1 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fade-in-fast");
+                console.log("entrou");
+                entry.target.classList.remove("opacity-0");
+            }
+            else{
+                console.log("saiu");
+                entry.target.classList.remove("animate-fade-in-fast");
+                entry.target.classList.add("opacity-0");
+            }
+        });
+    }, { threshold: 0.3 });
 
     document.querySelectorAll('[id="img"]').forEach(el => observer_img.observe(el));
     document.querySelectorAll('[id="txt"]').forEach(el => observer_txt.observe(el));
