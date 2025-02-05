@@ -16,7 +16,7 @@
   --animate-fade-in-x-i: fade-in-x-i 800ms ease-in-out;
   --animate-fade-in-scale: fade-in-scale 600ms ease-in-out;
   --animate-fade-in-y: fade-in-y 1s ease-in-out;
-  --animate-fade-catchau: fade-catchau 600ms ease-in-out;
+  --animate-fade-fall: fade-fall 1s ease-out;
 
   @keyframes wiggle {
     0%,
@@ -157,12 +157,14 @@
     }
   }
 
-  @keyframes fade-catchau {
+  @keyframes fade-fall {
     0% {
       opacity: 0;
+      transform: translateY(-100px);
     }
     100% {
       opacity: 1;
+      transform: translateY(0px);
     }
   }
 }
