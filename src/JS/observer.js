@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.target.classList.remove("opacity-0");
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.5 });
 
     const observer_img_i = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 entry.target.classList.remove("opacity-0");
             }
         });
-    }, { threshold: 0.4 });
+    }, { threshold: 0.5 });
 
     const observer_txt_i = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

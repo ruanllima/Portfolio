@@ -14,7 +14,7 @@ function view(id){
 }
 
 function view_tab(tab1, tab2, tab3){
-    const element = document.getElementById("session3");
+    const element = document.getElementById("formacao");
 
     if (document.getElementById(tab1).style.display == ""){
         element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo

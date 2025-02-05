@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
+@font-face{
+  font-family: 'Cherolina';
+  src: url(./src/fonts/Cherolina.ttf) format('truetype');
+}
+
 @theme {
+
+  --font-cherolina: 'Cherolina', sans-serif;
+
+
+
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   --animate-fade-in: fade-in 2s ease-in-out;
   --animate-fade-in-fast: fade-in 800ms ease-in-out;
@@ -193,7 +203,7 @@
   overflow: hidden;
   white-space: nowrap;
   width: 612px;
-  animation: typewriter 2.7s steps(48) alternate , blink 0.5s steps(48);
+  animation: typewriter 2.1s steps(48) alternate , blink 0.5s steps(48);
 }
 
 .parallax {
@@ -218,7 +228,7 @@
 }
 
 .header_text{
-  @apply text-slate-100 font-medium text-base;
+  @apply text-slate-100 font-medium hover:scale-105 hover:text-white hover:shadow-2xl hover:shadow-amber-400;
 }
 
 .header_buttons{
@@ -253,8 +263,11 @@
     @apply bg-amber-300 text-blue-600;
 }
 
-.text_shadow {
+.text_shadow2 {
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* sombra no texto */
+}
+.text_shadow2 {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* sombra no texto */
 }
 
 @layer components {
