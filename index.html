@@ -196,14 +196,14 @@
             </div>
 
             <div class="flex place-content-center mt-14">
-                <button type="button" onclick="view('certificados')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-lg rounded-md p-1 px-3">
+                <button type="button" onclick="view_tab('certificados', '', '')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-lg rounded-md p-1 px-3">
                     Visualizar todos os certificados</button>
             </div>
 
-            <div class="flex place-content-center">
+            <div style="display: none;" id="certificados" class="flex place-content-center">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
-                <div class="bg-slate-100 top-10 bottom-16 max-h-screen overflow-y-auto h-[50rem] w-[76rem] absolute mx-16 mt-6 px-16 py-12 rounded-xl">
-                    <div id="certificados" class="grid grid-cols-4 gap-8">
+                <div class="bg-slate-100 top-10 bottom-16 max-h-screen overflow-y-auto h-[50rem] w-[76rem] absolute mx-16 mt-6 px-16 py-20 rounded-xl">
+                    <div id="certificados_list" class="grid grid-cols-4 gap-8">
                         <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
                         <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
                         <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
@@ -223,14 +223,17 @@
                         <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado">
                     </div>
 
-                    <div id="view_container" class="flex place-content-center">
+                    <div style="display: none;" id="view_container" class="flex place-content-center">
                         <button id="left" onclick="change_certificate(this.id)"><img src="/src/media/seta.png" alt="" class="h-24 absolute top-64 left-20 rotate-180 opacity-15"></button>
                         <button id="right" onclick="change_certificate(this.id)"><img src="/src/media/seta.png" alt="" class="h-24 absolute top-64 right-20 opacity-15"></button>
                         <img id="view" src="" class="certificado h-[34rem]">
                     </div>
-                    
+                    <button onclick="view_tab('certificados', 'view_container', 'certificados_list')" class=" absolute top-5 left-5 transition_button "><img src="/src/media/voltar.png" alt="" class="h-8 opacity-20"></button>
+
                 </div>
-                <button onclick="view('certificados')" class=" absolute top-20 left-20 transition_button "><img src="/src/media/voltar.png" alt="" class="h-8 opacity-20"></button>
+                
+            </div>
+                
             </div>
             
                 
