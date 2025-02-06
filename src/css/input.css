@@ -1,19 +1,42 @@
 @import "tailwindcss";
 
 @font-face{
-  font-family: 'Cherolina';
-  src: url(./src/fonts/Cherolina.ttf) format('truetype');
+  font-family: Cherolina;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Cherolina.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Nexa.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: Mogilite;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Mogilite.otf) format('opentype');
+}
+
+@font-face{
+  font-family: Magules;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Magules.ttf) format('opentype');
 }
 
 @theme {
 
-  --font-cherolina: 'Cherolina', sans-serif;
-
-
-
+  --font-cherolina: "Cherolina", "sans serif";
+  --font-nexa: "Nexa", "sans serif";
+  --font-mogilite: "Mogilite", "sans serif";
+  --font-magules: "Magules", "sans serif";
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   --animate-fade-in: fade-in 2s ease-in-out;
-  --animate-fade-in-fast: fade-in 800ms ease-in-out;
+  --animate-fade-in-fast: fade-in 700ms ease-in-out;
   --animate-fade-in-y-down: fade-in-y-down 800ms ease-in-out;
   --animate-fade-in-y-i-down: fade-in-y-i-down 800ms ease-in-out;
   --animate-fade-in-y-up: fade-in-y-up 800ms ease-in-out;
@@ -25,7 +48,7 @@
   --animate-fade-in-x: fade-in-x 800ms ease-in-out;
   --animate-fade-in-x-i: fade-in-x-i 800ms ease-in-out;
   --animate-fade-in-scale: fade-in-scale 600ms ease-in-out;
-  --animate-fade-in-y: fade-in-y 1s ease-in-out;
+  --animate-fade-in-y: fade-in-y 600ms ease-in-out;
   --animate-fade-fall: fade-fall 1s ease-out;
 
   @keyframes wiggle {
@@ -228,7 +251,7 @@
 }
 
 .header_text{
-  @apply text-slate-100 font-medium hover:scale-105 hover:text-white hover:shadow-2xl hover:shadow-amber-400;
+  @apply text-slate-100 font-nexa hover:scale-105 hover:text-white hover:shadow-2xl;
 }
 
 .header_buttons{
@@ -263,11 +286,12 @@
     @apply bg-amber-300 text-blue-600;
 }
 
-.text_shadow2 {
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); /* sombra no texto */
+.textShadow{
+  text-shadow: 0 1px 2px rgba(28, 28, 28);
 }
-.text_shadow2 {
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* sombra no texto */
+
+.textShadow2{
+  text-shadow: 0 1px 2px rgba(46, 46, 46);
 }
 
 @layer components {
