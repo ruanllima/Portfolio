@@ -8,6 +8,28 @@
 }
 
 @font-face{
+  font-family: Coolvetica;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/Coolvetica.otf) format('opentype');
+}
+
+@font-face{
+  font-family: Superme;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/Superme.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: Grostick;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/GROSTICK.ttf) format('truetype');
+}
+
+
+@font-face{
   font-family: Nexa;
   font-style: normal;
   font-weight: 400;
@@ -18,20 +40,31 @@
   font-family: Mogilite;
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Mogilite.otf) format('opentype');
+  src: url(/src/fonts/Mogilite.otf) format('opentype');
+}
+
+@font-face{
+  font-family: CreatoDisplay;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/CreatoDisplay-Thin.ttf) format('opentype');
 }
 
 @font-face{
   font-family: Magules;
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Magules.ttf) format('opentype');
+  src: url(/src/fonts/Magules.ttf) format('opentype');
 }
 
 @theme {
 
   --font-cherolina: "Cherolina", "sans serif";
+  --font-coolvetica: "Coolvetica", "sans serif";
   --font-nexa: "Nexa", "sans serif";
+  --font-superme: "Superme", "sans serif";
+  --font-creato: "CreatoDisplay", "sans serif";
+  --font-grostick: "Grostick", "sans serif";
   --font-mogilite: "Mogilite", "sans serif";
   --font-magules: "Magules", "sans serif";
   --animate-wiggle: wiggle 1s ease-in-out infinite;
@@ -251,7 +284,7 @@
 }
 
 .header_text{
-  @apply text-slate-100 font-nexa hover:scale-105 hover:text-white hover:shadow-2xl;
+  @apply text-slate-100 font-nexa hover:scale-105 hover:shadow-2xl;
 }
 
 .header_buttons{

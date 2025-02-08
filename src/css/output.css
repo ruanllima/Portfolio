@@ -378,7 +378,11 @@
       --font-mono--font-variation-settings
     );
     --font-cherolina: "Cherolina", "sans serif";
+    --font-coolvetica: "Coolvetica", "sans serif";
     --font-nexa: "Nexa", "sans serif";
+    --font-superme: "Superme", "sans serif";
+    --font-creato: "CreatoDisplay", "sans serif";
+    --font-grostick: "Grostick", "sans serif";
     --font-mogilite: "Mogilite", "sans serif";
     --font-magules: "Magules", "sans serif";
     --animate-wiggle: wiggle 1s ease-in-out infinite;
@@ -966,6 +970,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1703,6 +1710,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-black\/70 {
     background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
   }
@@ -1979,6 +1989,12 @@
   }
   .font-cherolina {
     font-family: var(--font-cherolina);
+  }
+  .font-coolvetica {
+    font-family: var(--font-coolvetica);
+  }
+  .font-creato {
+    font-family: var(--font-creato);
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -2452,6 +2468,12 @@
   .transition-normal {
     transition-behavior: normal;
   }
+  .delay-75 {
+    transition-delay: 75ms;
+  }
+  .delay-100 {
+    transition-delay: 100ms;
+  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -2630,6 +2652,13 @@
       }
     }
   }
+  .hover\:fill-amber-400 {
+    &:hover {
+      @media (hover: hover) {
+        fill: var(--color-amber-400);
+      }
+    }
+  }
   .hover\:shadow-xl {
     &:hover {
       @media (hover: hover) {
@@ -2666,6 +2695,24 @@
   src: url(./fonts/Cherolina.ttf) format('truetype');
 }
 @font-face {
+  font-family: Coolvetica;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/Coolvetica.otf) format('opentype');
+}
+@font-face {
+  font-family: Superme;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/Superme.ttf) format('truetype');
+}
+@font-face {
+  font-family: Grostick;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/GROSTICK.ttf) format('truetype');
+}
+@font-face {
   font-family: Nexa;
   font-style: normal;
   font-weight: 400;
@@ -2675,13 +2722,19 @@
   font-family: Mogilite;
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Mogilite.otf) format('opentype');
+  src: url(/src/fonts/Mogilite.otf) format('opentype');
+}
+@font-face {
+  font-family: CreatoDisplay;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/CreatoDisplay-Thin.ttf) format('opentype');
 }
 @font-face {
   font-family: Magules;
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Magules.ttf) format('opentype');
+  src: url(/src/fonts/Magules.ttf) format('opentype');
 }
 @keyframes typewriter {
   0% {
@@ -2823,11 +2876,6 @@
       --tw-scale-y: 105%;
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
-      color: var(--color-white);
     }
   }
   &:hover {
