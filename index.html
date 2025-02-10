@@ -17,7 +17,9 @@
 </style>
 <body class="">
     <section id="init" class="h-[103vh] relative bg-gradient-to-bl from-[#3505e3] to-[#6800fa]">
-        <img src="/src//media/BACK.jpg" alt="" class="absolute bottom-0 h-full min-h-screen w-screen opacity-24 parallax">
+        <div>
+            <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-30 parallax"></div>
+        </div>
         <div class="absolute left-10 top-2 shadow-xs">
             <h1 class="text-white text-6xl font-cherolina">Ruan Lima</h1>
         </div>
@@ -134,7 +136,7 @@
                             <li class="pt-1 font-light text-md text-slate-600">Presencial</li>
                         </ul>
                     </div>
-                    <button type="button" onclick="view('certificado_nes')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">
+                    <button type="button" onclick="view('certificado_nes', 'formacao')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">
                         Ver certificado
                     </button>
                 </div>
@@ -148,7 +150,7 @@
                             <li class="pt-1 font-light text-md text-slate-600">Online</li>
                         </ul>
                     </div>
-                    <button type="button" onclick="view('certificado_SQL1')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
+                    <button type="button" onclick="view('certificado_SQL1', 'formacao')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
                 </div>
 
                 <div id="curso3" class="bg-white rounded-md rounded-bl-3xl rounded-tr-sm px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl transition delay-100">
@@ -160,7 +162,7 @@
                             <li class="pt-1 font-light text-md text-slate-600">Online</li>
                         </ul>
                     </div>
-                    <button type="button" onclick="view('certificado_python')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
+                    <button type="button" onclick="view('certificado_python', 'formacao')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
                 </div>
 
                 <div id="curso4" class="bg-white rounded-md rounded-br-3xl rounded-tl-sm px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl transition delay-100">
@@ -172,7 +174,7 @@
                             <li class="pt-1 font-light text-md text-slate-600">Online</li>
                         </ul>
                     </div>
-                    <button type="button" onclick="view('certificado_SQL2')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
+                    <button type="button" onclick="view('certificado_SQL2', 'formacao')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap text-md rounded-md h-8 w-auto mr-5">Ver certificado</button>
                 </div>
 
             </div>
@@ -183,28 +185,28 @@
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
                     <img src="/src/media/certificados/cert_nes.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                    <button style="cursor: pointer;" onclick="view('certificado_nes')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                    <button style="cursor: pointer;" onclick="view('certificado_nes', 'formacao')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             <div style="display: none;" id="certificado_SQL1">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
                     <img src="/src/media/certificados/cert_sql1.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                    <button style="cursor: pointer;" onclick="view('certificado_SQL1')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                    <button style="cursor: pointer;" onclick="view('certificado_SQL1', 'formacao')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             <div style="display: none;" id="certificado_SQL2">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
                     <img src="/src/media/certificados/cert_sql2.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                    <button style="cursor: pointer;" onclick="view('certificado_SQL2')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                    <button style="cursor: pointer;" onclick="view('certificado_SQL2', 'formacao')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             <div style="display: none;" id="certificado_python">
                 <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
                 <div class="absolute top-16 left-72">
                     <img src="/src/media/certificados/cert_python.jpg" alt="" class="rounded-2xl shadow-2xl relative h-[35rem]">
-                    <button style="cursor: pointer;" onclick="view('certificado_python')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
+                    <button style="cursor: pointer;" onclick="view('certificado_python', 'formacao')" class="absolute -top-4 -right-24 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-12"></button>
                 </div>
             </div>
             </div>

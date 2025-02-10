@@ -292,7 +292,7 @@
 }
 
 .certificado{
-  @apply rounded-md shadow-md;
+  @apply rounded-md shadow-md transition delay-75 hover:scale-105 hover:shadow-xl;
 }
 
 .transition_button{

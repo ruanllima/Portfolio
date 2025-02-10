@@ -1,5 +1,5 @@
-function view(id){
-    const element = document.getElementById("session3");
+function view(id, fixed){
+    const element = document.getElementById(fixed);
 
     if (document.getElementById(id).style.display == ""){
         document.getElementById(id).style.display = "none";
