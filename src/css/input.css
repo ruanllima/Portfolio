@@ -296,7 +296,7 @@
 }
 
 .transition_button{
-    @apply transition ease-in-out  hover:scale-105;
+    @apply transition ease-in-out hover:scale-105 duration-100;
 }
 
 .alert{
@@ -307,6 +307,10 @@
 .alert_positive {
     @apply animate-bounce-alert flex flex-wrap items-center rounded-b-lg justify-center py-3 pl-4 pr-14 text-base font-medium [transition:all_0.5s_ease]
     border-solid border border-[#4caf50] text-[#2e7d32] bg-[linear-gradient(#4caf501a,#4caf501a)];
+}
+
+.main_buttons {
+  @apply bg-indigo-600 font-medium text-white p-0.5 rounded-sm hover:bg-[#ff6f00] hover:shadow-lg;
 }
 
 
