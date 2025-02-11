@@ -123,6 +123,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, { threshold: 0.4 });
 
+    const observer_fadeiny = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fade-in-y");
+                console.log("entrou");
+                entry.target.classList.remove("opacity-0");
+            }
+        });
+    }, { threshold: 0.3 });
     
 
     document.querySelectorAll('[id="img"]').forEach(el => observer_img.observe(el));
@@ -140,5 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="init1"]').forEach(el => observer_init1.observe(el));
     document.querySelectorAll('[id="init2"]').forEach(el => observer_init2.observe(el));
     document.querySelectorAll('[id="init3"]').forEach(el => observer_init3.observe(el));
+    document.querySelectorAll('#data_projects > *').forEach(el => observer_fadeiny.observe(el));
+
     
 });

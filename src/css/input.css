@@ -310,7 +310,7 @@
 }
 
 .main_buttons {
-  @apply bg-indigo-600 font-medium text-white p-0.5 rounded-sm hover:bg-[#ff6f00] hover:shadow-lg;
+  @apply bg-indigo-600 font-medium text-white p-1 rounded-sm hover:bg-[#ff6f00] hover:shadow-lg;
 }
 
 
