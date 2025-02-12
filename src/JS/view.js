@@ -13,8 +13,8 @@ function view(id, fixed){
     }
 }
 
-function view_tab(tab1, tab2, tab3){
-    const element = document.getElementById("formacao");
+function view_tab(tab1, tab2, tab3, local){
+    const element = document.getElementById(local);
 
     if (document.getElementById(tab1).style.display == ""){
         element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
