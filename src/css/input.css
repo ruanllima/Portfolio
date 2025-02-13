@@ -57,8 +57,16 @@
   src: url(/src/fonts/Magules.ttf) format('opentype');
 }
 
+@font-face{
+  font-family: Minecrafter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/Minecrafter.ttf) format('truetype');
+}
+
 @theme {
 
+  --font-minecrafter: "Minecrafter", "sans serif";
   --font-cherolina: "Cherolina", "sans serif";
   --font-coolvetica: "Coolvetica", "sans serif";
   --font-nexa: "Nexa", "sans serif";
