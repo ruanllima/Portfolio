@@ -329,6 +329,15 @@
 .transition_button{
     @apply transition ease-in-out hover:scale-105 duration-100;
 }
+ 
+.input_email{
+  @apply bg-white w-3/4 rounded-sm mb-3 p-1.5 border border-slate-300 font-light text-slate-600 focus:outline-0 focus:ring-blue-500/70 focus:ring-1
+   placeholder:font-light placeholder:text-zinc-400;
+}
+
+.button_email{
+  @apply bg-indigo-500 w-1/2 rounded-md mb-3 p-1.5 font-bold text-slate-100 transition hover:scale-105 hover:bg-[#ff6f00];
+}
 
 .alert{
     @apply animate-bounce-alert flex flex-wrap items-center rounded-b-lg justify-center py-3 pl-4 pr-14 text-base font-medium [transition:all_0.5s_ease] 

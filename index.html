@@ -28,6 +28,8 @@
                 <a href="#about" class="header_text textShadow2">Sobre Mim</a>
                 <a href="#education" class="header_text textShadow2">Formação Acadêmica</a>
                 <a href="#projects" class="header_text textShadow2">Projetos</a>
+                <a href="#skills" class="header_text textShadow2">Skills</a>
+
                 <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text textShadow2 inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5 hover:fill-amber-400">
                         <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
@@ -345,9 +347,10 @@
     </section>
 
     <section id="skills" class="h-auto bg-zinc-900 relative">
-        
 
         <div class="flex flex-col place-content-center mx-auto items-center pb-[12rem]">
+
+            <!--Header Texts-->
             <div class="w-full text-center p-10 pt-36">
                 <h1 id="title" class="font-black text-6xl text-zinc-100 opacity-0">Skills</h1>
             </div>
@@ -356,99 +359,112 @@
             </div>
 
             <div class="flex flex-col place-content-center items-center z-50">
-                    <div class="py-10 px-40 grid grid-cols-3 grid-rows-3 gap-1.5 h-[45rem] w-[77rem]">
-                        <div class="row-span-3 grid grid-rows-4 gap-1.5">
-                            <div id="python_skill" style="cursor: pointer;" onclick="card_skill('python_skill_1', 'python_skill_2', 'python_skill')" class="bg-[#045deb] skill_grid relative row-span-2">
-                                <img id="python_skill_1" src="/src/media/skills/python-logo.png" alt="" class="h-20 absolute bottom-4 -left-3">
-                                <p style="display: none;" id="python_skill_2" class="font-nexa text-blue-100/80 text-lg px-4 absolute top-6">Linguagem com maior domínio e tempo de uso. Conhecimento em diversas bibliotecas como: pandas, numpy, matplotlib, scikit-learn, além de orientação a objetos. Alguns projetos de data science e análise exploratória de dados.</p>
-                            </div>
+                <!--Grid of skills-->
+                <div class="py-10 px-40 grid grid-cols-3 grid-rows-3 gap-1.5 h-[45rem] w-[77rem]">
+                    <div class="row-span-3 grid grid-rows-4 gap-1.5">
+                        <div id="python_skill" style="cursor: pointer;" onclick="card_skill('python_skill_1', 'python_skill_2', 'python_skill')" class="bg-[#045deb] skill_grid relative row-span-2">
+                            <img id="python_skill_1" src="/src/media/skills/python-logo.png" alt="" class="h-20 absolute bottom-4 -left-3">
+                            <p style="display: none;" id="python_skill_2" class="font-nexa text-blue-100/80 text-lg px-4 absolute top-6">Linguagem com maior domínio e tempo de uso. Conhecimento em diversas bibliotecas como: pandas, numpy, matplotlib, scikit-learn, além de orientação a objetos. Alguns projetos de data science e análise exploratória de dados.</p>
+                        </div>
 
-                            <div class="grid grid-rows-2 gap-1.5 row-span-2">
-                                <div id="git_skill" style="cursor: pointer;" onclick="card_skill('git_skill_1', 'git_skill_2', 'git_skill')" class="bg-orange-400 skill_grid relative">
-                                    <img id="git_skill_1" src="/src/media/skills/Git-logo.png" alt="" class="h-8 absolute bottom-5 left-4">
-                                    <p id="git_skill_2" style="display: none;" class="font-nexa text-orange-100 absolute px-2 text-[16px] top-3">Conhecimento dos principais comandos de versionamento de código; Utilização em projetos, integrado ao GitHub.</p>
+                        <div class="grid grid-rows-2 gap-1.5 row-span-2">
+                            <div id="git_skill" style="cursor: pointer;" onclick="card_skill('git_skill_1', 'git_skill_2', 'git_skill')" class="bg-orange-400 skill_grid relative">
+                                <img id="git_skill_1" src="/src/media/skills/Git-logo.png" alt="" class="h-8 absolute bottom-5 left-4">
+                                <p id="git_skill_2" style="display: none;" class="font-nexa text-orange-100 absolute px-2 text-[16px] top-3">Conhecimento dos principais comandos de versionamento de código; Utilização em projetos, integrado ao GitHub.</p>
+                            </div>
+                            <div id="resolucao_skill" style="cursor: pointer;" onclick="card_skill('resolucao_skill_1', 'resolucao_skill_2', 'resolucao_skill')" class="bg-green-700 skill_grid relative">
+                                <img id="resolucao_skill_1" src="/src/media/skills/resolucao.png" alt="" class="h-10 absolute bottom-2 left-3 invert">
+                                <p id="resolucao_skill_2" style="display: none;" class="font-nexa text-indigo-100/90 absolute px-2 text-[16px] top-3">Capacidade de resolução de problemas, desenvolvida em virtude da participação em olímpiadas de conhecimento.</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1.5 col-span-2">
+                        <div id="mysql_skill" style="cursor: pointer;" onclick="card_skill('mysql_skill_1', 'mysql_skill_2', 'mysql_skill')" class="bg-slate-100 skill_grid relative">
+                            <img id="mysql_skill_1" src="/src/media/skills/mysql-logo.png" alt="" class="h-20 absolute bottom-2 left-6">
+                            <p style="display: none;" id="mysql_skill_2" class="font-nexa text-slate-500 text-lg px-4 absolute top-6">Proficiente no desenvolvimento e manipulação de bancos de dados em SQL, com ênfase em operações CRUD.</p>
+
+                        </div>
+                        <div id="tailwind_skill"  style="cursor: pointer;" onclick="card_skill('tailwind_skill_1', 'tailwind_skill_2', 'tailwind_skill')" class="bg-cyan-900 skill_grid relative">
+                            <img id="tailwind_skill_1" src="/src/media/skills/tailwind-logo.svg" alt="" class="h-4 absolute bottom-8 left-6">
+                            <p id="tailwind_skill_2" style="display: none;" class="font-nexa text-cyan-50/70 text-lg px-2 absolute top-6 left-1">Conhecimento das principais classes do Tailwind CSS, com aplicação prática em algusns projetos de desenvolvimento de interfaces responsivas.</p>
+
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 col-span-2 row-span-2 gap-1.5">
+                        
+                        <div class="grid grid-rows-5 gap-1.5">
+                            <div class="">
+                                <div id="php_skill" style="cursor: pointer;" onclick="card_skill('php_skill_1', 'php_skill_2', 'php_skill')" class="bg-[#73769c] skill_grid relative">
+                                    <img id="php_skill_1" src="/src/media/skills/PHP-logo-2.png" alt="" class="h-20 absolute -bottom-4 left-1">
+                                    <p id="php_skill_2" style="display: none;" class="font-nexa text-indigo-100 absolute px-2 text-[15px] top-1.5">Contato básico com a linguagem na integração com banco de dados MySQL.</p>
+                                </div>    
+                            </div>
+                            <div class="grid grid-cols-1 row-span-4 gap-1.5">
+                                <div id="csharp_skill" style="cursor: pointer;" onclick="card_skill('csharp_skill_1', 'csharp_skill_2', 'csharp_skill')" class="bg-[#510af8] skill_grid relative">
+                                    <img id="csharp_skill_1" src="/src/media/skills/csharp-logo.png" alt="" class="h-10 absolute bottom-2 left-4">
+                                    <p id="csharp_skill_2" style="display: none;" class="font-nexa text-indigo-100/90 absolute px-2 text-[15.5px] top-3">Contato básico com a linguagem no desenvolvimento de jogos com a Unity.</p>
                                 </div>
-                                <div id="resolucao_skill" style="cursor: pointer;" onclick="card_skill('resolucao_skill_1', 'resolucao_skill_2', 'resolucao_skill')" class="bg-green-700 skill_grid relative">
-                                    <img id="resolucao_skill_1" src="/src/media/skills/resolucao.png" alt="" class="h-10 absolute bottom-2 left-3 invert">
-                                    <p id="resolucao_skill_2" style="display: none;" class="font-nexa text-indigo-100/90 absolute px-2 text-[16px] top-3">Capacidade de resolução de problemas, desenvolvida em virtude da participação em olímpiadas de conhecimento.</p>
+                                <div id="unity_skill" style="cursor: pointer;" onclick="card_skill('unity_skill_1', 'unity_skill_2', 'unity_skill')" class="bg-slate-800 skill_grid relative">
+                                    <img id="unity_skill_1" src="/src/media/skills/unity-logo.png" alt="" class="h-10 absolute bottom-2 left-3 invert">
+                                    <p id="unity_skill_2" style="display: none;" class="font-nexa text-indigo-100/90 absolute px-2 text-[16px] top-3">Compreesão da estrutura e funcionamento além de experiência prática.</p>
+                                </div>
+                        
+                                <div id="english_skill" style="cursor: pointer;" onclick="card_skill('english_skill_1', 'english_skill_2', 'english_skill')" class="bg-[#ff0000] skill_grid relative">
+                                    <img id="english_skill_1" src="/src/media/skills/ingles.png" alt="" class="h-10 absolute bottom-4 left-4">
+                                    <p id="english_skill_2" style="display: none;" class="font-nexa text-red-100/90 absolute px-2 text-[15.5px] top-3">Proficiência básica em inglês, com bom entendimento na leitura e audição, e habilidades razoáveis na conversação.</p>
                                 </div>
                                 
-                                
                             </div>
                         </div>
-                        <div class="grid grid-cols-2 gap-1.5 col-span-2">
-                            <div id="mysql_skill" style="cursor: pointer;" onclick="card_skill('mysql_skill_1', 'mysql_skill_2', 'mysql_skill')" class="bg-slate-100 skill_grid relative">
-                                <img id="mysql_skill_1" src="/src/media/skills/mysql-logo.png" alt="" class="h-20 absolute bottom-2 left-6">
-                                <p style="display: none;" id="mysql_skill_2" class="font-nexa text-slate-500 text-lg px-4 absolute top-6">Proficiente no desenvolvimento e manipulação de bancos de dados em SQL, com ênfase em operações CRUD.</p>
 
-                            </div>
-                            <div id="tailwind_skill"  style="cursor: pointer;" onclick="card_skill('tailwind_skill_1', 'tailwind_skill_2', 'tailwind_skill')" class="bg-cyan-900 skill_grid relative">
-                                <img id="tailwind_skill_1" src="/src/media/skills/tailwind-logo.svg" alt="" class="h-4 absolute bottom-8 left-6">
-                                <p id="tailwind_skill_2" style="display: none;" class="font-nexa text-cyan-50/70 text-lg px-2 absolute top-6 left-1">Conhecimento das principais classes do Tailwind CSS, com aplicação prática em algusns projetos de desenvolvimento de interfaces responsivas.</p>
+                        <div class="grid grid-cols-1">
+                            <div class="grid grid-cols-1 row-span-2 gap-1.5">
+                                <div id="javascript_skill" style="cursor: pointer;" onclick="card_skill('javascript_skill_1', 'javascript_skill_2', 'javascript_skill')" class="bg-[#ebc907] skill_grid relative"> 
+                                    <img id="javascript_skill_1" src="/src/media/skills/javascript-logo.png" alt="" class="h-14 absolute bottom-5 left-5">
+                                    <p id="javascript_skill_2" style="display: none;" class="font-nexa text-yellow-950/70 text-[16px] absolute top-3 px-2">Conhecimento prático em JavaScript, com aplicação em projetos e implementação de scripts para funcionalidades específicas.</p>
 
+                                </div>
+                                <div id="html_skill" style="cursor: pointer;" onclick="card_skill('html_skill_1', 'html_skill_2', 'html_skill')" class="bg-[#f74904] skill_grid relative">
+                                    <img id="html_skill_1" src="/src/media/skills/html-logo-2.png" alt="" class="h-14 absolute bottom-5 left-4 invert">
+                                    <p id="html_skill_2" style="display: none;" class="font-nexa text-orange-100/80 absolute text-[16px] top-3 px-2">Conhecimento estruturado da linguagem, com familiaridade na aplicação em projetos pessoais de desenvolvimento web.</p>
+                                </div> 
+                                <div id="css_skill" style="cursor: pointer;" onclick="card_skill('css_skill_1', 'css_skill_2', 'css_skill')" class="bg-[#2a0bef] skill_grid relative">
+                                    <img id="css_skill_1" src="/src/media/skills/css-logo-2.png" alt="" class="h-14 absolute bottom-5 left-4 invert">
+                                    <p id="css_skill_2" style="display: none;" class="font-nexa text-blue-100/70 text-[16px] absolute top-3 px-2 ">Compreensão básica da estrutura do CSS, aplicando suas principais propriedades para estilização e formatação de interfaces em projetos.</p>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-2 col-span-2 row-span-2 gap-1.5">
-                            
-                            <div class="grid grid-rows-5 gap-1.5">
-                                <div class="">
-                                    <div id="php_skill" style="cursor: pointer;" onclick="card_skill('php_skill_1', 'php_skill_2', 'php_skill')" class="bg-[#73769c] skill_grid relative">
-                                        <img id="php_skill_1" src="/src/media/skills/PHP-logo-2.png" alt="" class="h-20 absolute -bottom-4 left-1">
-                                        <p id="php_skill_2" style="display: none;" class="font-nexa text-indigo-100 absolute px-2 text-[15px] top-1.5">Contato básico com a linguagem na integração com banco de dados MySQL.</p>
-                                    </div>    
-                                </div>
-                                <div class="grid grid-cols-1 row-span-4 gap-1.5">
-                                    <div id="csharp_skill" style="cursor: pointer;" onclick="card_skill('csharp_skill_1', 'csharp_skill_2', 'csharp_skill')" class="bg-[#510af8] skill_grid relative">
-                                        <img id="csharp_skill_1" src="/src/media/skills/csharp-logo.png" alt="" class="h-10 absolute bottom-2 left-4">
-                                        <p id="csharp_skill_2" style="display: none;" class="font-nexa text-indigo-100/90 absolute px-2 text-[15.5px] top-3">Contato básico com a linguagem no desenvolvimento de jogos com a Unity.</p>
-                                    </div>
-                                    <div id="unity_skill" style="cursor: pointer;" onclick="card_skill('unity_skill_1', 'unity_skill_2', 'unity_skill')" class="bg-slate-800 skill_grid relative">
-                                        <img id="unity_skill_1" src="/src/media/skills/unity-logo.png" alt="" class="h-10 absolute bottom-2 left-3 invert">
-                                        <p id="unity_skill_2" style="display: none;" class="font-nexa text-indigo-100/90 absolute px-2 text-[16px] top-3">Compreesão da estrutura e funcionamento além de experiência prática.</p>
-                                    </div>
-                            
-                                    <div id="english_skill" style="cursor: pointer;" onclick="card_skill('english_skill_1', 'english_skill_2', 'english_skill')" class="bg-[#ff0000] skill_grid relative">
-                                        <img id="english_skill_1" src="/src/media/skills/ingles.png" alt="" class="h-10 absolute bottom-4 left-4">
-                                        <p id="english_skill_2" style="display: none;" class="font-nexa text-red-100/90 absolute px-2 text-[15.5px] top-3">Proficiência básica em inglês, com bom entendimento na leitura e audição, e habilidades razoáveis na conversação.</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1">
-                                <div class="grid grid-cols-1 row-span-2 gap-1.5">
-                                    <div id="javascript_skill" style="cursor: pointer;" onclick="card_skill('javascript_skill_1', 'javascript_skill_2', 'javascript_skill')" class="bg-[#ebc907] skill_grid relative"> 
-                                        <img id="javascript_skill_1" src="/src/media/skills/javascript-logo.png" alt="" class="h-14 absolute bottom-5 left-5">
-                                        <p id="javascript_skill_2" style="display: none;" class="font-nexa text-yellow-950/70 text-[16px] absolute top-3 px-2">Conhecimento prático em JavaScript, com aplicação em projetos e implementação de scripts para funcionalidades específicas.</p>
-    
-                                    </div>
-                                    <div id="html_skill" style="cursor: pointer;" onclick="card_skill('html_skill_1', 'html_skill_2', 'html_skill')" class="bg-[#f74904] skill_grid relative">
-                                        <img id="html_skill_1" src="/src/media/skills/html-logo-2.png" alt="" class="h-14 absolute bottom-5 left-4 invert">
-                                        <p id="html_skill_2" style="display: none;" class="font-nexa text-orange-100/80 absolute text-[16px] top-3 px-2">Conhecimento estruturado da linguagem, com familiaridade na aplicação em projetos pessoais de desenvolvimento web.</p>
-                                    </div> 
-                                    <div id="css_skill" style="cursor: pointer;" onclick="card_skill('css_skill_1', 'css_skill_2', 'css_skill')" class="bg-[#2a0bef] skill_grid relative">
-                                        <img id="css_skill_1" src="/src/media/skills/css-logo-2.png" alt="" class="h-14 absolute bottom-5 left-4 invert">
-                                        <p id="css_skill_2" style="display: none;" class="font-nexa text-blue-100/70 text-[16px] absolute top-3 px-2 ">Compreensão básica da estrutura do CSS, aplicando suas principais propriedades para estilização e formatação de interfaces em projetos.</p>
-    
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                        
- 
-                       
-                        
-                        
-            
-                        
-
 
                     </div>
+    
+                </div>
             </div>
         </div>
-    
+
+    </section>
+    <section id="cta" class="h-auto pb-64 bg-slate-100">
+        <div class="flex flex-col place-content-center text-center mx-auto pt-32">
+            <h1 id="cta1" class="text-indigo-600 font-black font-coolvetica text-7xl">Despertei seu interesse?</h1>
+            <h2 id="cta2" class="text-indigo-400 font-light text-3xl pt-7">Sinta-se à vontade para entrar em contato comigo.</h2>
+
+            <div id="cta3" class="bg-indigo-100 mx-auto w-2/5 mt-12 rounded-md">
+                <form action="https://formsubmit.co/ruanlimafn@gmail.com" method="POST" class="flex flex-col place-content-center items-center p-10 mx-auto">
+                    <input type="text" name="name" placeholder="Seu nome" required class="input_email">
+                    <input type="email" name="email" placeholder="Seu email" required class="input_email">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                    <textarea name="message" rows="5" placeholder="Mensagem" required class="input_email"></textarea>
+                    <button type="submit" class="button_email">Send</button>
+                </form>
+            </div>
+        </div>
+
+
+
 
     </section>
     

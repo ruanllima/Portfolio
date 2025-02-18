@@ -115,3 +115,8 @@ function card_skill(id1, id2, div){
     }
 }
 
+function card_all(){
+    const cards = document.querySelectorAll('[id*="skill"]');
+    console.log(cards);
+}
+
