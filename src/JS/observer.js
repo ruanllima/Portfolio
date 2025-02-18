@@ -150,6 +150,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="init2"]').forEach(el => observer_init2.observe(el));
     document.querySelectorAll('[id="init3"]').forEach(el => observer_init3.observe(el));
     document.querySelectorAll('#data_projects > *').forEach(el => observer_fadeiny.observe(el));
+    document.querySelectorAll('[id="cta1"]').forEach(el => observer_fadeiny.observe(el));
+    document.querySelectorAll('[id="cta2"]').forEach(el => observer_fadeiny.observe(el));
+    document.querySelectorAll('[id="cta3"]').forEach(el => observer_fadeiny.observe(el));
+
+
 
     
 });
