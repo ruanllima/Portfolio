@@ -91,6 +91,9 @@
   --animate-fade-in-scale: fade-in-scale 600ms ease-in-out;
   --animate-fade-in-y: fade-in-y 600ms ease-in-out;
   --animate-fade-fall: fade-fall 1s ease-out;
+  --animate-card-skill-out: card-skill-out 510ms ease-out;
+  --animate-card-skill-in: card-skill-in 510ms ease-out;
+
 
   @keyframes wiggle {
     0%,
@@ -241,6 +244,24 @@
       transform: translateY(0px);
     }
   }
+
+  @keyframes card-skill-out {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(90deg);
+    }
+  }
+  
+  @keyframes card-skill-in {
+    0% {
+      transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
 }
 
 @keyframes typewriter {
@@ -275,7 +296,7 @@
 }
 
 .skill_grid{
-  @apply h-full w-full flex items-center place-content-center hover:scale-[101%];
+  @apply h-full w-full flex items-center place-content-center hover:scale-[102%] shadow-black/30 shadow-md;
 }
 
 .box_code{
@@ -340,12 +361,3 @@
 .textShadow2{
   text-shadow: 0 1px 2px rgba(46, 46, 46);
 }
-
-@layer components {
-    .card {
-      background-color: var(--color-white);
-      border-radius: var(--rounded-lg);
-      padding: var(--spacing-6);
-      box-shadow: var(--shadow-xl);
-    }
-  }

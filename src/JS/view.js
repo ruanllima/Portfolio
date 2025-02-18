@@ -81,3 +81,37 @@ function change_certificate(id){
 
 }
 
+function card_skill(id1, id2, div){
+    const front = document.getElementById(id1);
+    const back = document.getElementById(id2);
+    const _div = document.getElementById(div);
+
+    if(front.style.display != 'none'){
+        _div.classList.add("animate-card-skill-out");
+        setTimeout(() =>{
+            _div.classList.remove("animate-card-skill-out");
+            front.style.display = 'none';
+            _div.classList.add("animate-card-skill-in");
+            back.style.display = '';
+            setTimeout(() =>{
+                _div.classList.remove("animate-card-skill-in");
+            }, 600)
+        }, 400) 
+               
+    }
+    else if(back.style.display != 'none'){
+        _div.classList.add("animate-card-skill-out");
+        setTimeout(() =>{
+            _div.classList.remove("animate-card-skill-out");
+
+            front.style.display = '';
+            _div.classList.add("animate-card-skill-in");
+            back.style.display = 'none';
+            setTimeout(() =>{
+                _div.classList.remove("animate-card-skill-in");
+            }, 600)
+        }, 400)      
+
+    }
+}
+
