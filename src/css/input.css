@@ -296,7 +296,7 @@
 }
 
 .skill_grid{
-  @apply h-full w-full flex items-center place-content-center hover:scale-[102%] shadow-black/30 shadow-md;
+  @apply h-full w-full flex items-center place-content-center hover:scale-[102%] shadow-black/30 shadow-md transition delay-75;
 }
 
 .box_code{
