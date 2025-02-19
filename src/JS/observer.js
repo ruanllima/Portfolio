@@ -153,6 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="cta1"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('[id="cta2"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('[id="cta3"]').forEach(el => observer_fadeiny.observe(el));
+    document.querySelectorAll('#contact > *').forEach(el => observer_fadeiny.observe(el));
+
 
 
 

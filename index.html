@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruan Lima</title>
+    <link rel="shortcut icon" href="/src/media/icon.ico">
     <link rel="stylesheet" href="/src/css/output.css">
 </head>
 <style>
@@ -13,6 +14,11 @@
 
     button{
         cursor: pointer;
+    }
+
+    #copy-btn:hover #copy-tooltip{
+        visibility: visible;
+        opacity: 1;
     }
 </style>
 <body class="">
@@ -445,12 +451,12 @@
         </div>
 
     </section>
-    <section id="cta" class="h-auto pb-64 bg-slate-100">
+    <section id="cta" class="h-auto pb-36 bg-slate-100">
         <div class="flex flex-col place-content-center text-center mx-auto pt-32">
             <h1 id="cta1" class="text-indigo-600 font-black font-coolvetica text-7xl opacity-0">Despertei seu interesse?</h1>
             <h2 id="cta2" class="text-indigo-400 font-light text-3xl pt-7 opacity-0">Sinta-se à vontade para entrar em contato comigo.</h2>
 
-            <div id="cta3" class="bg-indigo-100 mx-auto w-2/5 mt-12 rounded-md opacity-0">
+            <div id="cta3" class="bg-slate-200/45 mx-auto w-2/5 mt-12 rounded-md opacity-0">
                 <form action="https://formsubmit.co/ruanlimafn@gmail.com" method="POST" class="flex flex-col place-content-center items-center p-10 mx-auto">
                     <input type="text" name="name" placeholder="Seu nome" required class="input_email">
                     <input type="email" name="email" placeholder="Seu email" required class="input_email">
@@ -463,15 +469,59 @@
             </div>
         </div>
 
+    </section>
 
+    <section id="contact" class="h-[15rem] bg-slate-900 flex-col text-center ">
+        <div class="inline-flex gap-5 items-center mt-24">
+            <button class="bg-slate-950 rounded-full px-5 py-2 flex items-center hover:scale-105 hover:bg-black/67">
+                <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="font-nexa text-slate-100 inline-flex items-center gap-1">
+                    <svg class="invert h-5 w-5">
+                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
+                    </svg> Git Hub
+                </a>
+            </button>
 
+            <button class="bg-slate-950 rounded-full px-5 py-2 flex items-center hover:scale-105 hover:bg-black/67">
+                <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="font-nexa text-slate-100 inline-flex items-center gap-1">
+                    <svg class="invert h-5 w-5">
+                        <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
+                    </svg>Linkedin
+                </a>
+            </button>
 
+            <button id="copy-btn" onclick="copy_to_clipboard('ruanlimafn@gmail.com')" class="relative bg-slate-950 rounded-full px-5 py-2 items-center inline-flex gap-1 hover:scale-105 hover:bg-black/67">
+                <svg class="invert h-5 w-5">
+                    <image href="/src/media/email.png" width="100%" height="100%"></image>
+                </svg>
+                <h1 class="font-nexa text-slate-100">ruanlimafn@gmail.com</h1>
+                <span id="copy-tooltip" class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 text-sm text-white bg-gray-800 rounded py-1 px-3 opacity-0 invisible transition-opacity duration-300 delay-300 text-nowrap">
+                    Clique para copiar
+                </span>
+            </button>
+        </div>
+        
+
+        
+        
+        
+    </section>
+
+    <section class="bg-slate-900">
+        <div class="flex text-center place-content-center mb-3">
+            <a href="https://github.com/ruanllima/portfolio" target="_blank" rel="noopener noreferrer" class="font-light text-slate-500 hover:underline underline-offset-2">Repository of this website.</a>
+
+        </div>
+
+        <footer class="bg-slate-950 text-center">
+            <p class="text-slate-300 font-coolvetica p-1">&copy; 2025 Ruan Lima. Todos os direitos reservados.</p>
+        </footer>
     </section>
     
     
     
     <script src="/src/js/observer.js"></script>
     <script src="/src/js/view.js"></script>
+    <script src="/src/js/script.js"></script>
     <script>
         document.addEventListener("scroll", function () {
         let scrollPosition = window.scrollY;
