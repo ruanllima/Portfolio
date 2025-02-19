@@ -122,7 +122,7 @@ function card_all(){
     console.log(cards);
 }
 
-function view_certificate(id, tab, div, imgTab){
+function view_certificate2(id, tab, div, imgTab){
     console.log('chamou a função');
     const element = document.getElementById(div);
     const tab_div = document.getElementById(tab);
