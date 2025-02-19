@@ -134,10 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }, { threshold: 0.3 });
     
 
-    document.querySelectorAll('[id="img"]').forEach(el => observer_img.observe(el));
-    document.querySelectorAll('[id="txt"]').forEach(el => observer_txt.observe(el));
-    document.querySelectorAll('[id="img-i"]').forEach(el => observer_img_i.observe(el));
-    document.querySelectorAll('[id="txt-i"]').forEach(el => observer_txt_i.observe(el));
+    document.querySelectorAll('[id *="img_about"]').forEach(el => observer_fadeiny.observe(el));
+    document.querySelectorAll('[id *="txt_about"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('[id="intro1"]').forEach(el => observer_intro1.observe(el));
     document.querySelectorAll('[id="intro2"]').forEach(el => observer_intro2.observe(el));
     document.querySelectorAll('[id="intro3"]').forEach(el => observer_intro3.observe(el));
