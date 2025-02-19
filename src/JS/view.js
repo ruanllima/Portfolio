@@ -13,6 +13,8 @@ function view(id, fixed){
     }
 }
 
+
+
 function view_tab(tab1, tab2, tab3, local){
     const element = document.getElementById(local);
 
@@ -120,3 +122,24 @@ function card_all(){
     console.log(cards);
 }
 
+function view_certificate(id, tab, div, imgTab){
+    console.log('chamou a função');
+    const element = document.getElementById(div);
+    const tab_div = document.getElementById(tab);
+    const img_tab = document.getElementById(imgTab);
+    const course = document.getElementById(id);
+
+    if (tab_div.style.display == ""){
+        tab_div.style.display = "none";
+        document.body.style.overflow = 'auto';
+    }
+    else{
+        console.log('tá nao');
+        tab_div.style.display = "";
+        img_tab.src = course.src;
+        console.log(img_tab.src);
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
+        document.body.style.overflow = 'hidden';
+      
+    }
+}
