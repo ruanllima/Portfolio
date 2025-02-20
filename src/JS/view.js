@@ -130,11 +130,11 @@ function view_certificate2(id, tab, div, imgTab){
     const course = document.getElementById(id);
 
     if (tab_div.style.display == ""){
+        img_tab.src = "";
         tab_div.style.display = "none";
         document.body.style.overflow = 'auto';
     }
     else{
-        console.log('tá nao');
         tab_div.style.display = "";
         img_tab.src = course.src;
         console.log(img_tab.src);

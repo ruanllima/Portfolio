@@ -941,6 +941,9 @@
   .mt-\[30rem\] {
     margin-top: 30rem;
   }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
@@ -2019,6 +2022,9 @@
   .bg-orange-400 {
     background-color: var(--color-orange-400);
   }
+  .bg-purple-900\/95 {
+    background-color: color-mix(in oklab, var(--color-purple-900) 95%, transparent);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -2235,6 +2241,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -3178,10 +3187,24 @@
       }
     }
   }
+  .hover\:bg-purple-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-purple-700);
+      }
+    }
+  }
   .hover\:fill-amber-400 {
     &:hover {
       @media (hover: hover) {
         fill: var(--color-amber-400);
+      }
+    }
+  }
+  .hover\:text-yellow-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-yellow-400);
       }
     }
   }
@@ -3210,6 +3233,11 @@
   .sm\:grid-cols-1 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
     }
   }
   .md\:grid-cols-1 {
