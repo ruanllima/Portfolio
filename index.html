@@ -266,12 +266,78 @@
 
     <section id="projects" class="h-[140vh] bg-slate-100">
         <div class="container flex flex-col place-content-center mx-auto pt-20 items-center">
+            <!--Title-->
             <div class="text-center">
                 <h1 id="title" class="font-black text-6xl text-slate-800 opacity-0">Projetos</h1>
             </div>
             
+            <!--Projects tab-->
             <div id="data_projects" class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-8 mt-16 place-content-center ">
-                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0 hover:shadow-xl hover:scale-[101%] hover:-translate-y-1">
+                
+                <!--Project one-->
+                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0 transition hover:shadow-xl hover:scale-[101%] hover:-translate-y-1 delay-75">
+                    <div class="w-72 h-64 flex-shrink-0 relative">
+                        <img src="/src/media/projects/1game.png" class="w-full h-full object-cover rounded-l-lg pr-3 absolute" alt="">
+                        <button onclick="view('game_iframe', 'projects')"><img src="/src/media/play.png" alt="" class="absolute h-14 top-[100px] left-[110px] transition hover:scale-115"></button>
+
+                    </div>
+                    
+                    <div class="pt-5 pr-2 relative">
+                        <h1 class="font-coolvetica text-indigo-600 ">Platform Game</h1>
+                        <p class="text-slate-400 font-light">Um jogo de plataforma 2D desenvolvido com a engine Unity. Um projeto inicialmente para uma competição (Desafio Liga Jovem), adaptado para um projeto pessoal.</p>
+                        <div class="flex place-content-center text-center">
+                            <a href="https://github.com/ruanllima/game" target="_blank" rel="noopener noreferrer" class="w-full mb-5 absolute bottom-1">
+                                <button class="w-3/4 transition_button main_buttons shadow-sm inline-flex gap-1.5 place-content-center text-center items-center">
+                                    <svg class="h-5 w-5 invert">
+                                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
+                                    </svg>Repositório Git Hub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--Project two-->
+                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0 transition hover:shadow-xl hover:scale-[101%] hover:-translate-y-1 delay-75">
+                    <div class="w-72 h-64 flex-shrink-0 relative">
+                        <img src="/src/media/projects/2machine.png" class="w-full h-full object-cover rounded-l-lg absolute pr-1 border-r border-slate-300/20" alt="">
+                    </div>
+                    
+                    <div class="pt-5 pr-2 relative pl-2">
+                        <h1 class="font-coolvetica text-indigo-600 ">Sentiment Analysis</h1>
+                        <p class="text-slate-400 font-light">Projeto acadêmico focado na implementação de algoritmos de Machine Learning. Com a combinação de diferentes algoritmos de classificação, foi observado o desempenho de cada um na tarefa de análise de sentimentos a partir de tweets.</p>
+                        <div class="flex place-content-center text-center">
+                            <a href="https://github.com/ruanllima/ML_SentimentAnalysis" target="_blank" rel="noopener noreferrer" class="w-full mb-5 absolute bottom-1">
+                                <button class="w-3/4 transition_button main_buttons shadow-sm inline-flex gap-1.5 place-content-center text-center items-center">
+                                    <svg class="h-5 w-5 invert">
+                                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
+                                    </svg>Repositório Git Hub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <!--Project three-->
+                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0 transition hover:shadow-xl hover:scale-[101%] hover:-translate-y-1 delay-75">
+                    <div class="w-72 h-64 flex-shrink-0 relative">
+                        <img src="/src/media/projects/3eda.png" class="w-full h-full object-cover rounded-l-lg pr-3 absolute" alt="">
+                    </div>
+                    
+                    <div class="pt-5 pr-2 relative">
+                        <h1 class="font-coolvetica text-indigo-600 ">Maceió Commerce EDA</h1>
+                        <p class="text-slate-400 font-light">Análise exploratória de dados do comércio de Máceio através da linguagem python e bibliotecas competentes. Gráficos, heatmaps e dossiê dos dados coletados. </p>
+                        <div class="flex place-content-center text-center">
+                            <a href="https://github.com/ruanllima/eda_commerce_mcz" target="_blank" rel="noopener noreferrer" class="w-full mb-5 absolute bottom-1">
+                                <button class="w-3/4 transition_button main_buttons shadow-sm inline-flex gap-1.5 place-content-center text-center items-center">
+                                    <svg class="h-5 w-5 invert">
+                                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
+                                    </svg>Repositório Git Hub</button>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!--Project four-->
+                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0 transition hover:shadow-xl hover:scale-[101%] hover:-translate-y-1 delay-75">
                     <div class="w-72 h-64 flex-shrink-0 relative">
                         <img src="/src/media/projects/1game.png" class="w-full h-full object-cover rounded-l-lg pr-3 absolute" alt="">
                     </div>
@@ -290,59 +356,17 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0 hover:shadow-xl hover:scale-[101%] hover:-translate-y-1">
-                    <div class="w-72 h-64 flex-shrink-0 relative">
-                        <img src="/src/media/projects/2machine.png" class="w-full h-full object-cover rounded-l-lg absolute pr-1 border-r border-slate-300/20" alt="">
-                    </div>
-                    
-                    <div class="pt-5 pr-2 relative pl-2">
-                        <h1 class="font-coolvetica text-indigo-600 ">Sentiment Analysis</h1>
-                        <p class="text-slate-400 font-light">Projeto acadêmico focado na implementação de algoritmos de Machine Learning. Com a combinação de diferentes algoritmos de classificação, foi observado o desempenho de cada um na tarefa de análise de sentimentos a partir de tweets.</p>
-                        <div class="flex place-content-center text-center">
-                            <a href="https://github.com/ruanllima/ML_SentimentAnalysis" target="_blank" rel="noopener noreferrer" class="w-full mb-5 absolute bottom-1">
-                                <button class="w-3/4 transition_button main_buttons shadow-sm inline-flex gap-1.5 place-content-center text-center items-center">
-                                    <svg class="h-5 w-5 invert">
-                                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
-                                    </svg>Repositório Git Hub</button>
-                            </a>
-                        </div>
-                    </div>
-                </div> 
-                
-                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0 hover:shadow-xl hover:scale-[101%] hover:-translate-y-1">
-                    <div class="w-72 h-64 flex-shrink-0 relative">
-                        <img src="/src/media/projects/3eda.png" class="w-full h-full object-cover rounded-l-lg pr-3 absolute" alt="">
-                    </div>
-                    
-                    <div class="pt-5 pr-2 relative">
-                        <h1 class="font-coolvetica text-indigo-600 ">Maceió Commerce EDA</h1>
-                        <p class="text-slate-400 font-light">Análise exploratória de dados do comércio de Máceio através da linguagem python e bibliotecas competentes. Gráficos, heatmaps e dossiê dos dados coletados. </p>
-                        <div class="flex place-content-center text-center">
-                            <a href="https://github.com/ruanllima/eda_commerce_mcz" target="_blank" rel="noopener noreferrer" class="w-full mb-5 absolute bottom-1">
-                                <button class="w-3/4 transition_button main_buttons shadow-sm inline-flex gap-1.5 place-content-center text-center items-center">
-                                    <svg class="h-5 w-5 invert">
-                                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
-                                    </svg>Repositório Git Hub</button>
-                            </a>
-                        </div>
-                    </div>
-                </div> 
+                <div style="display: none;" id="game_iframe" class="fixed inset-0 flex items-center justify-center z-50">
+                    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm z-40"></div> 
+                    <div class="relative z-50 w-11/12 md:w-3/4 h-3/4 bg-white rounded-lg">
+                        <iframe scrolling="no" src="https://delightful-semolina-2b94e0.netlify.app" frameborder="0" class="w-full h-full border-0"></iframe>
+                        <button style="cursor: pointer;" onclick="view('game_iframe', 'projects')" class="absolute -top-6 -right-20 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-16 opacity-100 hover:opacity-85"></button>
 
-                
+                    </div>
 
-                <div class="bg-white rounded-lg shadow-md inline-flex pr-4 mx-auto h-auto opacity-0">
-                    <div class="w-72 h-64 flex-shrink-0">
-                        <img src="/src/media/projects/1game.png" class="w-full h-full object-cover rounded-l-lg pr-3" alt="">
-                    </div>
-                    
-                    <div class="pt-5 pr-2 relative">
-                        <h1 class="font-coolvetica text-indigo-600 ">Platform Game</h1>
-                        <p class="text-slate-400 font-light">Um jogo de plataforma 2D desenvolvido com a engine Unity. Um projeto inicialmente para uma competição (Desafio Liga Jovem), adaptado para um projeto pessoal.</p>
-                        <div class="flex place-content-center">
-                            <button class="w-3/4 mb-5 absolute bottom-1 transition_button main_buttons shadow-sm">Repositório Git Hub</button>
-                        </div>
-                    </div>
                 </div>
+
+                
             </div>
         </div>
     </section>
