@@ -132,6 +132,30 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, { threshold: 0.3 });
+
+    const observer_fadein_skill = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let time = 150;
+                const ids = ['mysql_skill', 'tailwind_skill', 'php_skill', 'git_skill', 'javascript_skill', 'csharp_skill', 'resolucao_skill', 'unity_skill', 'html_skill', 'english_skill', 'css_skill'];
+                ids.forEach(id => {
+                    setTimeout(() => {
+                    const skill = document.getElementById(id);
+                    skill.classList.add("animate-fade-in-scale");
+                    setTimeout(() => {skill.classList.remove("animate-fade-in-scale")},999)
+                    skill.classList.remove("opacity-0");
+                    console.log(skill.classList);
+
+                    }, time);
+                    time += 150;
+                })
+                entry.target.classList.add("animate-fade-in-scale");
+                setTimeout(() => {entry.target.classList.remove("animate-fade-in-scale")},999)
+                console.log("entrou");
+                entry.target.classList.remove("opacity-0");
+            }
+        });
+    }, { threshold: 0.4 });
     
 
     document.querySelectorAll('[id *="img_about"]').forEach(el => observer_fadeiny.observe(el));
@@ -152,6 +176,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="cta2"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('[id="cta3"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('#contact > *').forEach(el => observer_fadeiny.observe(el));
+    document.querySelectorAll('[id="python_skill"]').forEach(el => observer_fadein_skill.observe(el));
+
+
 
 
 
