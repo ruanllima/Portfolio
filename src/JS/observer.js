@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(() => {
                     entry.target.classList.add("animate-fade-in-y");
                     entry.target.classList.remove("opacity-0");
-                }, 1000)
+                }, 400)
             
             }
         });
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(() => {
                     entry.target.classList.add("write");
                     entry.target.classList.remove("opacity-0");
-                }, 1700)
+                }, 900)
             
             }
         });
