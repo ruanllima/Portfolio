@@ -143,3 +143,17 @@ function view_certificate2(id, tab, div, imgTab){
       
     }
 }
+
+function menu_mobile(){
+    view("menu_mobile", "home");
+    const button = document.getElementById("menu_button");
+
+    if(button.src.includes("/src/media/menu.png")){
+        button.src = "/src/media/sair.png";
+    }
+    else {
+        button.src = "/src/media/menu.png";
+    }
+    console.log(button + "2");
+
+}

@@ -27,10 +27,45 @@
         <div>
             <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-20 parallax"></div>
         </div>
-        <div class="absolute left-10 top-2 shadow-xs">
-            <h1 class="text-white text-6xl font-cherolina">Ruan Lima</h1>
+        <div class="absolute left-10 max-sm:left-6 top-3 shadow-xs">
+            <h1 class="text-white text-6xl max-sm:text-5xl font-cherolina">Ruan Lima</h1>
         </div>
-        <div class="inline-flex absolute top-5 right-9 items-center animate-fade-fall">
+
+
+        <div class="max-sm:text-6xl text-8xl textShadow">
+            <h1 id="init1" class="absolute left-10 top-72 max-sm:top-56 max-sm:left-6 font-bold text-slate-100 opacity-0">Welcome to</h1>
+            <div class="inline-flex absolute left-10 top-96 max-sm:top-72 max-sm:left-6s gap-6">
+                <h1 id="init2" class="font-bold text-slate-100 opacity-0">my</h1>
+                <h1 id="init3" class=" font-bold text-[#ffbf00] opacity-0">world.</h1>
+            </div>
+        </div>
+
+        <!--Menu Mobile-->
+        <div class="max-sm:visible invisible">
+            <div style="display: none" id="menu_mobile" class="flex flex-col gap-1 absolute top-0 right-0 bg-indigo-600 pt-7 pb-7 pr-6 pl-3 rounded-bl-2xl shadow-lg">
+                <a href="#about" class="header_text2">Sobre Mim</a>
+                <a href="#education" class="header_text2">Formação Acadêmica</a>
+                <a href="#projects" class="header_text2">Projetos</a>
+                <a href="#skills" class="header_text2">Skills</a>
+
+                <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
+                    <svg class="invert h-5 w-5 hover:fill-amber-400">
+                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
+                    </svg> Git Hub
+                </a>
+        
+                <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
+                    <svg class="invert h-5 w-5">
+                        <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
+                    </svg>Linkedin
+                </a>
+            </div>
+            <button onclick="menu_mobile()"><img id="menu_button" src="/src/media/menu.png" alt="" class="invert h-9 w-9 opacity-75 absolute top-4 right-6"></button>
+
+        </div>
+
+
+        <div style="display: none;" class="inline-flex absolute top-5 right-9 items-center animate-fade-fall">
 
                 <a href="#about" class="header_text">Sobre Mim</a>
                 <a href="#education" class="header_text">Formação Acadêmica</a>
@@ -51,14 +86,10 @@
         </div>
 
         <div class="">
-            <img src="/src/media/img_perfil.png" alt="Ruan Lima" loading="lazy" class="h-[680px] absolute -bottom-16 right-14">
+            <img src="/src/media/img_perfil.png" alt="Ruan Lima" loading="lazy" class="h-[680px] max-sm:h-[580px] max-sm:right-20 absolute -bottom-16 right-14">
         </div>
         
-        <div class="text-8xl textShadow">
-            <h1 id="init1" class="absolute left-10 top-72 font-bold text-slate-100 opacity-0">Welcome to</h1>
-            <h1 id="init2" class="absolute left-10 top-96 font-bold text-slate-100 opacity-0">my</h1>
-            <h1 id="init3" class="absolute left-52 top-96 font-bold text-[#ffbf00] opacity-0">world.</h1>
-        </div>
+        
         
         
     </section>
@@ -359,7 +390,7 @@
                 <div style="display: none;" id="game_iframe" class="fixed inset-0 flex items-center justify-center z-50">
                     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm z-40"></div> 
                     <div class="relative z-50 w-11/12 md:w-3/4 h-3/4 bg-white rounded-lg">
-                        <iframe scrolling="no" src="https://delightful-semolina-2b94e0.netlify.app" frameborder="0" class="w-full h-full border-0"></iframe>
+                        <iframe scrolling="no" src="" frameborder="0" class="w-full h-full border-0"></iframe>
                         <button style="cursor: pointer;" onclick="view('game_iframe', 'projects')" class="absolute -top-6 -right-20 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-16 opacity-100 hover:opacity-85"></button>
 
                     </div>

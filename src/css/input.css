@@ -318,6 +318,10 @@
   @apply text-slate-100 text-lg font-nexa px-3 py-1 hover:-translate-y-1 hover:bg-indigo-700 rounded-lg hover:shadow-lg hover:shadow-black/10;
 }
 
+.header_text2{
+  @apply text-slate-100 font-coolvetica px-3 py-1 hover:-translate-y-1 hover:bg-indigo-700 rounded-lg hover:shadow-lg hover:shadow-black/10;
+}
+
 .header_buttons{
   @apply bg-slate-100 rounded-tr-3xl rounded-br-xl rounded-tl-sm rounded-bl-4xl px-4 pl-5 text-slate-700 font-medium text-base shadow-lg
 }
