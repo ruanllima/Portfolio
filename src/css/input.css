@@ -315,7 +315,7 @@
 }
 
 .header_text{
-  @apply text-slate-100 font-nexa hover:scale-105 hover:shadow-2xl;
+  @apply text-slate-100 text-lg font-nexa px-3 py-1 hover:-translate-y-1 hover:bg-indigo-700 rounded-lg hover:shadow-lg hover:shadow-black/10;
 }
 
 .header_buttons{
@@ -364,9 +364,9 @@
 }
 
 .textShadow{
-  text-shadow: 0 1px 2px rgba(28, 28, 28);
+  text-shadow: 0 2px 5px rgba(52, 52, 52);
 }
 
 .textShadow2{
-  text-shadow: 0 1px 2px rgba(46, 46, 46);
+  text-shadow: 0 1px 1px rgba(50, 50, 46);
 }

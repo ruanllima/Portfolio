@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animate-fade-in-y");
                 console.log("entrou");
+                console.log(entry.target.classList);
                 entry.target.classList.remove("opacity-0");
             }
         });
@@ -135,7 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const observer_fadein_skill = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && !var_skill) {
+                var_skill = true;
                 let time = 150;
                 const ids = ['mysql_skill', 'tailwind_skill', 'php_skill', 'git_skill', 'javascript_skill', 'csharp_skill', 'resolucao_skill', 'unity_skill', 'html_skill', 'english_skill', 'css_skill'];
                 ids.forEach(id => {
@@ -176,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="cta2"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('[id="cta3"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('#contact > *').forEach(el => observer_fadeiny.observe(el));
+    let var_skill = false;
     document.querySelectorAll('[id="python_skill"]').forEach(el => observer_fadein_skill.observe(el));
 
 

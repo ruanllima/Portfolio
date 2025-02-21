@@ -25,25 +25,25 @@
     
     <section id="home" class="h-[103vh] relative bg-gradient-to-bl from-[#3505e3] to-[#6800fa]">
         <div>
-            <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-30 parallax"></div>
+            <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-20 parallax"></div>
         </div>
         <div class="absolute left-10 top-2 shadow-xs">
             <h1 class="text-white text-6xl font-cherolina">Ruan Lima</h1>
         </div>
-        <div class="inline-flex gap-7 absolute top-5 right-9 items-center animate-fade-fall">
+        <div class="inline-flex absolute top-5 right-9 items-center animate-fade-fall">
 
-                <a href="#about" class="header_text textShadow2">Sobre Mim</a>
-                <a href="#education" class="header_text textShadow2">Formação Acadêmica</a>
-                <a href="#projects" class="header_text textShadow2">Projetos</a>
-                <a href="#skills" class="header_text textShadow2">Skills</a>
+                <a href="#about" class="header_text">Sobre Mim</a>
+                <a href="#education" class="header_text">Formação Acadêmica</a>
+                <a href="#projects" class="header_text">Projetos</a>
+                <a href="#skills" class="header_text">Skills</a>
 
-                <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text textShadow2 inline-flex items-center gap-1">
+                <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5 hover:fill-amber-400">
                         <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
                     </svg> Git Hub
                 </a>
         
-                <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="header_text textShadow2 inline-flex items-center gap-1">
+                <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="header_text inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5">
                         <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
                     </svg>Linkedin
@@ -492,7 +492,7 @@
 
     <section id="contact" class="h-[15rem] bg-slate-900 flex-col text-center ">
         <div class="inline-flex gap-5 items-center mt-24">
-            <button class="bg-slate-950 rounded-full px-5 py-2 flex items-center hover:scale-105 hover:bg-black/67">
+            <button class="bg-slate-950 rounded-full px-5 py-2 flex items-center hover:-translate-y-1 hover:bg-black/67">
                 <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="font-nexa text-slate-100 inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5">
                         <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
@@ -500,7 +500,7 @@
                 </a>
             </button>
 
-            <button class="bg-slate-950 rounded-full px-5 py-2 flex items-center hover:scale-105 hover:bg-black/67">
+            <button class="bg-slate-950 rounded-full px-5 py-2 flex items-center hover:-translate-y-1 hover:bg-black/67">
                 <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="font-nexa text-slate-100 inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5">
                         <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
@@ -508,12 +508,12 @@
                 </a>
             </button>
 
-            <button id="copy-btn" onclick="copy_to_clipboard('ruanlimafn@gmail.com')" class="relative bg-slate-950 rounded-full px-5 py-2 items-center inline-flex gap-1 hover:scale-105 hover:bg-black/67">
+            <button id="copy-btn" onclick="copy_to_clipboard('ruanlimafn@gmail.com')" class="relative bg-slate-950 rounded-full px-5 py-2 items-center inline-flex gap-1 hover:-translate-y-1 hover:bg-black/67">
                 <svg class="invert h-5 w-5">
                     <image href="/src/media/email.png" width="100%" height="100%"></image>
                 </svg>
                 <h1 class="font-nexa text-slate-100">ruanlimafn@gmail.com</h1>
-                <span id="copy-tooltip" class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 text-sm text-white bg-gray-800 rounded py-1 px-3 opacity-0 opacity-0 transition-opacity duration-300 delay-300 text-nowrap">
+                <span id="copy-tooltip" class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 text-sm text-white bg-gray-800 rounded py-1 px-3 opacity-0 transition-opacity duration-300 delay-300 text-nowrap">
                     Clique para copiar
                 </span>
             </button>
