@@ -65,7 +65,7 @@
         </div>
 
 
-        <div style="display: none;" class="inline-flex absolute top-5 right-9 items-center animate-fade-fall">
+        <div class="inline-flex absolute top-5 right-9 items-center animate-fade-fall max-sm:invisible">
 
                 <a href="#about" class="header_text">Sobre Mim</a>
                 <a href="#education" class="header_text">Formação Acadêmica</a>
@@ -99,9 +99,9 @@
         <!--Introduce-->
         <div class="flex place-content-center">
             <div class="flex flex-col text-center">
-                <h1 id="intro1" class=" text-3xl font-bold text-slate-900 mt-32">Olá! Meu nome é </h1>
-                <h1 id="intro2" class="mt-4 text-indigo-700 text-7xl font-extrabold opacity-0">RUAN LIMA</h1>
-                <h2 id="intro3" class="text-slate-400 text-xl font-light mt-6 w-128 opacity-0">Algumas coisas que você precisa saber sobre mim:</h2>
+                <h1 id="intro1" class="max-sm:text-2xl text-3xl font-bold text-slate-900 mt-32">Olá! Meu nome é </h1>
+                <h1 id="intro2" class="max-sm:text-5xl mt-4 text-indigo-700 text-7xl font-extrabold opacity-0">RUAN LIMA</h1>
+                <h2 id="intro3" class="max-sm:text-base text-slate-400 text-xl font-light mt-6 w-128 opacity-0">Algumas coisas que você precisa saber sobre mim:</h2>
             
             </div>
         </div>
@@ -109,18 +109,20 @@
         <div class="mt-36 px-8 md:px-16 lg:px-32 xl:px-28">
 
             <!--Summary one-->
-            <div class="inline-flex gap-10">
-                <img id="img_about1" src="/src/media/IMG1.jpg" alt="Campus Party Nordeste 2024" class="h-[30rem] rounded-lg max-w-[60rem] opacity-0">
+            <div class="max-sm:flex-col inline-flex gap-10">
+                <img id="img_about1" src="/src/media/IMG1.jpg" alt="Campus Party Nordeste 2024" class="max-sm:hidden h-[30rem] rounded-lg max-w-[60rem] opacity-0">
                 <div id="txt_about1" class="mt-6 opacity-0">
                     <h1 class="text-indigo-600 text-xl font-coolvetica">Quem sou eu</h1>
                     <hr class="text-slate-300 mt-1">
                     <p class="font-light text-slate-500 text-lg mt-2">Sou um jovem de 18 anos, residente no estado de Alagoas, Brasil, apaixonado por música, tecnologia e inovação e busco constantemente aprender e explorar novas áreas do conhecimento. Frequentei a maior parte da minha vida escolar em instituições públicas, mas isso não foi um impedimento para me destacar nas ciências exatas ou tecnológicas. Mesmo após terminar o ensino médio, continuo focado em adquirir novos conhecimentos e me aprimorar ainda mais na programação.
                     </p>
                 </div>
+                <img id="img_about1" src="/src/media/IMG1.jpg" alt="Campus Party Nordeste 2024" class="hidden max-sm:flex h-[30rem] rounded-lg max-w-[60rem] opacity-0">
+
             </div>
 
             <!--Summary two-->
-            <div class="inline-flex gap-10 mt-20">
+            <div class="max-sm:flex-col inline-flex gap-10 mt-20">
                 <div id="txt_about2" class="mt-6 opacity-0">
                     <h1 class="text-indigo-600 text-xl font-coolvetica">Experiência com Tecnologia e Empreendedorismo</h1>
                     <hr class="text-slate-300 mt-1">
@@ -134,8 +136,8 @@
             </div>
 
             <!--Summary three-->
-            <div class="inline-flex gap-10 mt-20">
-                <img id="img_about3" src="/src/media/IMG3.jpg" alt="Novo Ensino Suplementar" class="h-[28rem] rounded-lg opacity-0">
+            <div class="max-sm:flex-col inline-flex gap-10 mt-20">
+                <img id="img_about3" src="/src/media/IMG3.jpg" alt="Novo Ensino Suplementar" class="max-sm:hidden h-[28rem] rounded-lg opacity-0">
                 <div id="txt_about3" class="mt-6 opacity-0">
                     <h1 class="text-indigo-600 text-xl font-coolvetica">Formação Acadêmica e Olimpíadas</h1>
                     <hr class="text-slate-300 mt-1">
@@ -144,10 +146,12 @@
                     <p class="font-light text-slate-500 text-lg">Em 2023, ingressei em um centro de excelência em matemática e programação na Universidade Federal de Alagoas: <a href="https://sites.google.com/view/nes-alagoas" target="_blank" rel="noopener noreferrer" class="text-[#FF6D00] font-semibold text-base hover:underline">Novo Ensino Suplementar</a>. Esse ambiente foi determinante para minha paixão pela programação, permitindo-me conviver com pessoas que compartilham o mesmo desejo de evolução, além de aprender com profissionais renomados de todo o Brasil e do mundo. 
                     </p>
                 </div>
+                <img id="img_about3" src="/src/media/IMG3.jpg" alt="Novo Ensino Suplementar" class="hidden max-sm:flex h-[28rem] rounded-lg opacity-0">
+
             </div>
 
             <!--Summary four-->
-            <div class="inline-flex gap-10 mt-20">
+            <div class="max-sm:flex-col inline-flex gap-10 mt-20">
                 <div id="txt_about4" class="mt-6 opacity-0">
                     <h1 class="text-indigo-600 text-xl font-coolvetica">Habilidades Técnicas e Objetivos</h1>
                     <hr class="text-slate-300 mt-1">
