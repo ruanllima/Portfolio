@@ -4,7 +4,7 @@
   font-family: Cherolina;
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Cherolina.ttf) format('truetype');
+  src: url(/src/fonts/Cherolina.ttf) format('truetype');
 }
 
 @font-face{
@@ -33,7 +33,7 @@
   font-family: Nexa;
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/Nexa.ttf) format('truetype');
+  src: url(/src/fonts/Nexa.ttf) format('truetype');
 }
 
 @font-face{
