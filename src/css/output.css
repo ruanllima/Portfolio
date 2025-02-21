@@ -3213,6 +3213,16 @@
       visibility: visible;
     }
   }
+  .max-sm\:top-40 {
+    @media (width < 40rem) {
+      top: calc(var(--spacing) * 40);
+    }
+  }
+  .max-sm\:top-52 {
+    @media (width < 40rem) {
+      top: calc(var(--spacing) * 52);
+    }
+  }
   .max-sm\:top-56 {
     @media (width < 40rem) {
       top: calc(var(--spacing) * 56);
