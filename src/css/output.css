@@ -1065,15 +1065,6 @@
   .h-\[20rem\] {
     height: 20rem;
   }
-  .h-\[103vh\] {
-    height: 103vh;
-  }
-  .h-\[105vh\] {
-    height: 105vh;
-  }
-  .h-\[15rem\] {
-    height: 15rem;
-  }
   .h-\[28rem\] {
     height: 28rem;
   }
@@ -1083,6 +1074,18 @@
   .h-\[30rem\] {
     height: 30rem;
   }
+  .h-\[50rem\] {
+    height: 50rem;
+  }
+  .h-\[103vh\] {
+    height: 103vh;
+  }
+  .h-\[105vh\] {
+    height: 105vh;
+  }
+  .h-\[15rem\] {
+    height: 15rem;
+  }
   .h-\[34rem\] {
     height: 34rem;
   }
@@ -1091,9 +1094,6 @@
   }
   .h-\[40rem\] {
     height: 40rem;
-  }
-  .h-\[50rem\] {
-    height: 50rem;
   }
   .h-\[140vh\] {
     height: 140vh;
@@ -3642,9 +3642,29 @@
       font-size: 5px;
     }
   }
+  .max-sm\:text-\[8\.4px\] {
+    @media (width < 40rem) {
+      font-size: 8.4px;
+    }
+  }
+  .max-sm\:text-\[8\.5px\] {
+    @media (width < 40rem) {
+      font-size: 8.5px;
+    }
+  }
   .max-sm\:text-\[8\.7px\] {
     @media (width < 40rem) {
       font-size: 8.7px;
+    }
+  }
+  .max-sm\:text-\[8\.8px\] {
+    @media (width < 40rem) {
+      font-size: 8.8px;
+    }
+  }
+  .max-sm\:text-\[8\.9px\] {
+    @media (width < 40rem) {
+      font-size: 8.9px;
     }
   }
   .max-sm\:text-\[8px\] {
@@ -3675,6 +3695,11 @@
   .max-sm\:text-\[9\.5px\] {
     @media (width < 40rem) {
       font-size: 9.5px;
+    }
+  }
+  .max-sm\:text-\[9\.6px\] {
+    @media (width < 40rem) {
+      font-size: 9.6px;
     }
   }
   .max-sm\:text-\[9\.7px\] {
