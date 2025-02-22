@@ -64,7 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 setTimeout(() => {
-                    entry.target.classList.add("write");
+                    entry.target.classList.add("sm:write");
+                    entry.target.classList.add("max-sm:animate-fade-in-y");
                     entry.target.classList.remove("opacity-0");
                 }, 900)
             
