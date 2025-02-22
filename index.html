@@ -101,7 +101,7 @@
             <div class="grid grid-cols-1 text-center items-center">
                 <h1 id="intro1" class="max-sm:text-2xl text-3xl font-bold text-slate-900 mt-32">Olá! Meu nome é </h1>
                 <h1 id="intro2" class="max-sm:text-5xl mt-4 text-indigo-700 text-7xl font-extrabold opacity-0">RUAN LIMA</h1>
-                <h2 id="intro3" class="max-sm:text-lg text-slate-400 text-xl font-light mt-6  opacity-0">Algumas coisas que você precisa saber sobre mim:</h2>
+                <h2 id="intro3" class="max-sm:text-lg text-slate-400 text-xl font-light mt-6 opacity-0">Algumas coisas que você precisa saber sobre mim:</h2>
             </div>
         </div>
         
@@ -256,9 +256,11 @@
             </div>
 
             <div style="display: none;" id="certificados" class="flex place-content-center">
-                <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs"></div>
-                <div class="bg-slate-100 top-10 bottom-16 max-h-screen overflow-y-auto h-[50rem] w-[76rem] absolute px-16 pt-12 pb-16 rounded-lg">
-                    <div id="certificados_list" class="grid grid-cols-4 gap-8 mx-4">
+                <div class="fixed inset-0 bg-black/70 flex items-center justify-center backdrop-blur-xs">
+                </div>
+
+                <div class="bg-slate-100 max-h-screen overflow-y-auto h-[50rem] w-[76rem] max-sm:w-screen relative -mt-[550px] px-16 pt-12 pb-16 rounded-lg">
+                    <div id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-8 mx-4 max-sm:mx-1">
                         <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
                         <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
                         <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
@@ -277,13 +279,15 @@
                         <img style="cursor: pointer;" id="eba" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_eba.jpg" alt="EBA 2024" class="certificado">
                         <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado">
                     </div>
-
                     <div style="display: none;" id="view_container" class="flex place-content-center">
                         <button id="left" onclick="change_certificate(this.id)"><img src="/src/media/seta.png" alt="" class="h-24 absolute top-64 left-20 rotate-180 opacity-20 transition hover:opacity-30 hover:scale-110 hover:-translate-x-1"></button>
                         <button id="right" onclick="change_certificate(this.id)"><img src="/src/media/seta.png" alt="" class="h-24 absolute top-64 right-20 opacity-20 transition hover:opacity-30 hover:scale-110 hover:translate-x-1"></button>
                         <img id="view" src="" class="rounded-md h-[34rem]">
                     </div>
-                    <button onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class=" absolute top-5 left-5 transition_button "><img src="/src/media/voltar.png" alt="" class="h-10 opacity-20 hover:opacity-30"></button>
+       
+                    <button onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 left-5 transition_button "><img src="/src/media/voltar.png" alt="" class="h-10 opacity-20 hover:opacity-30"></button>
+           
+
 
                 </div>
                 
@@ -504,6 +508,7 @@
         </div>
 
     </section>
+
     <section id="cta" class="h-auto pb-36 bg-slate-100">
         <div class="flex flex-col place-content-center text-center mx-auto pt-32">
             <h1 id="cta1" class="text-indigo-600 font-black font-coolvetica text-7xl opacity-0">Despertei seu interesse?</h1>
