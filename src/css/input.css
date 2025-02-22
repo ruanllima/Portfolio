@@ -339,7 +339,7 @@
 }
  
 .input_email{
-  @apply bg-white w-3/4 rounded-sm mb-3 p-1.5 border border-slate-300 font-light text-slate-600 focus:outline-0 focus:ring-blue-500/70 focus:ring-1
+  @apply bg-white w-3/4 max-sm:text-sm rounded-sm mb-3 p-1.5 border border-slate-300 font-light text-slate-600 focus:outline-0 focus:ring-blue-500/70 focus:ring-1
    placeholder:font-light placeholder:text-zinc-400;
 }
 
