@@ -375,6 +375,6 @@
   text-shadow: 0 2px 5px rgba(52, 52, 52);
 }
 
-.textShadow2{
-  text-shadow: 0 1px 1px rgba(50, 50, 46);
+.textShadowInit{
+  text-shadow: 0 1px 1px hsl(60, 10%, 10%);;
 }

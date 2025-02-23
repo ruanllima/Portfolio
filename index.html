@@ -32,9 +32,9 @@
         </div>
 
 
-        <div class="max-sm:text-6xl text-8xl textShadow">
+        <div class="max-sm:text-6xl text-8xl textShadowInit">
             <h1 id="init1" class="absolute left-10 top-72 max-sm:top-40 max-sm:left-6 font-bold text-slate-100 opacity-0">Welcome to</h1>
-            <div class="inline-flex absolute left-10 top-96 max-sm:top-52 max-sm:left-6 gap-6">
+            <div class="inline-flex absolute left-10 top-96 max-sm:top-56 max-sm:left-6 gap-6">
                 <h1 id="init2" class="font-bold text-slate-100 opacity-0">my</h1>
                 <h1 id="init3" class=" font-bold text-[#ffbf00] opacity-0">world.</h1>
             </div>
@@ -42,19 +42,19 @@
 
         <!--Menu Mobile-->
         <div class="max-sm:flex hidden">
-            <div style="display: none" id="menu_mobile" class="flex flex-col gap-1 absolute top-0 right-0 bg-indigo-600 pt-7 pb-7 pr-6 pl-3 rounded-bl-2xl shadow-lg">
-                <a href="#about" class="header_text2">Sobre Mim</a>
-                <a href="#education" class="header_text2">Formação Acadêmica</a>
-                <a href="#projects" class="header_text2">Projetos</a>
-                <a href="#skills" class="header_text2">Skills</a>
+            <div style="display: none" id="menu_mobile" class="flex flex-col gap-1 absolute top-0 right-0 bg-indigo-600 pt-10 pb-16 pr-8 pl-5 rounded-bl-lg shadow-lg">
+                <a onclick="menu_mobile()" href="#about" class="header_text2">Sobre Mim</a>
+                <a onclick="menu_mobile()" href="#education" class="header_text2">Formação Acadêmica</a>
+                <a onclick="menu_mobile()" href="#projects" class="header_text2">Projetos</a>
+                <a onclick="menu_mobile()" href="#skills" class="header_text2">Skills</a>
 
-                <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
+                <a onclick="menu_mobile()" href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5 hover:fill-amber-400">
                         <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
                     </svg> Git Hub
                 </a>
         
-                <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
+                <a onclick="menu_mobile()" href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5">
                         <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
                     </svg>Linkedin
@@ -86,7 +86,7 @@
         </div>
 
         <div class="">
-            <img src="/src/media/img_perfil.png" alt="Ruan Lima" loading="lazy" class="h-[680px] max-sm:h-[580px] max-sm:right-20 absolute -bottom-16 right-14">
+            <img src="/src/media/img_perfil.png" alt="Ruan Lima" loading="lazy" class="h-[680px] max-sm:h-[580px] max-sm:right-16 absolute -bottom-16 right-14">
         </div>
         
         
@@ -101,7 +101,7 @@
             <div class="grid grid-cols-1 text-center items-center">
                 <h1 id="intro1" class="max-sm:text-2xl text-3xl font-bold text-slate-900 mt-32">Olá! Meu nome é </h1>
                 <h1 id="intro2" class="max-sm:text-5xl mt-4 text-indigo-700 text-7xl font-extrabold opacity-0">RUAN LIMA</h1>
-                <h2 id="intro3" class="max-sm:text-lg text-slate-400 text-xl font-light mt-6 opacity-0">Algumas coisas que você precisa saber sobre mim:</h2>
+                <h2 id="intro3" class="max-sm:text-lg max-sm:mx-10 text-slate-400 text-xl font-light mt-6 opacity-0">Algumas coisas que você precisa saber sobre mim:</h2>
             </div>
         </div>
         
@@ -172,8 +172,8 @@
     <section id="education" class="h-auto relative bg-[#ffbf00] pb-20">
         
         <!--Title-->
-        <div class="flex place-content-center text-center pt-20 max-sm:pt-20 max-sm:pb-10">
-            <h1 id="title" class="absolute font-black max-sm:text-4xl text-6xl text-[#ff6f00] opacity-0">Formação Acadêmica</h1>
+        <div class="flex place-content-center text-center pt-20 max-sm:pt-20 max-sm:pb-20 ">
+            <h1 id="title" class="absolute font-black max-sm:text-5xl max-sm:text-wrap text-6xl text-[#ff6f00] opacity-0">Formação Acadêmica</h1>
         </div>
 
 
@@ -261,8 +261,8 @@
                 <div class="fixed inset-0 w-screen bg-black/70 flex items-center justify-center backdrop-blur-xs">
                 </div>
 
-                <div class="bg-slate-100 max-h-screen overflow-y-auto h-[50rem] w-[76rem] max-sm:w-screen relative -mt-[550px] max-sm:-mt-[780px] px-16 max-sm:px-5 pt-12 max-sm:pt-15 pb-16 rounded-lg">
-                    <div  id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-8 mx-4">
+                <div class="bg-slate-100 max-h-screen overflow-y-auto h-[50rem] w-[76rem] max-sm:w-screen relative -mt-[630px] max-sm:-mt-[780px] px-16 max-sm:px-5 pt-12 max-sm:pt-15 pb-16 rounded-lg">
+                    <div id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-8 mx-4 max-sm:pb-14">
                         <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
                         <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
                         <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
