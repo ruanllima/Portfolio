@@ -1819,9 +1819,6 @@
   .rounded-bl {
     border-bottom-left-radius: 0.25rem;
   }
-  .rounded-bl-2xl {
-    border-bottom-left-radius: var(--radius-2xl);
-  }
   .rounded-bl-3xl {
     border-bottom-left-radius: var(--radius-3xl);
   }
@@ -2247,23 +2244,14 @@
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
   }
-  .pr-6 {
-    padding-right: calc(var(--spacing) * 6);
-  }
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
-  }
-  .pb-7 {
-    padding-bottom: calc(var(--spacing) * 7);
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
-  }
-  .pb-24 {
-    padding-bottom: calc(var(--spacing) * 24);
   }
   .pb-32 {
     padding-bottom: calc(var(--spacing) * 32);
@@ -2273,9 +2261,6 @@
   }
   .pb-\[12rem\] {
     padding-bottom: 12rem;
-  }
-  .pl-3 {
-    padding-left: calc(var(--spacing) * 3);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
@@ -3215,11 +3200,6 @@
       top: calc(var(--spacing) * 40);
     }
   }
-  .max-sm\:top-52 {
-    @media (width < 40rem) {
-      top: calc(var(--spacing) * 52);
-    }
-  }
   .max-sm\:top-56 {
     @media (width < 40rem) {
       top: calc(var(--spacing) * 56);
@@ -3230,29 +3210,9 @@
       top: 430px;
     }
   }
-  .max-sm\:right-10 {
-    @media (width < 40rem) {
-      right: calc(var(--spacing) * 10);
-    }
-  }
   .max-sm\:right-16 {
     @media (width < 40rem) {
       right: calc(var(--spacing) * 16);
-    }
-  }
-  .max-sm\:right-20 {
-    @media (width < 40rem) {
-      right: calc(var(--spacing) * 20);
-    }
-  }
-  .max-sm\:right-30 {
-    @media (width < 40rem) {
-      right: calc(var(--spacing) * 30);
-    }
-  }
-  .max-sm\:right-32 {
-    @media (width < 40rem) {
-      right: calc(var(--spacing) * 32);
     }
   }
   .max-sm\:-bottom-2 {
@@ -3388,6 +3348,11 @@
   .max-sm\:h-\[580px\] {
     @media (width < 40rem) {
       height: 580px;
+    }
+  }
+  .max-sm\:h-auto {
+    @media (width < 40rem) {
+      height: auto;
     }
   }
   .max-sm\:h-full {
@@ -4119,7 +4084,7 @@
   text-shadow: 0 2px 5px rgba(52, 52, 52);
 }
 .textShadowInit {
-  text-shadow: 0 1px 1px rgba(50, 50, 46);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 @keyframes spin {
   to {
