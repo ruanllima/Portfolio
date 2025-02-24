@@ -1,6 +1,7 @@
 function view(id, fixed){
     const element = document.getElementById(fixed);
 
+    // Posso usar classList.toogle here
     if (document.getElementById(id).style.display == ""){
         document.getElementById(id).style.display = "none";
         document.body.style.overflow = 'auto';
@@ -8,6 +9,19 @@ function view(id, fixed){
     else{
         document.getElementById(id).style.display = "";
         element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
+        document.body.style.overflow = 'hidden';
+      
+    }
+}
+
+function view2(id,){
+    // Posso usar classList.toogle here
+    if (document.getElementById(id).style.display == ""){
+        document.getElementById(id).style.display = "none";
+        document.body.style.overflow = 'auto';
+    }
+    else{
+        document.getElementById(id).style.display = "";
         document.body.style.overflow = 'hidden';
       
     }
@@ -145,7 +159,7 @@ function view_certificate2(id, tab, div, imgTab){
 }
 
 function menu_mobile(){
-    view("menu_mobile", "home");
+    view2("menu_mobile");
     const button = document.getElementById("menu_button");
 
     if(button.src.includes("/src/media/menu.png")){

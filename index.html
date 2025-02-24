@@ -21,28 +21,45 @@
         opacity: 1;
     }
 </style>
-<body class="">
-    
-    <section id="home" class="h-[103vh] relative bg-gradient-to-bl from-[#3505e3] to-[#6800fa]">
-        <div>
-            <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-20 parallax"></div>
-        </div>
-        <div class="absolute left-10 max-sm:left-6 top-3 shadow-xs">
-            <h1 class="text-white text-6xl max-sm:text-5xl font-cherolina">Ruan Lima</h1>
-        </div>
+<body>
+    <header id="header" class="fixed z-999 h-12 w-full transition-colors duration-300">
+        <div class="relative top-1 animate-fade-fall max-sm:hidden">
 
-
-        <div class="max-sm:text-6xl text-8xl textShadowInit">
-            <h1 id="init1" class="absolute left-10 top-72 max-sm:top-40 max-sm:left-6 font-bold text-slate-100 opacity-0">Welcome to</h1>
-            <div class="inline-flex absolute left-10 top-96 max-sm:top-56 max-sm:left-6 gap-6">
-                <h1 id="init2" class="font-bold text-slate-100 opacity-0">my</h1>
-                <h1 id="init3" class=" font-bold text-[#ffbf00] opacity-0">world.</h1>
-            </div>
+            <a href="/" class="absolute left-10 max-sm:left-6 shadow-xs">
+                <h1 class="text-white text-4xl max-sm:text-5xl font-cherolina">RL</h1>
+            </a>
+       
+            <nav class="absolute right-9 items-center max-sm:hidden">
+                <ul class="inline-flex items-center">
+                    <li><a href="#about" class="header_text">Sobre Mim</a></li>
+                    <li><a href="#education" class="header_text">Formação Acadêmica</a></li>
+                    <li><a href="#projects" class="header_text">Projetos</a></li>
+                    <li><a href="#skills" class="header_text">Skills</a></li>
+                    <li>
+                        <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text inline-flex items-center gap-1">
+                            <svg class="invert h-5 w-5 hover:fill-amber-400">
+                                <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
+                            </svg> Git Hub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="header_text inline-flex items-center gap-1">
+                            <svg class="invert h-5 w-5">
+                                <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
+                            </svg>Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
+        
         <!--Menu Mobile-->
         <div class="max-sm:flex hidden">
-            <div style="display: none" id="menu_mobile" class="flex flex-col gap-1 absolute top-0 right-0 bg-indigo-600 pt-10 pb-16 pr-8 pl-5 rounded-bl-lg shadow-lg">
+            <a href="/" class="absolute top-2 left-4 shadow-xs">
+                <h1 class="text-white text-3xl font-cherolina">RL</h1>
+            </a>
+
+            <div style="display: none" id="menu_mobile" class="flex flex-col h-screen gap-1 absolute top-0 right-0 bg-indigo-700 pt-14 pr-8 pl-3 shadow-lg">
                 <a onclick="menu_mobile()" href="#about" class="header_text2">Sobre Mim</a>
                 <a onclick="menu_mobile()" href="#education" class="header_text2">Formação Acadêmica</a>
                 <a onclick="menu_mobile()" href="#projects" class="header_text2">Projetos</a>
@@ -60,31 +77,30 @@
                     </svg>Linkedin
                 </a>
             </div>
-            <button onclick="menu_mobile()"><img id="menu_button" src="/src/media/menu.png" alt="" class="invert h-9 w-9 opacity-75 absolute top-4 right-6"></button>
+            <button onclick="menu_mobile()"><img id="menu_button" src="/src/media/menu.png" alt="" class="invert h-8 w-8 opacity-75 absolute top-2 right-5"></button>
 
         </div>
-
-
-        <div class="inline-flex absolute top-5 right-9 items-center animate-fade-fall max-sm:hidden">
-
-                <a href="#about" class="header_text">Sobre Mim</a>
-                <a href="#education" class="header_text">Formação Acadêmica</a>
-                <a href="#projects" class="header_text">Projetos</a>
-                <a href="#skills" class="header_text">Skills</a>
-
-                <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text inline-flex items-center gap-1">
-                    <svg class="invert h-5 w-5 hover:fill-amber-400">
-                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
-                    </svg> Git Hub
-                </a>
         
-                <a href="https://www.linkedin.com/in/ruan-lima-a945a127a/" target="_blank" rel="noopener noreferrer" class="header_text inline-flex items-center gap-1">
-                    <svg class="invert h-5 w-5">
-                        <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
-                    </svg>Linkedin
-                </a>
+    </header>
+
+
+    
+    <section id="home" class="h-[103vh] relative bg-gradient-to-bl from-[#3505e3] to-[#6800fa]">
+        <div>
+            <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-20 parallax"></div>
+        </div>
+        
+        <div class="max-sm:text-5xl text-8xl textShadowInit">
+            <h1 id="init1" class="absolute left-10 top-72 max-sm:top-40 max-sm:left-6 font-bold text-slate-100 opacity-0">Welcome to</h1>
+            <div class="inline-flex absolute left-10 top-96 max-sm:top-56 max-sm:left-6 gap-3">
+                <h1 id="init2" class="font-bold text-slate-100 opacity-0">my</h1>
+                <h1 id="init3" class=" font-bold text-[#ffbf00] opacity-0">world.</h1>
+            </div>
         </div>
 
+        
+
+        
         <div class="">
             <img src="/src/media/img_perfil.png" alt="Ruan Lima" loading="lazy" class="h-[680px] max-sm:h-[580px] max-sm:right-16 absolute -bottom-16 right-14">
         </div>
@@ -116,7 +132,7 @@
                     <p class="font-light text-slate-500 text-lg mt-2">Sou um jovem de 18 anos, residente no estado de Alagoas, Brasil, apaixonado por música, tecnologia e inovação e busco constantemente aprender e explorar novas áreas do conhecimento. Frequentei a maior parte da minha vida escolar em instituições públicas, mas isso não foi um impedimento para me destacar nas ciências exatas ou tecnológicas. Mesmo após terminar o ensino médio, continuo focado em adquirir novos conhecimentos e me aprimorar ainda mais na programação.
                     </p>
                 </div>
-                <img id="img_about1" src="/src/media/IMG1.jpg" alt="Campus Party Nordeste 2024" class="hidden max-sm:flex h-[28rem] rounded-lg opacity-0">
+                <img id="img_about1" src="/src/media/IMG1.jpg" alt="Campus Party Nordeste 2024" class="hidden max-sm:flex h-auto rounded-lg opacity-0">
 
             </div>
 
@@ -136,7 +152,7 @@
 
             <!--Summary three-->
             <div class="max-sm:flex-col inline-flex gap-10 mt-20">
-                <img id="img_about3" src="/src/media/IMG3.jpg" alt="Novo Ensino Suplementar" class="max-sm:hidden h-[28rem] rounded-lg opacity-0">
+                <img id="img_about3" src="/src/media/IMG3.jpg" alt="Novo Ensino Suplementar" class="max-sm:hidden h-[30rem] rounded-lg opacity-0">
                 <div id="txt_about3" class="mt-6 opacity-0">
                     <h1 class="text-indigo-600 text-xl font-coolvetica">Formação Acadêmica e Olimpíadas</h1>
                     <hr class="text-slate-300 mt-1">
@@ -145,7 +161,7 @@
                     <p class="font-light text-slate-500 text-lg">Em 2023, ingressei em um centro de excelência em matemática e programação na Universidade Federal de Alagoas: <a href="https://sites.google.com/view/nes-alagoas" target="_blank" rel="noopener noreferrer" class="text-[#FF6D00] font-semibold text-base hover:underline">Novo Ensino Suplementar</a>. Esse ambiente foi determinante para minha paixão pela programação, permitindo-me conviver com pessoas que compartilham o mesmo desejo de evolução, além de aprender com profissionais renomados de todo o Brasil e do mundo. 
                     </p>
                 </div>
-                <img id="img_about3" src="/src/media/IMG3.jpg" alt="Novo Ensino Suplementar" class="hidden max-sm:flex h-[28rem] rounded-lg opacity-0">
+                <img id="img_about3" src="/src/media/IMG3.jpg" alt="Novo Ensino Suplementar" class="hidden max-sm:flex h-auto rounded-lg opacity-0">
 
             </div>
 
@@ -161,7 +177,7 @@
                     <p class="font-light text-slate-500 text-lg">Meu objetivo é continuar crescendo na área de tecnologia, ingressar no mercado de trabalho e aproveitar as oportunidades para expandir meu conhecimento. Estou sempre aberto a desafios que me permitam evoluir e desenvolver novas habilidades.
                     </p>
                 </div>
-                <img id="img_about4" src="/src/media/IMG4.jpg" alt="Giulia Bordignon" class="h-[30rem] rounded-lg opacity-0">
+                <img id="img_about4" src="/src/media/IMG4.jpg" alt="Giulia Bordignon" class="h-[30rem] max-sm:h-auto rounded-lg opacity-0">
 
             </div>
             
@@ -458,7 +474,7 @@
                         <!--Tailwind-->
                         <div id="tailwind_skill"  style="cursor: pointer;" onclick="card_skill('tailwind_skill_1', 'tailwind_skill_2', 'tailwind_skill')" class="bg-cyan-900 skill_grid relative opacity-0">
                             <img id="tailwind_skill_1" src="/src/media/skills/tailwind-logo.svg" alt="" class="h-4 max-sm:h-2 absolute bottom-8 max-sm:bottom-4 left-6 max-sm:left-3">
-                            <p id="tailwind_skill_2" style="display: none;" class="font-light text-cyan-50/70 px-2 absolute max-sm:text-[9.3px] top-5 max-sm:top-2 max-sm:left-0 left-1">Conhecimento das principais classes do Tailwind CSS, com aplicação prática em algusns projetos de desenvolvimento de interfaces responsivas.</p>
+                            <p id="tailwind_skill_2" style="display: none;" class="font-light text-cyan-50/70 px-2 absolute max-sm:text-[9.3px] top-5 max-sm:top-2 max-sm:left-0 left-1">Conhecimento das principais classes do Tailwind CSS, com aplicação prática em alguns projetos de desenvolvimento de interfaces responsivas.</p>
                         </div>
                     </div>
 
@@ -588,10 +604,29 @@
     <script src="/src/js/view.js"></script>
     <script src="/src/js/script.js"></script>
     <script>
-        document.addEventListener("scroll", function () {
-        let scrollPosition = window.scrollY;
-        document.querySelector(".parallax").style.transform = `translateY(${scrollPosition * 0.4}px)`;
+        document.addEventListener("scroll", () => {
+            const header = document.getElementById("header");
+            let classBg = "";
+            let scrollPosition = window.scrollY;
+
+            classBg = scrollPosition > 0 ? "bg-indigo-600/96" : "bg-indigo-600/0";
+            if (classBg == "bg-indigo-600/96") {
+                header.classList.remove("bg-indigo-600/0");
+            }
+            else {
+                header.classList.remove("bg-indigo-600/96");
+            }
+            header.classList.add(classBg);
+
+            // Parallax effect
+            document.querySelector(".parallax").style.transform = `translateY(${scrollPosition * 0.4}px)`;
     });
+        document.addEventListener("DOMContentLoaded", () =>{
+            let scrollPosition = window.scrollY;
+            document.querySelector(".parallax").style.transform = `translateY(${scrollPosition * 0.4}px)`;
+            initBg = scrollPosition = 0 ? "bg-indigo-600/0" : "bg-indigo-600/96";
+            header.classList.add(initBg);
+        })
     </script>
     
     
