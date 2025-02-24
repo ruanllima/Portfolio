@@ -22,19 +22,19 @@
     }
 </style>
 <body>
-    <header id="header" class="fixed z-999 h-12 w-full transition-colors duration-300">
+    <header id="header" class="fixed z-999 h-12 w-full transition-colors duration-300 pt-[2px]">
         <div class="relative top-1 animate-fade-fall max-sm:hidden">
 
-            <a href="/" class="absolute left-10 max-sm:left-6 shadow-xs">
-                <h1 class="text-white text-4xl max-sm:text-5xl font-cherolina">RL</h1>
+            <a href="/" class="absolute left-6 shadow-xs">
+                <h1 class="text-white text-4xl font-cherolina">RL</h1>
             </a>
        
             <nav class="absolute right-9 items-center max-sm:hidden">
                 <ul class="inline-flex items-center">
-                    <li><a href="#about" class="header_text">Sobre Mim</a></li>
-                    <li><a href="#education" class="header_text">Formação Acadêmica</a></li>
-                    <li><a href="#projects" class="header_text">Projetos</a></li>
-                    <li><a href="#skills" class="header_text">Skills</a></li>
+                    <li class="header_text"><a href="#about">Sobre Mim</a></li>
+                    <li class="header_text"><a href="#education">Formação Acadêmica</a></li>
+                    <li class="header_text"><a href="#projects">Projetos</a></li>
+                    <li class="header_text"><a href="#skills">Skills</a></li>
                     <li>
                         <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text inline-flex items-center gap-1">
                             <svg class="invert h-5 w-5 hover:fill-amber-400">
@@ -624,7 +624,8 @@
         document.addEventListener("DOMContentLoaded", () =>{
             let scrollPosition = window.scrollY;
             document.querySelector(".parallax").style.transform = `translateY(${scrollPosition * 0.4}px)`;
-            initBg = scrollPosition = 0 ? "bg-indigo-600/0" : "bg-indigo-600/96";
+            initBg = scrollPosition == 0 ? "bg-indigo-600/0" : "bg-indigo-600/96";
+            console.log(scrollPosition);
             header.classList.add(initBg);
         })
     </script>

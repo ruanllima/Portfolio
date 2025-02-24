@@ -1,15 +1,17 @@
 function view(id, fixed){
     const element = document.getElementById(fixed);
-
+    const header = document.getElementById('header');
     // Posso usar classList.toogle here
     if (document.getElementById(id).style.display == ""){
         document.getElementById(id).style.display = "none";
         document.body.style.overflow = 'auto';
+        header.classList.remove("hidden");
     }
     else{
         document.getElementById(id).style.display = "";
         element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
         document.body.style.overflow = 'hidden';
+        header.classList.add("hidden");
       
     }
 }
@@ -31,13 +33,15 @@ function view2(id,){
 
 function view_tab(tab1, tab2, tab3, local){
     const element = document.getElementById(local);
-
+    const header = document.getElementById('header');
+    // ordem: tab1 > tab3 > tab2
     if (document.getElementById(tab1).style.display == ""){
         element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
         document.body.style.overflow = 'hidden';
 
 
         if (document.getElementById(tab2).style.display == ""){
+            // Desativa o tab2 e ativa o tab3
             document.getElementById(tab2).style.display = "none";  
             console.log('teste3'); 
             document.getElementById(tab3).style.display = "";
@@ -46,18 +50,22 @@ function view_tab(tab1, tab2, tab3, local){
         }
         
         else{
+            // Desativa o tab1
             document.getElementById(tab1).style.display = "none";
             console.log('teste4');
             document.body.style.overflow = 'auto';
+            header.classList.remove("hidden");
         }
        
         
     }
     else{
-        console.log('teste5');
+        // Ativa o display do tab1
         document.getElementById(tab1).style.display = "";
         element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
         document.body.style.overflow = 'hidden';
+        header.classList.add("hidden");
+
       
     }
 }
@@ -65,7 +73,6 @@ function view_tab(tab1, tab2, tab3, local){
 
 
 function view_certificate(id) {
-
     const div = document.getElementById("certificados");
     const view = document.getElementById('view');
     const selected = document.getElementById(id);
@@ -142,11 +149,13 @@ function view_certificate2(id, tab, div, imgTab){
     const tab_div = document.getElementById(tab);
     const img_tab = document.getElementById(imgTab);
     const course = document.getElementById(id);
+    const header = document.getElementById('header');
 
     if (tab_div.style.display == ""){
         img_tab.src = "";
         tab_div.style.display = "none";
         document.body.style.overflow = 'auto';
+        header.classList.remove("hidden");
     }
     else{
         tab_div.style.display = "";
@@ -154,6 +163,7 @@ function view_certificate2(id, tab, div, imgTab){
         console.log(img_tab.src);
         element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
         document.body.style.overflow = 'hidden';
+        header.classList.add("hidden");
       
     }
 }
