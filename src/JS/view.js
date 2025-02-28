@@ -36,7 +36,7 @@ function view_tab(tab1, tab2, tab3, local){
     const header = document.getElementById('header');
     // ordem: tab1 > tab3 > tab2
     if (document.getElementById(tab1).style.display == ""){
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
+        // element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
         document.body.style.overflow = 'hidden';
 
 
@@ -45,7 +45,7 @@ function view_tab(tab1, tab2, tab3, local){
             document.getElementById(tab2).style.display = "none";  
             console.log('teste3'); 
             document.getElementById(tab3).style.display = "";
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
+            // element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
             document.body.style.overflow = 'hidden';
         }
         
@@ -62,7 +62,7 @@ function view_tab(tab1, tab2, tab3, local){
     else{
         // Ativa o display do tab1
         document.getElementById(tab1).style.display = "";
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
+        // element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
         document.body.style.overflow = 'hidden';
         header.classList.add("hidden");
 

@@ -27,6 +27,14 @@
         visibility: visible;
         opacity: 1;
     }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* Para o Internet Explorer e Edge */
+        scrollbar-width: none;     /* Para o Firefox */
+    }
 </style>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -34,7 +42,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header id="header" class="fixed z-999 h-12 w-full transition-colors duration-300 pt-[2px]">
+    <header id="header" class="fixed z-20 h-12 w-full transition-colors duration-300 pt-[2px]">
         <div class="relative top-1 animate-fade-fall max-sm:hidden">
 
             <a href="/" class="absolute left-6 shadow-xs">
@@ -99,7 +107,7 @@
     </header>
 
     
-    <section id="home" class="h-[103vh] relative bg-gradient-to-bl from-[#3505e3] to-[#6800fa]">
+    <section id="home" class="h-[103vh] relative bg-gradient-to-bl from-[#3505e3] to-[#6800fa] z-10">
         <div>
             <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-20 parallax"></div>
         </div>
@@ -124,7 +132,7 @@
         
     </section>
 
-    <section id="about" class="h-auto pb-32 relative bg-slate-100">
+    <section id="about" class="h-auto pb-32 relative bg-slate-100 z-10">
 
         <!--Introduce-->
         <div class="flex place-content-center">
@@ -199,7 +207,7 @@
        
     </section>
 
-    <section id="education" class="h-auto min-h-screen relative bg-[#ffbf00] pb-10 pt-10">
+    <section id="education" class="h-auto min-h-screen relative bg-[#ffbf00] pb-20 pt-10 z-10 2xl:pb-10">
         
         <!--Title-->
         <div class="flex place-content-center text-center pt-20 max-sm:pt-20 max-sm:pb-20 ">
@@ -210,7 +218,7 @@
         <div class="pt-36 max-sm:pt-44 px-8 max-sm:px-1 md:px-16 lg:px-32 xl:px-24">
 
             <!--Courses grid-->
-            <div class="grid max-sm:w-full md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 place-content-center w-[64rem] h-[20rem] mx-auto">
+            <div class="grid max-sm:w-full md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 place-content-center w-[64rem] h-[20rem] mx-auto max-sm:p-2">
                 <!--Course one-->
                 <div id="curso1" class="bg-white rounded-md rounded-br-sm rounded-tl-3xl px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl transition delay-100">
                     <div class="col-span-2">
@@ -273,15 +281,18 @@
 
             <div style="display: none;" id="course_tab" course="relative">
                 <div class="fixed inset-0 w-screen bg-black/90 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
-                    
-                    <div class="fixed inset-0 py-12 ">
-                        <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="shadow-2xl max-sm:h-full h-[35rem] mx-auto my-auto">
-                        <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="absolute top-3 right-3 max-sm:left-3 transition_button bg-black/30 hover:bg-black/90 rounded-sm">
-                            <img src="/src/media/x.png" alt="" class="max-sm:hidden h-9 p-2 opacity-90 hover:opacity-100 invert">
+                
+                    <div class="fixed inset-0 py-12">
+                        <div class="flex items-center justify-center h-full">
+                            <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="shadow-2xl max-sm:h-auto max-sm:p-2 h-[35rem] mx-auto my-auto">
+                        </div>
+                        <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
+                            <img src="/src/media/x.png" alt="" class="h-10 p-2 opacity-90 hover:opacity-100 invert">
                         </button>
+                        
                     </div>
                     
-                    <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="transition_button "><img src="/src/media/button_sair.png" alt="" class="h-16 opacity-80 hover:opacity-100 mt-20 hidden max-sm:flex"></button>
+                
                 </div>
             </div>
             
@@ -291,12 +302,75 @@
                     Visualizar todos os certificados</button>
             </div>
 
-            <div style="display: none;" id="certificados" class="flex place-content-center">
-                <div class="fixed inset-0 w-screen bg-black/70 flex items-center justify-center backdrop-blur-xs">
-                </div>
 
-                <div class="bg-slate-100 max-h-screen overflow-y-auto h-[50rem] w-[76rem] max-sm:w-screen relative -mt-[630px] max-sm:-mt-[780px] px-16 max-sm:px-5 pt-12 max-sm:pt-15 pb-16 rounded-lg">
-                    <div id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-8 mx-4 max-sm:pb-14">
+            
+            <div style="display: none;" id="certificados" course="relative">
+                <div class="fixed inset-0 w-screen bg-black/93 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
+                
+                    <div class="fixed inset-0">
+                        <div id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-6 mx-24 max-sm:mx-4 my-10 max-sm:my-14 overflow-y-auto scrollbar-hide h-[90vh] pt-5  px-5 bg-transparent">
+                            <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
+                            <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
+                            <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
+                            <img style="cursor: pointer;" id="sql2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql2.jpg" alt="Certificado MySQL" class="certificado">
+                            <img style="cursor: pointer;" id="mandacaru" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_mandacaru.jpg" alt="Prata Olimpíada Mandacaru de Matemática" class="certificado">
+                            <img style="cursor: pointer;" id="obmep1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep1.jpg" alt="Menção Honrosa OBMEP 2019" class="certificado">
+                            <img style="cursor: pointer;" id="omep2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep2.jpg" alt="Menção Honrosa OBMEP 2021" class="certificado">
+                            <img style="cursor: pointer;" id="obmep3" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep3.jpg" alt="Menção Honrosa OBMEP 2022" class="certificado">
+                            <img style="cursor: pointer;" id="oamep" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_oamep.jpg" alt="Bronze OAMEP" class="certificado">
+                            <img style="cursor: pointer;" id="logica1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica1.jpg" alt="Bronze Maratona de Lógica" class="certificado">
+                            <img style="cursor: pointer;" id="logica2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica2.jpg" alt="Prata Maratona de Lógica" class="certificado">
+                            <img style="cursor: pointer;" id="fgv" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_fgv.jpg" alt="Seleção de Talentos FGV" class="certificado">
+                            <img style="cursor: pointer;" id="startup1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup1.jpg" alt="SEBRAE Startup Day" class="certificado">
+                            <img style="cursor: pointer;" id="campus" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_campus.jpg" alt="Campus Party Nordeste 2024" class="certificado">
+                            <img style="cursor: pointer;" id="dlj" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_dlj.jpg" alt="Desafio Liga Jovem 2024" class="certificado">
+                            <img style="cursor: pointer;" id="eba" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_eba.jpg" alt="EBA 2024" class="certificado">
+                            <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado">
+                        </div>
+                        <button style="cursor: pointer;" onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
+                            <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
+                        </button>
+
+                        <div style="display: none;" id="view_container" class="">
+                            <div class="flex place-content-center inset-0 fixed">
+                                <button style="cursor: pointer;" onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
+                                    <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
+                                </button>
+    
+                                <button id="left" onclick="change_certificate(this.id)" class="pr-20">
+                                    <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:-translate-x-1">
+                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] rotate-180 opacity-80 transition hover:opacity-100 p-2">
+                                    </div>
+                                </button>
+                            
+                                <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] max-sm:h-full max-sm:pt-20 my-auto relative">
+                                <button id="right" onclick="change_certificate(this.id)" class="pl-20">
+                                    <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:translate-x-1">
+                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] opacity-80 transition hover:opacity-100 p-2">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                </div>
+            </div>
+
+
+
+
+
+            <!--
+            <div style="display: none;" id="certificados" class="flex place-content-center relative">
+                
+                <div class="fixed inset-0 w-screen bg-black/95 flex items-center justify-center backdrop-blur-[1px]"></div>
+
+                <div class="fixed inset-0  max-h-screen  h-[50rem] w-[76rem] max-sm:w-screen -mt-[630px] max-sm:-mt-[780px] px-16 max-sm:px-5 pt-12 max-sm:pt-15 pb-16 rounded-lg">
+                    <div id="certificados_list" class="fixed inset-0 overflow-y-auto overflow-x-visible grid grid-cols-4 max-sm:grid-cols-1 gap-8 mx-20 my-10 p-4 max-sm:pb-14">
+                        <button onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-10 -right-10 bg-black hover:bg-red-600 rounded-sm h-10 w-10 flex items-center justify-center transition hover:scale-110" style="cursor: pointer;">
+                            <img src="/src/media/x.png" alt="Fechar" class="h-6 w-6 opacity-90 hover:opacity-100 invert">
+                        </button>
                         <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
                         <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
                         <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
@@ -315,13 +389,30 @@
                         <img style="cursor: pointer;" id="eba" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_eba.jpg" alt="EBA 2024" class="certificado">
                         <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado">
                     </div>
-                    <div style="display: none;" id="view_container" class="flex place-content-center">
-                        <button id="left" onclick="change_certificate(this.id)"><img src="/src/media/seta.png" alt="" class="h-24 absolute top-64 max-sm:top-[430px] left-20 rotate-180 opacity-20 transition hover:opacity-30 hover:scale-110 hover:-translate-x-1"></button>
-                        <button id="right" onclick="change_certificate(this.id)"><img src="/src/media/seta.png" alt="" class="h-24 absolute top-64 max-sm:top-[430px] right-20 opacity-20 transition hover:opacity-30 hover:scale-110 hover:translate-x-1"></button>
-                        <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] max-sm:h-full max-sm:pt-20">
+                    
+                    <div style="display: none;" id="view_container" class="">
+                        <div class="flex place-content-center inset-0 fixed">
+                            <button onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-10 right-10 bg-black hover:bg-red-600 rounded-sm h-10 w-10 flex items-center justify-center transition hover:scale-110" style="cursor: pointer;">
+                                <img src="/src/media/x.png" alt="Fechar" class="h-6 w-6 opacity-90 hover:opacity-100 invert">
+                            </button>
+
+                            <button id="left" onclick="change_certificate(this.id)" class="pr-20">
+                                <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:-translate-x-1">
+                                    <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] rotate-180 opacity-80 transition hover:opacity-100 p-2">
+                                </div>
+                            </button>
+                        
+                            <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] max-sm:h-full max-sm:pt-20 my-auto relative">
+                            <button id="right" onclick="change_certificate(this.id)" class="pl-20">
+                                <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:translate-x-1">
+                                    <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] opacity-80 transition hover:opacity-100 p-2">
+                                </div>
+                            </button>
+                        </div>
                     </div>
-       
-                    <button onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 left-5 transition_button "><img src="/src/media/voltar.png" alt="" class="max-sm:h-8 h-10 opacity-20 hover:opacity-30"></button>
+
+                    -->
+                    <!--<button  class="absolute top-5 left-5 transition_button "><img src="/src/media/voltar.png" alt="" class="max-sm:h-8 h-10 opacity-20 hover:opacity-30"></button>-->
            
 
 
@@ -338,7 +429,7 @@
 
     </section>
 
-    <section id="projects" class="h-auto pb-32 bg-slate-100">
+    <section id="projects" class="h-auto pb-32 bg-slate-100 z-10">
         <div class="container flex flex-col place-content-center mx-auto pt-20 items-center">
             <!--Title-->
             <div class="text-center">
@@ -428,7 +519,7 @@
         </div>
     </section>
 
-    <section id="skills" class="h-auto bg-zinc-900 relative">
+    <section id="skills" class="h-auto bg-zinc-900 relative z-10">
 
         <div class="flex flex-col place-content-center mx-auto items-center pb-[12rem]">
 
@@ -532,7 +623,7 @@
 
     </section>
 
-    <section id="cta" class="h-auto pb-36 bg-slate-100">
+    <section id="cta" class="h-auto pb-36 bg-slate-100 z-10">
         <div class="flex flex-col place-content-center text-center mx-auto pt-32">
             <h1 id="cta1" class="text-indigo-600 font-black font-coolvetica text-7xl max-sm:text-5xl opacity-0">Despertei seu interesse?</h1>
             <h2 id="cta2" class="text-indigo-400 font-light text-3xl max-sm:text-base pt-7 opacity-0">Sinta-se à vontade para entrar em contato comigo.</h2>
@@ -552,7 +643,7 @@
 
     </section>
 
-    <section id="contact" class="h-[15rem] bg-slate-900 flex-col text-center ">
+    <section id="contact" class="h-[15rem] bg-slate-900 flex-col text-center  z-10">
         <div class="inline-flex max-sm:flex max-sm:flex-col gap-5 items-center mt-24 max-sm:mt-0 max-sm:p-12">
             <button class="bg-slate-950 rounded-full px-5 py-2 flex items-center hover:-translate-y-1 hover:bg-black/67">
                 <a href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="font-nexa max-sm:font-light  text-slate-100 inline-flex items-center gap-1 max-sm:text-xs">
