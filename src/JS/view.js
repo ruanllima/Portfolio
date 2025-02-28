@@ -153,15 +153,17 @@ function view_certificate2(id, tab, div, imgTab){
 
     if (tab_div.style.display == ""){
         img_tab.src = "";
+        tab_div.classList.remove('fixed');
         tab_div.style.display = "none";
         document.body.style.overflow = 'auto';
         header.classList.remove("hidden");
     }
     else{
+        tab_div.classList.add('fixed');
         tab_div.style.display = "";
         img_tab.src = course.src;
         console.log(img_tab.src);
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
+        // element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Rola até o elemento e o alinha no topo
         document.body.style.overflow = 'hidden';
         header.classList.add("hidden");
       

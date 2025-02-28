@@ -33,6 +33,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBQ7LPSH"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <header id="header" class="fixed z-999 h-12 w-full transition-colors duration-300 pt-[2px]">
         <div class="relative top-1 animate-fade-fall max-sm:hidden">
 
@@ -97,18 +98,17 @@
         
     </header>
 
-
     
     <section id="home" class="h-[103vh] relative bg-gradient-to-bl from-[#3505e3] to-[#6800fa]">
         <div>
             <div style="background-image: url('/src/media/BACK.jpg');" class="bg-cover bg-center h-[103vh] opacity-20 parallax"></div>
         </div>
         
-        <div class="max-sm:text-5xl text-8xl textShadowInit">
-            <h1 id="init1" class="absolute left-10 top-72 max-sm:top-40 max-sm:left-6 font-bold text-slate-100 opacity-0">Welcome to</h1>
+        <div class="text-8xl max-sm:text-5xl textShadowInit">
+            <h1 id="init1" class="absolute left-10 top-72 max-sm:top-40 max-sm:left-6 font-bold text-slate-100 opacity-0">I'm just</h1>
             <div class="inline-flex absolute left-10 top-96 max-sm:top-56 max-sm:left-6 gap-3">
-                <h1 id="init2" class="font-bold text-slate-100 opacity-0">my</h1>
-                <h1 id="init3" class=" font-bold text-[#ffbf00] opacity-0">world.</h1>
+                <h1 id="init2" class="font-bold text-slate-100 opacity-0">a</h1>
+                <h1 id="init3" class=" font-bold text-[#ffbf00] opacity-0">young dev.</h1>
             </div>
         </div>
 
@@ -116,7 +116,7 @@
 
         
         <div class="">
-            <img src="/src/media/img_perfil.png" alt="Ruan Lima" onload="this.classList.remove('hidden')" class="hidden h-[680px] max-sm:h-[580px] max-sm:right-16 absolute -bottom-16 right-14">
+            <img src="/src/media/img_perfil.png" alt="Ruan Lima" onload="this.classList.remove('hidden')" class="hidden min-h-[88%] h-[680px] max-sm:h-[580px] max-sm:right-16 absolute -bottom-16 right-14">
         </div>
         
         
@@ -199,7 +199,7 @@
        
     </section>
 
-    <section id="education" class="h-auto relative bg-[#ffbf00] pb-20">
+    <section id="education" class="h-auto min-h-screen relative bg-[#ffbf00] pb-10 pt-10">
         
         <!--Title-->
         <div class="flex place-content-center text-center pt-20 max-sm:pt-20 max-sm:pb-20 ">
@@ -271,13 +271,17 @@
             <img id="certificado_python" style="display: none;" src="/src/media/certificados/cert_python.jpg" alt="">
 
 
-            <div style="display: none;" id="course_tab">
-                <div class="fixed inset-0 w-screen bg-black/70 flex items-center justify-center backdrop-blur-xs z-0"></div>
-                <div class="flex max-sm:flex-col items-center mt-[-30rem] place-content-center z-41 bg-slate-100 max-sm:bg-transparent relative py-5 rounded-md max-w-[66rem] mx-auto">
-                    <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="rounded-lg max-sm:rounded-none shadow-2xl relative max-sm:h-full h-[35rem] ">
-                    <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="absolute top-6 left-7 max-sm:left-3 transition_button "><img src="/src/media/voltar.png" alt="" class="max-sm:hidden h-10 opacity-20 hover:opacity-30"></button>
+            <div style="display: none;" id="course_tab" course="relative">
+                <div class="fixed inset-0 w-screen bg-black/90 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
+                    
+                    <div class="fixed inset-0 py-12 ">
+                        <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="shadow-2xl max-sm:h-full h-[35rem] mx-auto my-auto">
+                        <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="absolute top-3 right-3 max-sm:left-3 transition_button bg-black/30 hover:bg-black/90 rounded-sm">
+                            <img src="/src/media/x.png" alt="" class="max-sm:hidden h-9 p-2 opacity-90 hover:opacity-100 invert">
+                        </button>
+                    </div>
+                    
                     <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="transition_button "><img src="/src/media/button_sair.png" alt="" class="h-16 opacity-80 hover:opacity-100 mt-20 hidden max-sm:flex"></button>
-
                 </div>
             </div>
             
