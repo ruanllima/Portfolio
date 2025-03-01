@@ -43,7 +43,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header id="header" class="fixed z-20 h-12 w-full transition-colors duration-300 pt-[2px]">
-        <div class="relative top-1 animate-fade-fall max-sm:hidden">
+        <div class="relative top-1 animate-fade-fall max-lg:hidden">
 
             <a href="/" class="absolute left-6 shadow-xs">
                 <!--<h1 class="text-white text-4xl font-cherolina">RL</h1>-->
@@ -75,14 +75,14 @@
         </div>
         
         <!--Menu Mobile-->
-        <div class="max-sm:flex hidden">
+        <div class="max-lg:flex hidden">
             <a href="/" class="absolute top-1 left-4 shadow-xs">
                 <!--<h1 class="text-white text-3xl font-cherolina">RL</h1>-->
                 <img src="/src/media/icon.png" alt="RL" class="h-10 w-10">
 
             </a>
 
-            <div style="display: none" id="menu_mobile" class="flex flex-col h-screen gap-1 absolute top-0 right-0 bg-indigo-700 pt-14 pr-8 pl-3 shadow-lg">
+            <div style="display: none" id="menu_mobile" class="flex flex-col h-screen gap-1 absolute top-0 right-0 bg-indigo-700 pt-14 pr-16 pl-3 shadow-lg">
                 <a onclick="menu_mobile()" href="#about" class="header_text2">Sobre Mim</a>
                 <a onclick="menu_mobile()" href="#education" class="header_text2">Formação Acadêmica</a>
                 <a onclick="menu_mobile()" href="#projects" class="header_text2">Projetos</a>
@@ -113,8 +113,8 @@
         </div>
         
         <div class="text-8xl max-sm:text-5xl textShadowInit">
-            <h1 id="init1" class="absolute left-10 top-72 max-sm:top-40 max-sm:left-6 font-bold text-slate-100 opacity-0">I'm just</h1>
-            <div class="inline-flex absolute left-10 top-96 max-sm:top-56 max-sm:left-6 gap-3">
+            <h1 id="init1" class="absolute left-10 top-72 max-sm:top-40 md:top-36 max-sm:left-6 font-bold text-slate-100 opacity-0">I'm just</h1>
+            <div class="inline-flex absolute left-10 top-96 max-sm:top-56 md:top-[222px] max-sm:left-6 gap-3">
                 <h1 id="init2" class="font-bold text-slate-100 opacity-0">a</h1>
                 <h1 id="init3" class=" font-bold text-[#ffbf00] opacity-0">young dev.</h1>
             </div>
@@ -124,7 +124,7 @@
 
         
         <div class="">
-            <img src="/src/media/img_perfil.png" alt="Ruan Lima" onload="this.classList.remove('hidden')" loading="eager" class="hidden xl:min-h-[88%] h-[680px] max-sm:h-[580px] max-sm:right-16 absolute -bottom-16 right-14">
+            <img src="/src/media/img_perfil.png" alt="Ruan Lima" onload="this.classList.remove('hidden')" loading="eager" class="hidden xl:min-h-[88%] max-h-[80%] h-[680px] max-sm:h-[580px] md:h-[730px] lg:h-[1000px] max-sm:right-16 absolute -bottom-16 right-14">
         </div>
         
         
@@ -210,7 +210,7 @@
     <section id="education" class="h-auto min-h-screen relative bg-[#ffbf00] pb-20 pt-10 z-10 2xl:pb-10">
         
         <!--Title-->
-        <div class="flex place-content-center text-center pt-20 max-sm:pt-20 max-sm:pb-20 ">
+        <div class="flex place-content-center text-center pt-20 max-sm:pt-20 max-sm:pb-20 lg:pb-40 sm:pb-40 ">
             <h1 id="title" class="absolute font-black max-sm:text-5xl max-sm:text-wrap text-6xl text-[#ff6f00] opacity-0">Formação Acadêmica</h1>
         </div>
 
@@ -218,7 +218,7 @@
         <div class="pt-36 max-sm:pt-44 px-8 max-sm:px-1 md:px-16 lg:px-32 xl:px-24">
 
             <!--Courses grid-->
-            <div class="grid max-sm:w-full md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 place-content-center w-[64rem] h-[20rem] mx-auto max-sm:p-2">
+            <div class="grid max-sm:w-full max-lg:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 place-content-center w-[64rem] h-[20rem] mx-auto max-sm:p-2 md:w-[33rem] lg:w-full">
                 <!--Course one-->
                 <div id="curso1" class="bg-white rounded-md rounded-br-sm rounded-tl-3xl px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl transition delay-100">
                     <div class="col-span-2">
@@ -297,7 +297,7 @@
             </div>
             
 
-            <div class="flex place-content-center max-sm:pt-44 pt-20">
+            <div class="flex place-content-center max-sm:pt-44 lg:pt-72 xl:pt-40 md:pt-72 pt-20">
                 <button type="button" onclick="view_tab('certificados', '', '', 'education')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap max-sm:text-xs text-lg rounded-md p-1 px-3">
                     Visualizar todos os certificados</button>
             </div>
@@ -343,7 +343,7 @@
                                     </div>
                                 </button>
                                 
-                                <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] max-sm:h-auto max-sm:p-2 my-auto relative">
+                                <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] lg:h-[30rem] max-sm:h-auto max-sm:p-2 my-auto relative">
                                 
                                 <button id="right" onclick="change_certificate(this.id)" class="pl-20 max-sm:pl-0 max-sm:absolute max-sm:bottom-32 max-sm:right-24">
                                     <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:translate-x-1">
@@ -430,6 +430,7 @@
 
     </section>
 
+    
     <section id="projects" class="h-auto pb-32 bg-slate-100 z-10">
         <div class="container flex flex-col place-content-center mx-auto pt-20 items-center">
             <!--Title-->
@@ -438,7 +439,7 @@
             </div>
             
             <!--Projects tab-->
-            <div id="data_projects" class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 max-sm:grid-cols-1 gap-8 mt-16 place-content-center ">
+            <div id="data_projects" class="grid md:grid-cols-1 max-xl:grid-cols-1 xl:grid-cols-1 xl:mx-32 max-sm:grid-cols-1 gap-8 mt-16 place-content-center ">
                 
                 <!--Project one-->
                 <div class="bg-white rounded-lg shadow-md inline-flex pr-4 max-sm:pr-0 mx-auto max-sm:mx-4 h-auto opacity-0 transition hover:shadow-xl hover:scale-[101%] hover:-translate-y-1 delay-75 max-sm:flex max-sm:flex-col">
@@ -506,7 +507,7 @@
 
                 <!--Project four-->
                 
-
+                
                 <div style="display: none;" id="game_iframe" class="fixed inset-0 flex items-center justify-center z-50 max-sm:hidden">
                     <div class="absolute inset-0 w-screen bg-black/70 backdrop-blur-sm z-40"></div> 
                     <div class="relative z-50 w-11/12 md:w-3/4 h-3/4 bg-white rounded-lg">
@@ -514,6 +515,8 @@
                         <button style="cursor: pointer;" onclick="view('game_iframe', 'projects')" class="absolute -top-6 -right-20 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-16 opacity-100 hover:opacity-85"></button>
                     </div>
                 </div>
+                
+                
 
                 
             </div>
@@ -529,12 +532,12 @@
                 <h1 id="title" class="font-black text-6xl max-sm:text-5xl text-zinc-100 opacity-0">Skills</h1>
             </div>
             <div class="w-full text-center p-2">
-                <h1 id="title" class="font-light text-3xl max-sm:text-xl text-zinc-500 opacity-0">Quanto maior a área do card, maior o domínio da tecnologia.</h1>
+                <h1 id="title" class="font-light text-3xl max-sm:text-xl max-lg:text-2xl text-zinc-500 opacity-0">Quanto maior a área do card, maior o domínio da tecnologia.</h1>
             </div>
 
             <div class="flex flex-col place-content-center items-center z-50">
                 <!--Grid of skills-->
-                <div class="py-10 px-40 max-sm:px-8 grid grid-cols-3 grid-rows-3 gap-1.5 h-[40rem] w-[70rem] max-sm:h-[35rem] max-sm:w-screen">
+                <div class="py-10 px-40 max-sm:px-8 lg:px-20 grid grid-cols-3 grid-rows-3 gap-1.5 h-[40rem] w-[70rem] max-sm:h-[35rem] max-sm:w-screen max-lg:w-[50rem] lg:w-[50rem]">
                     
                     <div class="row-span-3 grid grid-rows-4 gap-1.5">
                         <!--Python-->
@@ -690,7 +693,6 @@
         </footer>
     </section>
 
-    
     
     <script src="/src/js/observer.js"></script>
     <script src="/src/js/view.js"></script>
