@@ -85,6 +85,9 @@ function view_certificate(id) {
     return id;
 }
 
+
+let touchStartX = 0; // Posição inicial do toque
+let touchEndX = 0; // Posição final do toque
 function change_certificate(id){
     const div = document.getElementById("certificados_list");
     const certificados = div.querySelectorAll('[id]');
@@ -94,7 +97,7 @@ function change_certificate(id){
     const index = array_cert.indexOf(currentCert);
     
 
-    if(id === 'left' && index > 0){
+    if(id === 'left' && index > 0 ){
         view_certificate(array_cert[index - 1]);
     }
 
