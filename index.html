@@ -304,11 +304,11 @@
 
 
             
-            <div id="certificados" course="relative">
+            <div style="display: none;" id="certificados" course="relative">
                 <div class="fixed inset-0 w-screen bg-black/93 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
                 
                     <div class="fixed inset-0">
-                        <div style="display: none;" id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-6 mx-24 max-sm:mx-4 my-10 max-sm:my-18 overflow-y-auto scrollbar-hide h-[90vh] pt-5  px-5 bg-transparent">
+                        <div  id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-6 mx-24 max-sm:mx-4 my-10 max-sm:my-18 overflow-y-auto scrollbar-hide h-[90vh] pt-5  px-5 bg-transparent">
                             <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
                             <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
                             <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
@@ -331,7 +331,7 @@
                             <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
                         </button>
 
-                        <div id="view_container" class="relative">
+                        <div style="display: none;" id="view_container" class="relative">
                             <div class="flex place-content-center inset-0 fixed">
                                 <button style="cursor: pointer;" onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
                                     <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
