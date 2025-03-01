@@ -304,11 +304,11 @@
 
 
             
-            <div style="display: none;" id="certificados" course="relative">
+            <div id="certificados" course="relative">
                 <div class="fixed inset-0 w-screen bg-black/93 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
                 
                     <div class="fixed inset-0">
-                        <div id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-6 mx-24 max-sm:mx-4 my-10 max-sm:my-18 overflow-y-auto scrollbar-hide h-[90vh] pt-5  px-5 bg-transparent">
+                        <div style="display: none;" id="certificados_list" class="grid grid-cols-4 max-sm:grid-cols-1 gap-6 mx-24 max-sm:mx-4 my-10 max-sm:my-18 overflow-y-auto scrollbar-hide h-[90vh] pt-5  px-5 bg-transparent">
                             <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
                             <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
                             <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
@@ -331,22 +331,23 @@
                             <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
                         </button>
 
-                        <div style="display: none;" id="view_container" class="">
+                        <div id="view_container" class="relative">
                             <div class="flex place-content-center inset-0 fixed">
                                 <button style="cursor: pointer;" onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
                                     <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
                                 </button>
     
-                                <button id="left" onclick="change_certificate(this.id)" class="pr-20">
+                                <button id="left" onclick="change_certificate(this.id)" class="pr-20 max-sm:pr-0 max-sm:absolute max-sm:bottom-32 max-sm:left-24">
                                     <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:-translate-x-1">
-                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] rotate-180 opacity-80 transition hover:opacity-100 p-2">
+                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:h-14 rotate-180 opacity-80 transition hover:opacity-100 active:opacity-100 p-2">
                                     </div>
                                 </button>
-                            
-                                <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] max-sm:h-full max-sm:pt-20 my-auto relative">
-                                <button id="right" onclick="change_certificate(this.id)" class="pl-20">
+                                
+                                <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] max-sm:h-auto max-sm:p-2 my-auto relative">
+                                
+                                <button id="right" onclick="change_certificate(this.id)" class="pl-20 max-sm:pl-0 max-sm:absolute max-sm:bottom-32 max-sm:right-24">
                                     <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:translate-x-1">
-                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] opacity-80 transition hover:opacity-100 p-2">
+                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:h-14 max-sm:top-[430px] opacity-80 transition hover:opacity-100 active:opacity-100 p-2">
                                     </div>
                                 </button>
                             </div>
