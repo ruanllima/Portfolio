@@ -3861,6 +3861,11 @@
       animation: typewriter 2.1s steps(48) alternate , blink 0.5s steps(48);
     }
   }
+  .md\:min-h-\[88\%\] {
+    @media (width >= 48rem) {
+      min-height: 88%;
+    }
+  }
   .md\:w-3\/4 {
     @media (width >= 48rem) {
       width: calc(3/4 * 100%);
@@ -3886,6 +3891,11 @@
       padding-inline: calc(var(--spacing) * 32);
     }
   }
+  .xl\:min-h-\[88\%\] {
+    @media (width >= 80rem) {
+      min-height: 88%;
+    }
+  }
   .xl\:grid-cols-2 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3899,6 +3909,11 @@
   .xl\:px-28 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 28);
+    }
+  }
+  .\32 xl\:min-h-\[88\%\] {
+    @media (width >= 96rem) {
+      min-height: 88%;
     }
   }
   .\32 xl\:pb-10 {
