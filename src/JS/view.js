@@ -100,7 +100,7 @@ function change_certificate(id){
     if(id === 'left' && index > 0 ){
         view_certificate(array_cert[index - 1]);
     }
-    console.log(id);
+
     if((id === 'right') && index < array_cert.length - 1){
         view_certificate(array_cert[index + 1]);
     }

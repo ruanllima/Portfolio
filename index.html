@@ -207,18 +207,18 @@
        
     </section>
 
-    <section id="education" class="h-auto min-h-screen relative bg-[#ffbf00] pb-20 pt-10 z-10 2xl:pb-10">
+    <section id="education" class="h-auto relative bg-[#ffbf00] z-10 pb-16 max-lg:pb-4">
         
         <!--Title-->
-        <div class="flex place-content-center text-center pt-20 max-sm:pt-20 max-sm:pb-20 lg:pb-40 sm:pb-40 ">
+        <div class="flex place-content-center text-center pt-36 max-lg:pt-20 max-xl:pt-24">
             <h1 id="title" class="absolute font-black max-sm:text-5xl max-sm:text-wrap text-6xl text-[#ff6f00] opacity-0">Formação Acadêmica</h1>
         </div>
 
 
-        <div class="pt-36 max-sm:pt-44 px-8 max-sm:px-1 md:px-16 lg:px-32 xl:px-24">
+        <div class=" px-8 max-sm:px-1 md:px-16 lg:px-32 xl:px-24 pt-36 pb-20 max-lg:pt-64 max-xl:pt-72 ">
 
             <!--Courses grid-->
-            <div class="grid max-sm:w-full max-lg:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 place-content-center w-[64rem] h-[20rem] mx-auto max-sm:p-2 md:w-[33rem] lg:w-full">
+            <div class="grid max-sm:w-full max-lg:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 place-content-center w-[64rem] h-[20rem] mx-auto max-sm:p-2 md:w-[33rem] max-lg:w-full lg:w-full ">
                 <!--Course one-->
                 <div id="curso1" class="bg-white rounded-md rounded-br-sm rounded-tl-3xl px-4 py-2 grid grid-cols-3 items-center mx-[1px] opacity-0 hover:scale-105 hover:shadow-xl transition delay-100">
                     <div class="col-span-2">
@@ -297,13 +297,6 @@
             </div>
             
 
-            <div class="flex place-content-center max-sm:pt-44 lg:pt-72 xl:pt-40 md:pt-72 pt-20">
-                <button type="button" onclick="view_tab('certificados', '', '', 'education')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap max-sm:text-xs text-lg rounded-md p-1 px-3">
-                    Visualizar todos os certificados</button>
-            </div>
-
-
-            
             <div style="display: none;" id="certificados" course="relative">
                 <div class="fixed inset-0 w-screen bg-black/93 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
                 
@@ -352,81 +345,13 @@
                                 </button>
                             </div>
                         </div>
-
                     </div>
-    
-                </div>
             </div>
 
-
-
-
-
-            <!--
-            <div style="display: none;" id="certificados" class="flex place-content-center relative">
-                
-                <div class="fixed inset-0 w-screen bg-black/95 flex items-center justify-center backdrop-blur-[1px]"></div>
-
-                <div class="fixed inset-0  max-h-screen  h-[50rem] w-[76rem] max-sm:w-screen -mt-[630px] max-sm:-mt-[780px] px-16 max-sm:px-5 pt-12 max-sm:pt-15 pb-16 rounded-lg">
-                    <div id="certificados_list" class="fixed inset-0 overflow-y-auto overflow-x-visible grid grid-cols-4 max-sm:grid-cols-1 gap-8 mx-20 my-10 p-4 max-sm:pb-14">
-                        <button onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-10 -right-10 bg-black hover:bg-red-600 rounded-sm h-10 w-10 flex items-center justify-center transition hover:scale-110" style="cursor: pointer;">
-                            <img src="/src/media/x.png" alt="Fechar" class="h-6 w-6 opacity-90 hover:opacity-100 invert">
-                        </button>
-                        <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
-                        <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
-                        <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
-                        <img style="cursor: pointer;" id="sql2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql2.jpg" alt="Certificado MySQL" class="certificado">
-                        <img style="cursor: pointer;" id="mandacaru" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_mandacaru.jpg" alt="Prata Olimpíada Mandacaru de Matemática" class="certificado">
-                        <img style="cursor: pointer;" id="obmep1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep1.jpg" alt="Menção Honrosa OBMEP 2019" class="certificado">
-                        <img style="cursor: pointer;" id="omep2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep2.jpg" alt="Menção Honrosa OBMEP 2021" class="certificado">
-                        <img style="cursor: pointer;" id="obmep3" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep3.jpg" alt="Menção Honrosa OBMEP 2022" class="certificado">
-                        <img style="cursor: pointer;" id="oamep" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_oamep.jpg" alt="Bronze OAMEP" class="certificado">
-                        <img style="cursor: pointer;" id="logica1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica1.jpg" alt="Bronze Maratona de Lógica" class="certificado">
-                        <img style="cursor: pointer;" id="logica2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica2.jpg" alt="Prata Maratona de Lógica" class="certificado">
-                        <img style="cursor: pointer;" id="fgv" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_fgv.jpg" alt="Seleção de Talentos FGV" class="certificado">
-                        <img style="cursor: pointer;" id="startup1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup1.jpg" alt="SEBRAE Startup Day" class="certificado">
-                        <img style="cursor: pointer;" id="campus" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_campus.jpg" alt="Campus Party Nordeste 2024" class="certificado">
-                        <img style="cursor: pointer;" id="dlj" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_dlj.jpg" alt="Desafio Liga Jovem 2024" class="certificado">
-                        <img style="cursor: pointer;" id="eba" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_eba.jpg" alt="EBA 2024" class="certificado">
-                        <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado">
-                    </div>
-                    
-                    <div style="display: none;" id="view_container" class="">
-                        <div class="flex place-content-center inset-0 fixed">
-                            <button onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-10 right-10 bg-black hover:bg-red-600 rounded-sm h-10 w-10 flex items-center justify-center transition hover:scale-110" style="cursor: pointer;">
-                                <img src="/src/media/x.png" alt="Fechar" class="h-6 w-6 opacity-90 hover:opacity-100 invert">
-                            </button>
-
-                            <button id="left" onclick="change_certificate(this.id)" class="pr-20">
-                                <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:-translate-x-1">
-                                    <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] rotate-180 opacity-80 transition hover:opacity-100 p-2">
-                                </div>
-                            </button>
-                        
-                            <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] max-sm:h-full max-sm:pt-20 my-auto relative">
-                            <button id="right" onclick="change_certificate(this.id)" class="pl-20">
-                                <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:translate-x-1">
-                                    <img src="/src/media/seta2.png" alt="" class="h-20 max-sm:top-[430px] opacity-80 transition hover:opacity-100 p-2">
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-
-                    -->
-                    <!--<button  class="absolute top-5 left-5 transition_button "><img src="/src/media/voltar.png" alt="" class="max-sm:h-8 h-10 opacity-20 hover:opacity-30"></button>-->
-           
-
-
-                </div>
-                
+            <div class="flex place-content-center pb-20 pt-20 max-lg:pt-32 max-xl:pt-40">
+                <button type="button" onclick="view_tab('certificados', '', '', 'education')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap max-sm:text-xs text-lg rounded-md p-1 px-3">
+                    Visualizar todos os certificados</button>
             </div>
-                
-            </div>
-            
-                
-            
-        </div>
-            
 
     </section>
 
@@ -537,7 +462,7 @@
 
             <div class="flex flex-col place-content-center items-center z-50">
                 <!--Grid of skills-->
-                <div class="py-10 px-40 max-sm:px-8 lg:px-20 grid grid-cols-3 grid-rows-3 gap-1.5 h-[40rem] w-[70rem] max-sm:h-[35rem] max-sm:w-screen max-lg:w-[50rem] lg:w-[50rem]">
+                <div class="py-10 px-40 max-sm:px-8 max-md:px-12 md:px-20 lg:px-20 xl:px-10 grid grid-cols-3 grid-rows-3 gap-1.5 h-[40rem] w-[70rem] max-sm:h-[35rem] max-sm:w-screen max-md:w-[45rem] max-lg:w-[48rem] lg:w-[50rem]">
                     
                     <div class="row-span-3 grid grid-rows-4 gap-1.5">
                         <!--Python-->
@@ -584,7 +509,7 @@
                                 <!--C#-->
                                 <div id="csharp_skill" style="cursor: pointer;" onclick="card_skill('csharp_skill_1', 'csharp_skill_2', 'csharp_skill')" class="bg-[#510af8] skill_grid relative opacity-0">
                                     <img id="csharp_skill_1" src="/src/media/skills/csharp-logo.png" alt="" class="h-10 max-sm:h-7 absolute bottom-2 max-sm:left-3 left-4">
-                                    <p id="csharp_skill_2" style="display: none;" class="font-light text-indigo-100/90 absolute px-2 text-[15.4px] max-sm:text-[8.7px] top-3 max-sm:top-2">Contato básico com a linguagem no desenvolvimento de jogos com a Unity.</p>
+                                    <p id="csharp_skill_2" style="display: none;" class="font-light text-indigo-100/90 absolute px-2 text-[15.4px] max-sm:text-[8.7px] max-xl:text-[14px] top-2">Contato básico com a linguagem no desenvolvimento de jogos com a Unity.</p>
                                 </div>
                                 <!--Unity-->
                                 <div id="unity_skill" style="cursor: pointer;" onclick="card_skill('unity_skill_1', 'unity_skill_2', 'unity_skill')" class="bg-slate-800 skill_grid relative opacity-0">
