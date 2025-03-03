@@ -296,6 +296,10 @@
                 </div>
             </div>
             
+            <div class="flex place-content-center pb-20 pt-20 max-lg:pt-32 max-xl:pt-40">
+                <button type="button" onclick="view_tab('certificados', '', '', 'education')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap max-sm:text-xs text-lg rounded-md p-1 px-3">
+                    Visualizar todos os certificados</button>
+            </div>
 
             <div style="display: none;" id="certificados" course="relative">
                 <div class="fixed inset-0 w-screen bg-black/93 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
@@ -331,16 +335,16 @@
                                 </button>
     
                                 <button id="left" onclick="change_certificate(this.id)" class="pr-20 max-lg:pr-0 max-lg:absolute max-lg:bottom-32 max-lg:left-24">
-                                    <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:-translate-x-1">
-                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-lg:h-14 rotate-180 opacity-80 transition hover:opacity-100 active:opacity-100 p-2">
+                                    <div class="bg-white/95 hover:bg-white/100 rounded-sm transition delay-75 hover:scale-110 hover:-translate-x-1">
+                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-lg:h-14 rotate-180 opacity-80 transition delay-100 hover:opacity-100 active:opacity-100 p-2">
                                     </div>
                                 </button>
                                 
                                 <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] lg:h-[30rem] max-lg:h-auto max-lg:p-2 my-auto relative">
                                 
                                 <button id="right" onclick="change_certificate(this.id)" class="pl-20 max-lg:pl-0 max-lg:absolute max-lg:bottom-32 max-lg:right-24">
-                                    <div class="bg-white/95 hover:bg-white/100 rounded-sm transition-colors hover:scale-110 hover:translate-x-1">
-                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-lg:h-14 max-lg:top-[430px] opacity-80 transition hover:opacity-100 active:opacity-100 p-2">
+                                    <div class="bg-white/95 hover:bg-white/100 rounded-sm transition delay-75 hover:scale-110 hover:translate-x-1">
+                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-lg:h-14 max-lg:top-[430px] opacity-80 transition delay-100 hover:opacity-100 active:opacity-100 p-2">
                                     </div>
                                 </button>
                             </div>
@@ -348,10 +352,7 @@
                     </div>
             </div>
 
-            <div class="flex place-content-center pb-20 pt-20 max-lg:pt-32 max-xl:pt-40">
-                <button type="button" onclick="view_tab('certificados', '', '', 'education')" class="bg-indigo-600 transition_button hover:bg-[#ff6f00] text-slate-100 font-semibold whitespace-nowrap max-sm:text-xs text-lg rounded-md p-1 px-3">
-                    Visualizar todos os certificados</button>
-            </div>
+            
 
     </section>
 
@@ -433,11 +434,11 @@
                 <!--Project four-->
                 
                 
-                <div style="display: none;" id="game_iframe" class="fixed inset-0 flex items-center justify-center z-50 max-sm:hidden">
-                    <div class="absolute inset-0 w-screen bg-black/70 backdrop-blur-sm z-40"></div> 
-                    <div class="relative z-50 w-11/12 md:w-3/4 h-3/4 bg-white rounded-lg">
-                        <iframe scrolling="no" src="https://delightful-semolina-2b94e0.netlify.app" frameborder="0" class="w-full h-full border-0"></iframe>
-                        <button style="cursor: pointer;" onclick="view('game_iframe', 'projects')" class="absolute -top-6 -right-20 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-16 opacity-100 hover:opacity-85"></button>
+                <div style="display: none;" id="game_iframe" class="fixed inset-0 flex items-center justify-center z-50 max-lg:hidden">
+                    <div class="absolute inset-0 w-screen bg-black/70 backdrop-blur-xs z-40"></div> 
+                    <div class="relative z-50 w-11/12 md:w-3/4 h-full bg-white rounded-lg">
+                        <iframe scrolling="no" src="https://delightful-semolina-2b94e0.netlify.app" frameborder="0" class="w-full h-[99%] border-0"></iframe>
+                        <button style="cursor: pointer;" onclick="view('game_iframe', 'projects')" class="absolute top-0 -right-20 transition_button "><img src="/src/media/button_sair.png" alt="" class="h-16 opacity-100 hover:opacity-85"></button>
                     </div>
                 </div>
                 
