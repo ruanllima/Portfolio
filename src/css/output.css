@@ -1047,12 +1047,6 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
-  .h-\[103vh\] {
-    height: 103vh;
-  }
-  .h-\[15rem\] {
-    height: 15rem;
-  }
   .h-\[20rem\] {
     height: 20rem;
   }
@@ -1064,6 +1058,12 @@
   }
   .h-\[35rem\] {
     height: 35rem;
+  }
+  .h-\[103vh\] {
+    height: 103vh;
+  }
+  .h-\[15rem\] {
+    height: 15rem;
   }
   .h-\[40rem\] {
     height: 40rem;
@@ -3396,6 +3396,11 @@
       top: calc(var(--spacing) * 40);
     }
   }
+  .max-sm\:top-52 {
+    @media (width < 40rem) {
+      top: calc(var(--spacing) * 52);
+    }
+  }
   .max-sm\:top-56 {
     @media (width < 40rem) {
       top: calc(var(--spacing) * 56);
@@ -3569,6 +3574,31 @@
   .max-sm\:h-\[38rem\] {
     @media (width < 40rem) {
       height: 38rem;
+    }
+  }
+  .max-sm\:h-\[50vh\] {
+    @media (width < 40rem) {
+      height: 50vh;
+    }
+  }
+  .max-sm\:h-\[60vh\] {
+    @media (width < 40rem) {
+      height: 60vh;
+    }
+  }
+  .max-sm\:h-\[63vh\] {
+    @media (width < 40rem) {
+      height: 63vh;
+    }
+  }
+  .max-sm\:h-\[65vh\] {
+    @media (width < 40rem) {
+      height: 65vh;
+    }
+  }
+  .max-sm\:h-\[70vh\] {
+    @media (width < 40rem) {
+      height: 70vh;
     }
   }
   .max-sm\:h-\[580px\] {
@@ -3789,9 +3819,35 @@
       animation: typewriter 2.1s steps(48) alternate , blink 0.5s steps(48);
     }
   }
+  .sm\:h-\[50vh\] {
+    @media (width >= 40rem) {
+      height: 50vh;
+    }
+  }
+  .sm\:h-\[70vh\] {
+    @media (width >= 40rem) {
+      height: 70vh;
+    }
+  }
+  .sm\:h-\[75vh\] {
+    @media (width >= 40rem) {
+      height: 75vh;
+    }
+  }
+  .sm\:text-6xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
   .md\:top-36 {
     @media (width >= 48rem) {
       top: calc(var(--spacing) * 36);
+    }
+  }
+  .md\:h-\[70vh\] {
+    @media (width >= 48rem) {
+      height: 70vh;
     }
   }
   .md\:h-\[730px\] {
@@ -3827,6 +3883,72 @@
   .md\:px-20 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:text-7xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .lg\:top-32 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:top-36 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 36);
+    }
+  }
+  .lg\:top-40 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:top-44 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 44);
+    }
+  }
+  .lg\:top-48 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 48);
+    }
+  }
+  .lg\:top-56 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 56);
+    }
+  }
+  .lg\:top-60 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 60);
+    }
+  }
+  .lg\:top-64 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 64);
+    }
+  }
+  .lg\:top-68 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 68);
+    }
+  }
+  .lg\:top-72 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 72);
+    }
+  }
+  .lg\:top-96 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 96);
+    }
+  }
+  .lg\:top-\[50vh\] {
+    @media (width >= 64rem) {
+      top: 50vh;
     }
   }
   .lg\:h-\[30rem\] {
@@ -3867,6 +3989,37 @@
   .lg\:px-32 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:text-8xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+  }
+  .xl\:top-\[37vh\] {
+    @media (width >= 80rem) {
+      top: 37vh;
+    }
+  }
+  .xl\:top-\[45vh\] {
+    @media (width >= 80rem) {
+      top: 45vh;
+    }
+  }
+  .xl\:top-\[49vh\] {
+    @media (width >= 80rem) {
+      top: 49vh;
+    }
+  }
+  .xl\:top-\[50vh\] {
+    @media (width >= 80rem) {
+      top: 50vh;
+    }
+  }
+  .xl\:top-\[59vh\] {
+    @media (width >= 80rem) {
+      top: 59vh;
     }
   }
   .xl\:mx-32 {
