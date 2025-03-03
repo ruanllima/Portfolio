@@ -7,7 +7,7 @@
 
 ## Resume
 This site was created with a basic structure of HTML, CSS and JavaScript. 
-In addition, most of the styling of the site was done with the Tailwind CSS framework. It was hosted on <a href="https://www.netlify.com">https://www.netlify.com</a>.
+In addition, most of the styling of the site was done with the Tailwind CSS framework.
 
 ## Features
 - To view the animations, the JavaScript IntersectionObserver API was used.
