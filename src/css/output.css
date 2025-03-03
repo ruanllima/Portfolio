@@ -1047,17 +1047,11 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
-  .h-\[20rem\] {
-    height: 20rem;
-  }
-  .h-\[34rem\] {
-    height: 34rem;
+  .h-\[30rem\] {
+    height: 30rem;
   }
   .h-\[35rem\] {
     height: 35rem;
-  }
-  .h-\[40rem\] {
-    height: 40rem;
   }
   .h-\[90vh\] {
     height: 90vh;
@@ -1068,8 +1062,14 @@
   .h-\[15rem\] {
     height: 15rem;
   }
-  .h-\[30rem\] {
-    height: 30rem;
+  .h-\[20rem\] {
+    height: 20rem;
+  }
+  .h-\[34rem\] {
+    height: 34rem;
+  }
+  .h-\[40rem\] {
+    height: 40rem;
   }
   .h-\[680px\] {
     height: 680px;
@@ -3177,10 +3177,52 @@
       }
     }
   }
+  .hover\:scale-\[103\%\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 103%;
+      }
+    }
+  }
+  .hover\:bg-\[\#FFFFFF\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #FFFFFF;
+      }
+    }
+  }
   .hover\:bg-\[\#ff6f00\] {
     &:hover {
       @media (hover: hover) {
         background-color: #ff6f00;
+      }
+    }
+  }
+  .hover\:bg-\[\#ffef84\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #ffef84;
+      }
+    }
+  }
+  .hover\:bg-amber-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-400);
+      }
+    }
+  }
+  .hover\:bg-amber-400\/80 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-amber-400) 80%, transparent);
+      }
+    }
+  }
+  .hover\:bg-amber-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-500);
       }
     }
   }
@@ -3202,6 +3244,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: color-mix(in oklab, var(--color-white) 100%, transparent);
+      }
+    }
+  }
+  .hover\:bg-yellow-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-yellow-500);
       }
     }
   }
