@@ -5,9 +5,14 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
+
 ## Resume
 This site was created with a basic structure of HTML, CSS and JavaScript. 
 In addition, most of the styling of the site was done with the Tailwind CSS framework.
+
+<div>
+    <img src="./src/media/branding/img1.png">
+</div>
 
 ## Features
 - To view the animations, the JavaScript IntersectionObserver API was used.
