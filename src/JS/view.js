@@ -178,10 +178,14 @@ function menu_mobile(){
     const button = document.getElementById("menu_button");
 
     if(button.src.includes("/src/media/menu.png")){
-        button.src = "/src/media/sair.png";
+        button.src = "/src/media/x.png";
+        button.classList.replace("h-8", "h-7");
+        button.classList.replace("w-8", "w-7");
     }
     else {
         button.src = "/src/media/menu.png";
+        button.classList.replace("h-7", "h-8");
+        button.classList.replace("w-7", "w-8");
     }
     console.log(button + "2");
 
