@@ -339,7 +339,7 @@
 }
  
 .input_email{
-  @apply bg-white w-3/4 max-sm:text-sm rounded-lg mb-3 p-1.5 border border-slate-300 font-light text-slate-400 focus:outline-0 focus:ring-blue-500/70 focus:ring-1
+  @apply bg-white w-3/4 max-sm:text-sm rounded-lg mb-3 p-1.5 border border-slate-300 font-light text-slate-500 focus:outline-0 focus:ring-blue-500/70 focus:ring-1
    placeholder:font-light placeholder:text-zinc-400;
 }
 
@@ -354,7 +354,7 @@
 
 .alert_positive {
     @apply animate-bounce-alert flex flex-wrap items-center rounded-b-lg justify-center py-3 pl-4 pr-14 text-base font-medium [transition:all_0.5s_ease]
-    border-solid border border-[#4caf50] text-[#2e7d32] bg-[linear-gradient(#4caf501a,#4caf501a)];
+    border-solid border border-[#4caf50] bg-[linear-gradient(#4caf501a,#4caf501a)];
 }
 
 .main_buttons {

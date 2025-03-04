@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animate-fade-in-y");
-                console.log("entrou");
+                
                 entry.target.classList.remove("opacity-0");
             }
         });
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animate-fade-in-fast");
-                console.log("entrou");
+                
                 entry.target.classList.remove("opacity-0");
             }
         });
@@ -128,8 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animate-fade-in-y");
-                console.log("entrou");
-                console.log(entry.target.classList);
+                
+                
                 entry.target.classList.remove("opacity-0");
             }
         });
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 })
                 entry.target.classList.add("animate-fade-in-scale");
                 setTimeout(() => {entry.target.classList.remove("animate-fade-in-scale")},999)
-                console.log("entrou");
+                
                 entry.target.classList.remove("opacity-0");
             }
         });
