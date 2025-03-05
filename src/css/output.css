@@ -387,7 +387,7 @@
     --font-mogilite: "Mogilite", "sans serif";
     --font-magules: "Magules", "sans serif";
     --animate-wiggle: wiggle 1s ease-in-out infinite;
-    --animate-fade-in: fade-in 2s ease-in-out;
+    --animate-fade-in: fade-in 1s ease-in-out;
     --animate-fade-in-fast: fade-in 700ms ease-in-out;
     --animate-fade-in-y-down: fade-in-y-down 800ms ease-in-out;
     --animate-fade-in-y-i-down: fade-in-y-i-down 800ms ease-in-out;
@@ -651,9 +651,6 @@
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-  .right-1 {
-    right: calc(var(--spacing) * 1);
   }
   .right-1\/3 {
     right: calc(1/3 * 100%);
@@ -1054,6 +1051,9 @@
   .h-\[20rem\] {
     height: 20rem;
   }
+  .h-\[35rem\] {
+    height: 35rem;
+  }
   .h-\[103vh\] {
     height: 103vh;
   }
@@ -1065,9 +1065,6 @@
   }
   .h-\[34rem\] {
     height: 34rem;
-  }
-  .h-\[35rem\] {
-    height: 35rem;
   }
   .h-\[40rem\] {
     height: 40rem;
@@ -1102,9 +1099,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1128,9 +1122,6 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-11 {
-    width: calc(var(--spacing) * 11);
   }
   .w-11\/12 {
     width: calc(11/12 * 100%);
@@ -1254,10 +1245,6 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
@@ -1911,9 +1898,6 @@
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-slate-300 {
-    border-color: var(--color-slate-300);
-  }
   .border-slate-300\/20 {
     border-color: color-mix(in oklab, var(--color-slate-300) 20%, transparent);
   }
@@ -2006,9 +1990,6 @@
   }
   .bg-slate-100 {
     background-color: var(--color-slate-100);
-  }
-  .bg-slate-200 {
-    background-color: var(--color-slate-200);
   }
   .bg-slate-200\/45 {
     background-color: color-mix(in oklab, var(--color-slate-200) 45%, transparent);
@@ -2538,17 +2519,11 @@
   .text-\[\#ffbf00\] {
     color: #ffbf00;
   }
-  .text-blue-100 {
-    color: var(--color-blue-100);
-  }
   .text-blue-100\/70 {
     color: color-mix(in oklab, var(--color-blue-100) 70%, transparent);
   }
   .text-blue-100\/80 {
     color: color-mix(in oklab, var(--color-blue-100) 80%, transparent);
-  }
-  .text-cyan-50 {
-    color: var(--color-cyan-50);
   }
   .text-cyan-50\/70 {
     color: color-mix(in oklab, var(--color-cyan-50) 70%, transparent);
@@ -2580,9 +2555,6 @@
   .text-orange-100\/80 {
     color: color-mix(in oklab, var(--color-orange-100) 80%, transparent);
   }
-  .text-red-100 {
-    color: var(--color-red-100);
-  }
   .text-red-100\/90 {
     color: color-mix(in oklab, var(--color-red-100) 90%, transparent);
   }
@@ -2609,9 +2581,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .text-yellow-900 {
-    color: var(--color-yellow-900);
   }
   .text-yellow-900\/80 {
     color: color-mix(in oklab, var(--color-yellow-900) 80%, transparent);
@@ -4020,14 +3989,14 @@
   align-items: center;
   --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  --tw-shadow-color: color-mix(in oklab, var(--color-black) 30%, transparent);
+  --tw-shadow-color: color-mix(in oklab, var(--color-black) 40%, transparent);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
-  transition-delay: 100ms;
+  transition-delay: 75ms;
   &:hover {
     @media (hover: hover) {
-      scale: 102%;
+      scale: 103%;
     }
   }
 }

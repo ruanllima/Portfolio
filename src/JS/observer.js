@@ -201,6 +201,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, { threshold: 0.3 });
 
+    const observer_fade_in = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fade-in");
+                entry.target.classList.remove("opacity-0");
+            }
+        });
+    }, { threshold: 0.6 });
+
     
 
     document.querySelectorAll('[id *="img_about"]').forEach(el => observer_fadeiny.observe(el));
@@ -226,6 +235,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="python_skill"]').forEach(el => observer_fadein_skill.observe(el));
     document.querySelectorAll('[id="img_tab"]').forEach(el => observer_fade_in_scale_big.observe(el));
     document.querySelectorAll('[id="certificados_list"]').forEach(el => observer_fade_in_certificates.observe(el));
+    document.querySelectorAll('[id="view_all_certificates"]').forEach(el => observer_fadeiny.observe(el));
+
 
 
 

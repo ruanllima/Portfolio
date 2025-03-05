@@ -76,7 +76,7 @@
   --font-mogilite: "Mogilite", "sans serif";
   --font-magules: "Magules", "sans serif";
   --animate-wiggle: wiggle 1s ease-in-out infinite;
-  --animate-fade-in: fade-in 2s ease-in-out;
+  --animate-fade-in: fade-in 1s ease-in-out;
   --animate-fade-in-fast: fade-in 700ms ease-in-out;
   --animate-fade-in-y-down: fade-in-y-down 800ms ease-in-out;
   --animate-fade-in-y-i-down: fade-in-y-i-down 800ms ease-in-out;
@@ -312,7 +312,7 @@
 }
 
 .skill_grid{
-  @apply h-full w-full flex items-center place-content-center hover:scale-[102%] shadow-black/30 shadow-md transition delay-100;
+  @apply h-full w-full flex items-center place-content-center hover:scale-[103%] shadow-black/40 shadow-md transition delay-75;
 }
 
 .box_code{
