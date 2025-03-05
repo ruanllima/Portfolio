@@ -29,7 +29,6 @@ function send_Form(){
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
     
-    // Mostra o ícone de carregamento
     loadingIcon.style.display = 'inline-block';
     submitButton.disabled = true;
 
@@ -47,20 +46,16 @@ function send_Form(){
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data);  // Exibe a resposta do servidor
-      // Esconde o ícone de carregamento
       loadingIcon.style.display = 'none';
       submitButton.disabled = false;
-      // Exibe o pop-up de sucesso
       successPopup.style.display = 'block';
       setTimeout(() => {
       successPopup.style.display = 'none';
       }, 3000);
-      form.reset();  // Limpa o formulário
+      form.reset();  
     })
     .catch(error => {
       console.log(error);
-      // Esconde o ícone de carregamento
       loadingIcon.style.display = 'none';
       submitButton.disabled = false;
     });
@@ -68,3 +63,12 @@ function send_Form(){
 }
 
 send_Form();
+
+
+document.querySelectorAll('a[href^="#"]').forEach(button => {
+  button.addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
