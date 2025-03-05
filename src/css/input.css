@@ -331,7 +331,7 @@
 }
 
 .header_text{
-  @apply text-slate-100 text-lg font-nexa px-3 py-1 hover:-translate-y-[1px] hover:bg-indigo-700 rounded-lg hover:shadow-lg hover:shadow-black/10;
+  @apply text-lg font-nexa px-1 mx-2 transition hover:-translate-y-[1px] hover:border-b-2 hover:border-amber-400;
 }
 
 .header_text2{
