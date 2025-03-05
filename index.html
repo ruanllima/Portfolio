@@ -284,7 +284,7 @@
                 
                     <div class="fixed inset-0 py-12">
                         <div class="flex items-center justify-center h-full">
-                            <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="shadow-2xl max-sm:h-auto max-sm:p-2 h-[35rem] mx-auto my-auto">
+                            <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="shadow-2xl max-sm:h-auto max-sm:p-2 h-[35rem] mx-auto my-auto opacity-0">
                         </div>
                         <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
                             <img src="/src/media/x.png" alt="" class="h-10 p-2 opacity-90 hover:opacity-100 invert">
@@ -301,28 +301,28 @@
                     Visualizar todos os certificados</button>
             </div>
 
-            <div style="display: none;" id="certificados" course="relative">
+            <div style="display: none;" id="certificados" class="relative">
                 <div class="fixed inset-0 w-screen bg-black/93 flex items-center justify-center backdrop-blur-[1px] z-0"></div>
                 
                     <div class="fixed inset-0">
                         <div id="certificados_list" class="grid grid-cols-4 max-md:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 gap-6 mx-24 max-sm:mx-4 my-10 max-sm:my-18 overflow-y-auto scrollbar-hide h-[90vh] pt-5  px-5 bg-transparent">
-                            <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado">
-                            <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado">
-                            <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado">
-                            <img style="cursor: pointer;" id="sql2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql2.jpg" alt="Certificado MySQL" class="certificado">
-                            <img style="cursor: pointer;" id="mandacaru" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_mandacaru.jpg" alt="Prata Olimpíada Mandacaru de Matemática" class="certificado">
-                            <img style="cursor: pointer;" id="obmep1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep1.jpg" alt="Menção Honrosa OBMEP 2019" class="certificado">
-                            <img style="cursor: pointer;" id="omep2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep2.jpg" alt="Menção Honrosa OBMEP 2021" class="certificado">
-                            <img style="cursor: pointer;" id="obmep3" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep3.jpg" alt="Menção Honrosa OBMEP 2022" class="certificado">
-                            <img style="cursor: pointer;" id="oamep" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_oamep.jpg" alt="Bronze OAMEP" class="certificado">
-                            <img style="cursor: pointer;" id="logica1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica1.jpg" alt="Bronze Maratona de Lógica" class="certificado">
-                            <img style="cursor: pointer;" id="logica2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica2.jpg" alt="Prata Maratona de Lógica" class="certificado">
-                            <img style="cursor: pointer;" id="fgv" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_fgv.jpg" alt="Seleção de Talentos FGV" class="certificado">
-                            <img style="cursor: pointer;" id="startup1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup1.jpg" alt="SEBRAE Startup Day" class="certificado">
-                            <img style="cursor: pointer;" id="campus" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_campus.jpg" alt="Campus Party Nordeste 2024" class="certificado">
-                            <img style="cursor: pointer;" id="dlj" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_dlj.jpg" alt="Desafio Liga Jovem 2024" class="certificado">
-                            <img style="cursor: pointer;" id="eba" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_eba.jpg" alt="EBA 2024" class="certificado">
-                            <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado">
+                            <img style="cursor: pointer;" id="nes" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_nes.jpg" alt="Programação Básica NES" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="slq1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql1.jpg" alt="SQL DIO" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="python"  onclick="view_certificate(this.id)" src="/src/media/certificados/cert_python.jpg" alt="Ciência de Dados Python" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="sql2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_sql2.jpg" alt="Certificado MySQL" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="mandacaru" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_mandacaru.jpg" alt="Prata Olimpíada Mandacaru de Matemática" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="obmep1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep1.jpg" alt="Menção Honrosa OBMEP 2019" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="omep2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep2.jpg" alt="Menção Honrosa OBMEP 2021" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="obmep3" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_obmep3.jpg" alt="Menção Honrosa OBMEP 2022" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="oamep" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_oamep.jpg" alt="Bronze OAMEP" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="logica1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica1.jpg" alt="Bronze Maratona de Lógica" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="logica2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_logica2.jpg" alt="Prata Maratona de Lógica" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="fgv" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_fgv.jpg" alt="Seleção de Talentos FGV" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="startup1" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup1.jpg" alt="SEBRAE Startup Day" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="campus" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_campus.jpg" alt="Campus Party Nordeste 2024" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="dlj" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_dlj.jpg" alt="Desafio Liga Jovem 2024" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="eba" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_eba.jpg" alt="EBA 2024" class="certificado opacity-0">
+                            <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado opacity-0">
                         </div>
                         <button style="cursor: pointer;" onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
                             <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        

@@ -400,6 +400,7 @@
     --animate-fade-in-x: fade-in-x 800ms ease-in-out;
     --animate-fade-in-x-i: fade-in-x-i 800ms ease-in-out;
     --animate-fade-in-scale: fade-in-scale 1s ease-in-out;
+    --animate-fade-in-scale-big: fade-in-scale-big 300ms ease-out;
     --animate-fade-in-y: fade-in-y 600ms ease-in-out;
     --animate-fade-fall: fade-fall 1s ease-out;
     --animate-card-skill-out: card-skill-out 510ms ease-out;
@@ -648,27 +649,6 @@
   .top-\[100px\] {
     top: 100px;
   }
-  .-right-10 {
-    right: calc(var(--spacing) * -10);
-  }
-  .-right-20 {
-    right: calc(var(--spacing) * -20);
-  }
-  .-right-30 {
-    right: calc(var(--spacing) * -30);
-  }
-  .-right-36 {
-    right: calc(var(--spacing) * -36);
-  }
-  .-right-40 {
-    right: calc(var(--spacing) * -40);
-  }
-  .-right-44 {
-    right: calc(var(--spacing) * -44);
-  }
-  .-right-52 {
-    right: calc(var(--spacing) * -52);
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -687,17 +667,8 @@
   .right-9 {
     right: calc(var(--spacing) * 9);
   }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
-  }
   .right-14 {
     right: calc(var(--spacing) * 14);
-  }
-  .right-20 {
-    right: calc(var(--spacing) * 20);
-  }
-  .right-40 {
-    right: calc(var(--spacing) * 40);
   }
   .-bottom-4 {
     bottom: calc(var(--spacing) * -4);
@@ -1074,9 +1045,6 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -1085,15 +1053,6 @@
   }
   .h-\[20rem\] {
     height: 20rem;
-  }
-  .h-\[34rem\] {
-    height: 34rem;
-  }
-  .h-\[40rem\] {
-    height: 40rem;
-  }
-  .h-\[90vh\] {
-    height: 90vh;
   }
   .h-\[103vh\] {
     height: 103vh;
@@ -1104,8 +1063,17 @@
   .h-\[30rem\] {
     height: 30rem;
   }
+  .h-\[34rem\] {
+    height: 34rem;
+  }
   .h-\[35rem\] {
     height: 35rem;
+  }
+  .h-\[40rem\] {
+    height: 40rem;
+  }
+  .h-\[90vh\] {
+    height: 90vh;
   }
   .h-\[99\%\] {
     height: 99%;
@@ -1354,11 +1322,17 @@
   .animate-fade-fall {
     animation: var(--animate-fade-fall);
   }
+  .animate-fade-in {
+    animation: var(--animate-fade-in);
+  }
   .animate-fade-in-fast {
     animation: var(--animate-fade-in-fast);
   }
   .animate-fade-in-scale {
     animation: var(--animate-fade-in-scale);
+  }
+  .animate-fade-in-scale-big {
+    animation: var(--animate-fade-in-scale-big);
   }
   .animate-fade-in-x {
     animation: var(--animate-fade-in-x);
@@ -3252,13 +3226,6 @@
       }
     }
   }
-  .hover\:opacity-85 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 85%;
-      }
-    }
-  }
   .hover\:opacity-100 {
     &:hover {
       @media (hover: hover) {
@@ -4606,6 +4573,16 @@
   0% {
     opacity: 0;
     transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fade-in-scale-big {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
   }
   100% {
     opacity: 1;

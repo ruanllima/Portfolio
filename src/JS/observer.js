@@ -159,6 +159,48 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, { threshold: 0.4 });
+
+    const observer_fade_in_scale_big = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fade-in-scale-big");
+                entry.target.classList.remove("opacity-0");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    const observer_fade_in_certificates = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let time = 100;
+                const div = document.getElementById('certificados_list');
+                const certificados = Array.from(div.children).map(child => child.id);
+                certificados.forEach(id => {
+                    setTimeout(() => {
+                        const cert = document.getElementById(id);
+                        cert.classList.add("animate-fade-in-y");
+                        cert.classList.remove("opacity-0");
+                        console.log(cert.classList);
+                    }, time);
+                    time += 100;
+                })
+
+
+                entry.target.classList.add("animate-fade-in-y");
+                entry.target.classList.remove("opacity-0");
+            }
+            else {
+                const div = document.getElementById('certificados_list');
+                const certificados = Array.from(div.children).map(child => child.id);
+                certificados.forEach(id => {
+                    const cert = document.getElementById(id);
+                    cert.classList.remove("animate-fade-in-y");
+                    cert.classList.add("opacity-0");
+                })
+            }
+        });
+    }, { threshold: 0.3 });
+
     
 
     document.querySelectorAll('[id *="img_about"]').forEach(el => observer_fadeiny.observe(el));
@@ -179,8 +221,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('[id="cta2"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('[id="cta3"]').forEach(el => observer_fadeiny.observe(el));
     document.querySelectorAll('#contact > *').forEach(el => observer_fadeiny.observe(el));
+    // Variable to control the visibility of the skill cards (alowing viewing the cards once)
     let var_skill = false;
     document.querySelectorAll('[id="python_skill"]').forEach(el => observer_fadein_skill.observe(el));
+    document.querySelectorAll('[id="img_tab"]').forEach(el => observer_fade_in_scale_big.observe(el));
+    document.querySelectorAll('[id="certificados_list"]').forEach(el => observer_fade_in_certificates.observe(el));
+
+
+
 
 
 
