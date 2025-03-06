@@ -78,44 +78,45 @@ function change_nav_text_color(){
   console.log(navLinks);
 
   // Change the first header text color
-  if (window.scrollY >= sum && window.scrollY < sum1){
+  if (window.scrollY >= 0.95*(sum)&& window.scrollY < 0.95*(sum1)){
     current_header = document.getElementById(navLinks[0].id);
     current_header.classList.replace('text-slate-100', 'text-amber-300');
   }
-  else if (window.scrollY < sum || window.scrollY >= sum1){
+  else if (window.scrollY < (sum)|| window.scrollY >= 0.95*(sum1)){
     current_header = document.getElementById(navLinks[0].id);
     current_header.classList.replace('text-amber-300', 'text-slate-100');
   }
 
   // Change the second header text color
-  if (window.scrollY >= sum1 && window.scrollY < sum2){
+  if (window.scrollY >= 0.95*(sum1) && window.scrollY < 0.95*(sum2)){
     current_header = document.getElementById(navLinks[1].id);
     current_header.classList.replace('text-slate-100', 'text-amber-300');
   }
-  else if (window.scrollY < sum1 || window.scrollY >= sum2){
+  else if (window.scrollY < 0.95*(sum1) || window.scrollY >= 0.95*(sum2)){
     current_header = document.getElementById(navLinks[1].id);
     current_header.classList.replace('text-amber-300', 'text-slate-100');
   }
 
   // Change the third header text color
-  if (window.scrollY >= sum2 && window.scrollY < sum3){
+  if (window.scrollY >= 0.95*(sum2) && window.scrollY < 0.95*(sum3)){
     current_header = document.getElementById(navLinks[2].id);
     current_header.classList.replace('text-slate-100', 'text-amber-300');
   }
-  else if (window.scrollY < sum2 || window.scrollY >= sum3){
+  else if (window.scrollY < 0.95*(sum2) || window.scrollY >= 0.95*(sum3)){
     current_header = document.getElementById(navLinks[2].id);
     current_header.classList.replace('text-amber-300', 'text-slate-100');
   }
 
   // Change the fourth header text color
-  if (window.scrollY >= sum3 && window.scrollY < sum4){
+  if (window.scrollY >= 0.95*(sum3) && window.scrollY < 0.95*(sum4)){
     current_header = document.getElementById(navLinks[3].id);
     current_header.classList.replace('text-slate-100', 'text-amber-300');
   }
-  else if (window.scrollY < sum3 || window.scrollY >= sum4){
+  else if (window.scrollY < 0.95*(sum3) || window.scrollY >= 0.95*(sum4)){
     current_header = document.getElementById(navLinks[3].id);
     current_header.classList.replace('text-amber-300', 'text-slate-100');
   }
+
 
 
 
