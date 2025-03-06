@@ -179,13 +179,16 @@ function menu_mobile(){
 
     if(button.src.includes("/src/media/menu.png")){
         button.src = "/src/media/x.png";
-        button.classList.replace("h-8", "h-7");
-        button.classList.replace("w-8", "w-7");
+        button.classList.replace("h-10", "h-7");
+        button.classList.replace("w-10", "w-7");
+        button.classList.replace("top-1", "top-3");
+
     }
     else {
         button.src = "/src/media/menu.png";
-        button.classList.replace("h-7", "h-8");
-        button.classList.replace("w-7", "w-8");
+        button.classList.replace("h-7", "h-10");
+        button.classList.replace("w-7", "w-10");
+        button.classList.replace("top-3", "top-1");
     }
     console.log(button + "2");
 

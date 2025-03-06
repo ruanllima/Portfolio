@@ -380,6 +380,8 @@
     --font-minecrafter: "Minecrafter", "sans serif";
     --font-cherolina: "Cherolina", "sans serif";
     --font-coolvetica: "Coolvetica", "sans serif";
+    --font-madetommy-Medium: "MadeTommyMedium", "sans serif";
+    --font-madetommy-regular: "MadeTommyRegular", "sans serif";
     --font-nexa: "Nexa", "sans serif";
     --font-superme: "Superme", "sans serif";
     --font-creato: "CreatoDisplay", "sans serif";
@@ -622,6 +624,9 @@
   .end-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
+  .-top-1 {
+    top: calc(var(--spacing) * -1);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -651,9 +656,6 @@
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
-  }
-  .right-1 {
-    right: calc(var(--spacing) * 1);
   }
   .right-1\/3 {
     right: calc(1/3 * 100%);
@@ -691,23 +693,8 @@
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
   }
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
-  }
-  .bottom-20 {
-    bottom: calc(var(--spacing) * 20);
-  }
-  .bottom-30 {
-    bottom: calc(var(--spacing) * 30);
-  }
   .bottom-32 {
     bottom: calc(var(--spacing) * 32);
-  }
-  .bottom-40 {
-    bottom: calc(var(--spacing) * 40);
-  }
-  .bottom-52 {
-    bottom: calc(var(--spacing) * 52);
   }
   .bottom-full {
     bottom: 100%;
@@ -1063,29 +1050,29 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
-  .h-\[103vh\] {
-    height: 103vh;
-  }
-  .h-\[15rem\] {
-    height: 15rem;
-  }
   .h-\[20rem\] {
     height: 20rem;
   }
-  .h-\[30rem\] {
-    height: 30rem;
-  }
   .h-\[34rem\] {
     height: 34rem;
-  }
-  .h-\[35rem\] {
-    height: 35rem;
   }
   .h-\[40rem\] {
     height: 40rem;
   }
   .h-\[90vh\] {
     height: 90vh;
+  }
+  .h-\[103vh\] {
+    height: 103vh;
+  }
+  .h-\[15rem\] {
+    height: 15rem;
+  }
+  .h-\[30rem\] {
+    height: 30rem;
+  }
+  .h-\[35rem\] {
+    height: 35rem;
   }
   .h-\[99\%\] {
     height: 99%;
@@ -1114,14 +1101,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-3\/4 {
     width: calc(3/4 * 100%);
@@ -1143,9 +1124,6 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-11 {
-    width: calc(var(--spacing) * 11);
   }
   .w-11\/12 {
     width: calc(11/12 * 100%);
@@ -1272,10 +1250,6 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
@@ -1937,9 +1911,6 @@
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-slate-300 {
-    border-color: var(--color-slate-300);
-  }
   .border-slate-300\/20 {
     border-color: color-mix(in oklab, var(--color-slate-300) 20%, transparent);
   }
@@ -2570,17 +2541,11 @@
   .text-amber-300 {
     color: var(--color-amber-300);
   }
-  .text-blue-100 {
-    color: var(--color-blue-100);
-  }
   .text-blue-100\/70 {
     color: color-mix(in oklab, var(--color-blue-100) 70%, transparent);
   }
   .text-blue-100\/80 {
     color: color-mix(in oklab, var(--color-blue-100) 80%, transparent);
-  }
-  .text-cyan-50 {
-    color: var(--color-cyan-50);
   }
   .text-cyan-50\/70 {
     color: color-mix(in oklab, var(--color-cyan-50) 70%, transparent);
@@ -2612,9 +2577,6 @@
   .text-orange-100\/80 {
     color: color-mix(in oklab, var(--color-orange-100) 80%, transparent);
   }
-  .text-red-100 {
-    color: var(--color-red-100);
-  }
   .text-red-100\/90 {
     color: color-mix(in oklab, var(--color-red-100) 90%, transparent);
   }
@@ -2644,9 +2606,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .text-yellow-900 {
-    color: var(--color-yellow-900);
   }
   .text-yellow-900\/80 {
     color: color-mix(in oklab, var(--color-yellow-900) 80%, transparent);
@@ -4035,6 +3994,18 @@
   font-weight: 400;
   src: url(/src/fonts/Minecrafter.ttf) format('truetype');
 }
+@font-face {
+  font-family: MadeTommyMedium;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/MADETOMMY-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: MadeTommyRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/MADETOMMY-Regular.otf) format('opentype');
+}
 @keyframes typewriter {
   0% {
     width: 0px;
@@ -4181,7 +4152,7 @@
 .header_text {
   margin-inline: calc(var(--spacing) * 2);
   padding-inline: calc(var(--spacing) * 1);
-  font-family: var(--font-nexa);
+  font-family: var(--font-madetommy-Medium);
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
@@ -4209,7 +4180,7 @@
   border-radius: var(--radius-lg);
   padding-inline: calc(var(--spacing) * 3);
   padding-block: calc(var(--spacing) * 1);
-  font-family: var(--font-coolvetica);
+  font-family: var(--font-madetommy-Medium);
   color: var(--color-slate-100);
   &:hover {
     @media (hover: hover) {
