@@ -1,5 +1,3 @@
-const id_sections = ['home', 'about', 'education', 'projects', 'skills' , 'contact'];
-
 
 
 function copy_to_clipboard(clipboard){
@@ -68,13 +66,12 @@ function send_Form(){
 
 send_Form();
 
-
+const id_sections = ['home', 'about', 'education', 'projects', 'skills' , 'contact'];
 function change_nav_text_color(){
-  const nav = document.getElementById('nav');
   const navLinks = document.querySelectorAll('#nav [id*="header"]');
   const heights = id_sections.map(section => document.getElementById(section).offsetHeight);
   let sum = heights[0];
-  let sum1 = heights[0] + heights[1];
+  let sum1 = sum + heights[1];
   let sum2 = sum1 + heights[2];
   let sum3 = sum2 + heights[3];
   let sum4 = sum3 + heights[4];
