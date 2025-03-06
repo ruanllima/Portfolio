@@ -138,12 +138,12 @@
   @keyframes keys-loading {
     0%, 80%, 100% {
       opacity: 0.75;
-      box-shadow: 0 0 #076fe5;
-      height: 10px;
+      box-shadow: 0 0 #ff6f00;
+      height: 6px;
     }
     40% {
       opacity: 1;
-      box-shadow: 0 -0.5rem #076fe5;
+      box-shadow: 0 -0.5rem #ff6f00;
       height: 22px;
     }
   }
@@ -351,12 +351,12 @@
 }
  
 .input_email{
-  @apply bg-white w-3/4 max-sm:text-sm rounded-lg mb-3 p-1.5 border border-slate-300 font-light text-slate-500 focus:outline-0 focus:ring-blue-500/70 focus:ring-1
+  @apply bg-transparent w-3/4 max-sm:text-sm mb-3  p-1.5 border-b-2 border-solid border-indigo-800/40 font-light text-slate-500 focus:outline-0 focus:border-[#ff6f00]/70
    placeholder:font-light placeholder:text-zinc-400;
 }
 
 .button_email{
-  @apply bg-indigo-500 w-1/2 rounded-md mb-3 p-1.5 font-bold text-slate-100 transition hover:scale-105 hover:bg-[#ff6f00];
+  @apply bg-indigo-500 w-[20vh] rounded-md mb-3 p-1 font-bold text-slate-100 transition hover:scale-105 hover:bg-[#ff6f00];
 }
 
 .alert{

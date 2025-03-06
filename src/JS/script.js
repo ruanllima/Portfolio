@@ -66,6 +66,14 @@ function send_Form(){
 
 send_Form();
 
+
+function adjustHeight(element) {
+  element.style.height = "auto"; // Reseta a altura
+  element.style.height = element.scrollHeight + "px"; // Ajusta para o conteúdo
+}
+
+
+
 const id_sections = ['home', 'about', 'education', 'projects', 'skills' , 'contact'];
 function change_nav_text_color(){
   const navLinks = document.querySelectorAll('#nav [id*="header"]');
