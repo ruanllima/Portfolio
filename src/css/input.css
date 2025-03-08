@@ -368,7 +368,7 @@
  
 .input_email{
   @apply bg-transparent w-3/4 max-sm:text-sm mb-3  p-1.5 border-b-2 border-solid border-indigo-800/40 font-light text-slate-500 focus:outline-0 focus:border-[#ff6f00]/70
-   placeholder:font-light placeholder:text-zinc-400;
+   placeholder:font-light placeholder:text-zinc-400 hover:placeholder:text-zinc-400/70 hover:text-slate-500/80;
 }
 
 .button_email{

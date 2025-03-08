@@ -79,7 +79,7 @@
             </nav>
         </div>
         
-        <!--Menu Mobile-->
+        <!--Mobile menu-->
         <div class="max-lg:flex hidden">
             <a href="/" class="absolute top-1 left-4 shadow-xs">
                 <!--<h1 class="text-white text-3xl font-cherolina">RL</h1>-->
@@ -87,25 +87,25 @@
 
             </a>
 
-            <div style="display: none" id="menu_mobile" class="flex flex-col h-screen gap-1 absolute top-0 right-0 bg-indigo-700 pt-14 pr-16 pl-3 shadow-lg">
-                <a onclick="menu_mobile()" href="#about" class="header_text2">Sobre Mim</a>
-                <a onclick="menu_mobile()" href="#education" class="header_text2">Formação Acadêmica</a>
-                <a onclick="menu_mobile()" href="#projects" class="header_text2">Projetos</a>
-                <a onclick="menu_mobile()" href="#skills" class="header_text2">Skills</a>
+            <div style="display: none" id="mobile_menu" class="flex flex-col h-screen gap-1 absolute top-0 right-0 bg-indigo-700 pt-14 pr-16 pl-3 shadow-lg">
+                <a onclick="mobile_menu()" href="#about" class="header_text2">Sobre Mim</a>
+                <a onclick="mobile_menu()" href="#education" class="header_text2">Formação Acadêmica</a>
+                <a onclick="mobile_menu()" href="#projects" class="header_text2">Projetos</a>
+                <a onclick="mobile_menu()" href="#skills" class="header_text2">Skills</a>
 
-                <a onclick="menu_mobile()" href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
+                <a onclick="mobile_menu()" href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5 hover:fill-amber-400">
                         <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
                     </svg> Git Hub
                 </a>
         
-                <a onclick="menu_mobile()" href="https://www.linkedin.com/in/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
+                <a onclick="mobile_menu()" href="https://www.linkedin.com/in/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
                     <svg class="invert h-5 w-5">
                         <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
                     </svg>Linkedin
                 </a>
             </div>
-            <button onclick="menu_mobile()"><img id="menu_button" src="/src/media/menu.png" alt="" class="invert h-10 w-10 opacity-75 absolute top-1 right-5"></button>
+            <button onclick="mobile_menu()"><img id="menu_button" src="/src/media/menu.png" alt="" class="invert h-10 w-10 opacity-75 absolute top-1 right-5"></button>
 
         </div>
         
@@ -289,10 +289,10 @@
                 
                     <div class="fixed inset-0 py-12">
                         <div class="flex items-center justify-center h-full">
-                            <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="shadow-2xl max-sm:h-auto max-sm:p-2 h-[35rem] mx-auto my-auto opacity-0">
+                            <img id="img_tab" src="/src/media/certificados/cert_python.jpg" alt="" class="shadow-2xl max-sm:h-auto max-sm:p-2 h-[35rem] xl:h-[80vh] mx-auto my-auto opacity-0">
                         </div>
                         <button style="cursor: pointer;" onclick="view_certificate2('certificado_nes', 'course_tab', 'education', 'img_tab')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
-                            <img src="/src/media/x.png" alt="" class="h-10 p-2 opacity-90 hover:opacity-100 invert">
+                            <img src="/src/media/x.png" alt="" class="h-10 xl:h-[6vh] p-2 opacity-90 hover:opacity-100 invert">
                         </button>
                         
                     </div>
@@ -330,26 +330,26 @@
                             <img style="cursor: pointer;" id="startup2" onclick="view_certificate(this.id)" src="/src/media/certificados/cert_startup2.jpg" alt="Startup Mundi Game Experience" class="certificado opacity-0">
                         </div>
                         <button style="cursor: pointer;" onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
-                            <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
+                            <img src="/src/media/x.png" alt="Fechar" class="h-10 xl:h-[6vh] p-2 opacity-90 hover:opacity-100 invert">                        
                         </button>
 
                         <div style="display: none;" id="view_container" class="relative">
                             <div class="flex place-content-center inset-0 fixed">
                                 <button style="cursor: pointer;" onclick="view_tab('certificados', 'view_container', 'certificados_list', 'education')" class="absolute top-5 right-5 transition_button bg-black hover:bg-red-600 rounded-sm">
-                                    <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
+                                    <img src="/src/media/x.png" alt="Fechar" class="h-10 xl:h-[6vh] p-2 opacity-90 hover:opacity-100 invert">                        
                                 </button>
     
                                 <button id="left" onclick="change_certificate(this.id)" class="pr-20 max-lg:pr-0 max-lg:absolute max-lg:bottom-32 max-lg:left-24">
                                     <div class="bg-white/95 hover:bg-white/100 rounded-sm transition delay-75 hover:scale-110 hover:-translate-x-1">
-                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-lg:h-14 rotate-180 opacity-80 transition delay-100 hover:opacity-100 active:opacity-100 p-2">
+                                        <img src="/src/media/seta2.png" alt="" class="h-[12vh] max-lg:h-14 rotate-180 opacity-80 transition delay-100 hover:opacity-100 active:opacity-100 p-2">
                                     </div>
                                 </button>
                                 
-                                <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] lg:h-[30rem] max-lg:h-auto max-lg:p-2 my-auto relative">
+                                <img id="view" src="/src/media/certificados/cert_startup2.jpg" class="rounded-md h-[34rem] lg:h-[30rem] max-lg:h-auto xl:h-[80vh] max-lg:p-2 my-auto relative">
                                 
                                 <button id="right" onclick="change_certificate(this.id)" class="pl-20 max-lg:pl-0 max-lg:absolute max-lg:bottom-32 max-lg:right-24">
                                     <div class="bg-white/95 hover:bg-white/100 rounded-sm transition delay-75 hover:scale-110 hover:translate-x-1">
-                                        <img src="/src/media/seta2.png" alt="" class="h-20 max-lg:h-14 max-lg:top-[430px] opacity-80 transition delay-100 hover:opacity-100 active:opacity-100 p-2">
+                                        <img src="/src/media/seta2.png" alt="" class="h-[12vh] max-lg:h-14 max-lg:top-[430px] opacity-80 transition delay-100 hover:opacity-100 active:opacity-100 p-2">
                                     </div>
                                 </button>
                             </div>

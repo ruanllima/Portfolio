@@ -173,8 +173,8 @@ function view_certificate2(id, tab, div, imgTab){
     }
 }
 
-function menu_mobile(){
-    view2("menu_mobile");
+function mobile_menu(){
+    view2("mobile_menu");
     const button = document.getElementById("menu_button");
 
     if(button.src.includes("/src/media/menu.png")){

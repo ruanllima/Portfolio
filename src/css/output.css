@@ -624,9 +624,6 @@
   .end-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
-  .-top-1 {
-    top: calc(var(--spacing) * -1);
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -1050,6 +1047,21 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .h-\[12vh\] {
+    height: 12vh;
+  }
+  .h-\[30rem\] {
+    height: 30rem;
+  }
+  .h-\[35rem\] {
+    height: 35rem;
+  }
+  .h-\[103vh\] {
+    height: 103vh;
+  }
+  .h-\[15rem\] {
+    height: 15rem;
+  }
   .h-\[20rem\] {
     height: 20rem;
   }
@@ -1061,18 +1073,6 @@
   }
   .h-\[90vh\] {
     height: 90vh;
-  }
-  .h-\[103vh\] {
-    height: 103vh;
-  }
-  .h-\[15rem\] {
-    height: 15rem;
-  }
-  .h-\[30rem\] {
-    height: 30rem;
-  }
-  .h-\[35rem\] {
-    height: 35rem;
   }
   .h-\[99\%\] {
     height: 99%;
@@ -1115,9 +1115,6 @@
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
-  }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
   }
   .w-9 {
     width: calc(var(--spacing) * 9);
@@ -3909,6 +3906,16 @@
       margin-inline: calc(var(--spacing) * 32);
     }
   }
+  .xl\:h-\[6vh\] {
+    @media (width >= 80rem) {
+      height: 6vh;
+    }
+  }
+  .xl\:h-\[80vh\] {
+    @media (width >= 80rem) {
+      height: 80vh;
+    }
+  }
   .xl\:min-h-\[88\%\] {
     @media (width >= 80rem) {
       min-height: 88%;
@@ -4276,6 +4283,18 @@
   }
   &::placeholder {
     color: var(--color-zinc-400);
+  }
+  &:hover {
+    @media (hover: hover) {
+      color: color-mix(in oklab, var(--color-slate-500) 80%, transparent);
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      &::placeholder {
+        color: color-mix(in oklab, var(--color-zinc-400) 70%, transparent);
+      }
+    }
   }
   &:focus {
     border-color: color-mix(in oklab, #ff6f00 70%, transparent);
