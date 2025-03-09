@@ -193,3 +193,59 @@ function mobile_menu(){
     console.log(button + "2");
 
 }
+
+function flag_change(){
+    const element = document.getElementById("flag_div");
+    const flag = document.getElementById("flag");
+    let click = false;
+
+    // If the current flag is Brazil, change to USA if clicked, else, remains the same
+    if(flag.src.includes("brasil")){
+        flag.classList.add("animate-card-skill-in");
+        flag.src = "/src/media/usa.png";
+        setTimeout(() => {
+            flag.classList.remove("animate-card-skill-in");
+        }, 300);
+        console.log("ENTROU PARA O USA");
+
+        element.addEventListener("click", () => {
+            click = true;
+        });
+
+        element.addEventListener("mouseleave", () => {
+            if(!click){
+                console.log("SAIU DO USA");
+                flag.classList.add("animate-card-skill-in");
+                flag.src = "/src/media/brasil.png";
+                setTimeout(() => {
+                    flag.classList.remove("animate-card-skill-in");
+                }, 300);
+            }
+        });
+    }
+    else if(flag.src.includes("usa")){
+        flag.classList.add("animate-card-skill-in");
+        flag.src = "/src/media/brasil.png";
+        setTimeout(() => {
+            flag.classList.remove("animate-card-skill-in");
+        }, 300);
+
+        console.log("ENTROU PARA O BR");
+
+        element.addEventListener("click", () => {
+            click = true;
+        });
+
+        element.addEventListener("mouseleave", () => {
+            if(!click){
+                console.log("SAIU O BR");
+                flag.classList.add("animate-card-skill-in");
+                flag.src = "/src/media/usa.png";
+                setTimeout(() => {
+                    flag.classList.remove("animate-card-skill-in");
+                }, 300);
+            }
+        });
+    }
+
+}
