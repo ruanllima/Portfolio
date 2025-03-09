@@ -437,18 +437,26 @@
                 </div>
 
                 <!--Project four-->
-                
-                <div id="game_iframe" style="display: none;" class="w-screen h-screen relative">
-                    <div class="fixed inset-0 flex items-center justify-center z-50 max-lg:hidden ">
-                        <div class="fixed inset-0 w-screen bg-black/70 backdrop-blur-xs z-40"></div> 
-                        <div class=" z-50 w-11/12 md:w-3/4 h-full bg-white rounded-lg">
-                            <iframe scrolling="no" src="https://delightful-semolina-2b94e0.netlify.app" frameborder="0" class="w-full h-[99%] border-0"></iframe>
+
+                <!--Iframe-->
+                <div id="game_iframe" style="display: none;" id="course_tab" course="relative">
+                    <div class="fixed inset-0 w-screen bg-black/70 backdrop-blur-xs z-40"></div> 
+                    
+                        <div class="fixed inset-0 py-12 z-50">
+                            <div class="flex items-center justify-center h-full">
+                                <iframe scrolling="no" src="https://delightful-semolina-2b94e0.netlify.app" frameborder="0" class="max-sm:h-auto max-sm:p-2 h-[35rem] xl:h-[97vh] xl:w-screen mx-auto my-auto"></iframe>
+                            </div>
                             <button style="cursor: pointer;" onclick="view('game_iframe', 'projects')" class="absolute top-3 right-3 transition_button bg-black hover:bg-red-600 rounded-sm">
-                                <img src="/src/media/x.png" alt="Fechar" class="h-10 p-2 opacity-90 hover:opacity-100 invert">                        
+                                <img src="/src/media/x.png" alt="Fechar" class="h-10 xl:h-[6vh] p-2 opacity-90 hover:opacity-100 invert">                        
                             </button>
+                            
                         </div>
+                        
+                    
                     </div>
                 </div>
+
+                
                 
                 
                 
