@@ -57,7 +57,7 @@
                         <li id="header_about" class="header_text text-slate-100"><a href="#about">Sobre Mim</a></li>
                         <li id="header_education" class="header_text text-slate-100"><a href="#education">Formação Acadêmica</a></li>
                         <li id="header_projects" class="header_text text-slate-100"><a href="#projects">Projetos</a></li>
-                        <li id="header_skills" class="header_text text-slate-100"><a href="#skills">Skills</a></li>
+                        <li id="header_skills" class="header_text text-slate-100"><a href="#skills">Habilidades</a></li>
                     </div>
                     
                     <li class="translate-y-1 pl-1">
@@ -96,19 +96,23 @@
                 <a onclick="mobile_menu()" href="#about" class="header_text2">Sobre Mim</a>
                 <a onclick="mobile_menu()" href="#education" class="header_text2">Formação Acadêmica</a>
                 <a onclick="mobile_menu()" href="#projects" class="header_text2">Projetos</a>
-                <a onclick="mobile_menu()" href="#skills" class="header_text2">Skills</a>
-
-                <a onclick="mobile_menu()" href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
-                    <svg class="invert h-5 w-5 hover:fill-amber-400">
-                        <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
-                    </svg> Git Hub
-                </a>
-        
-                <a onclick="mobile_menu()" href="https://www.linkedin.com/in/ruanllima" target="_blank" rel="noopener noreferrer" class="header_text2 inline-flex items-center gap-1">
-                    <svg class="invert h-5 w-5">
-                        <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
-                    </svg>Linkedin
-                </a>
+                <a onclick="mobile_menu()" href="#skills" class="header_text2">Habilidades</a>
+                <div class="inline-flex gap-3 mt-4 pl-3">
+                    <a onclick="mobile_menu()" href="https://github.com/ruanllima" target="_blank" rel="noopener noreferrer" class=" inline-flex items-center gap-1">
+                        <svg class="invert h-5 w-5 hover:fill-amber-400">
+                            <image href="/src/media/GitHub.png" width="100%" height="100%"></image>
+                        </svg>
+                    </a>
+                    <a onclick="mobile_menu()" href="https://www.linkedin.com/in/ruanllima" target="_blank" rel="noopener noreferrer" class=" inline-flex items-center gap-1">
+                        <svg class="invert h-5 w-5">
+                            <image href="/src/media/linkedin.png" width="100%" height="100%"></image>
+                        </svg>
+                    </a>
+                    <div id="flag_div" onmouseenter="flag_change()" class="flex items-center transition hover:scale-110">
+                        <a href="/en/"><img id="flag" style="cursor: pointer" src="/src/media/usa.png" alt="" class="h-5 w-[30px] rounded-sm "></a>
+                    </div>
+                </div>
+                
             </div>
             <button onclick="mobile_menu()"><img id="menu_button" src="/src/media/menu.png" alt="" class="invert h-10 w-10 opacity-75 absolute top-1 right-5"></button>
 
