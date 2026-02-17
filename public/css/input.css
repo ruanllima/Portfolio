@@ -4,28 +4,28 @@
   font-family: Cherolina;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Cherolina.ttf) format('truetype');
+  src: url(/public/fonts/Cherolina.ttf) format('truetype');
 }
 
 @font-face{
   font-family: Coolvetica;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Coolvetica.otf) format('opentype');
+  src: url(/public/fonts/Coolvetica.otf) format('opentype');
 }
 
 @font-face{
   font-family: Superme;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Superme.ttf) format('truetype');
+  src: url(/public/fonts/Superme.ttf) format('truetype');
 }
 
 @font-face{
   font-family: Grostick;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/GROSTICK.ttf) format('truetype');
+  src: url(/public/fonts/GROSTICK.ttf) format('truetype');
 }
 
 
@@ -33,49 +33,49 @@
   font-family: Nexa;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Nexa.ttf) format('truetype');
+  src: url(/public/fonts/Nexa.ttf) format('truetype');
 }
 
 @font-face{
   font-family: Mogilite;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Mogilite.otf) format('opentype');
+  src: url(/public/fonts/Mogilite.otf) format('opentype');
 }
 
 @font-face{
   font-family: CreatoDisplay;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/CreatoDisplay-Thin.ttf) format('opentype');
+  src: url(/public/fonts/CreatoDisplay-Thin.ttf) format('opentype');
 }
 
 @font-face{
   font-family: Magules;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Magules.ttf) format('opentype');
+  src: url(/public/fonts/Magules.ttf) format('opentype');
 }
 
 @font-face{
   font-family: Minecrafter;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/Minecrafter.ttf) format('truetype');
+  src: url(/public/fonts/Minecrafter.ttf) format('truetype');
 }
 
 @font-face{
   font-family: MadeTommyMedium;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/MADETOMMY-Medium.otf) format('opentype');
+  src: url(/public/fonts/MADETOMMY-Medium.otf) format('opentype');
 }
 
 @font-face{
   font-family: MadeTommyRegular;
   font-style: normal;
   font-weight: 400;
-  src: url(/src/fonts/MADETOMMY-Regular.otf) format('opentype');
+  src: url(/public/fonts/MADETOMMY-Regular.otf) format('opentype');
 }
 
 @theme {
