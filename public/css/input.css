@@ -1,96 +1,26 @@
 @import "tailwindcss";
 
-@font-face{
-  font-family: Cherolina;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/Cherolina.ttf) format('truetype');
-}
-
-@font-face{
-  font-family: Coolvetica;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/Coolvetica.otf) format('opentype');
-}
-
-@font-face{
-  font-family: Superme;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/Superme.ttf) format('truetype');
-}
-
-@font-face{
-  font-family: Grostick;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/GROSTICK.ttf) format('truetype');
-}
 
 
-@font-face{
-  font-family: Nexa;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/Nexa.ttf) format('truetype');
-}
-
-@font-face{
-  font-family: Mogilite;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/Mogilite.otf) format('opentype');
-}
-
-@font-face{
-  font-family: CreatoDisplay;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/CreatoDisplay-Thin.ttf) format('opentype');
-}
-
-@font-face{
-  font-family: Magules;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/Magules.ttf) format('opentype');
-}
-
-@font-face{
-  font-family: Minecrafter;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/public/fonts/Minecrafter.ttf) format('truetype');
-}
 
 @font-face{
   font-family: MadeTommyMedium;
   font-style: normal;
   font-weight: 400;
-  src: url(/public/fonts/MADETOMMY-Medium.otf) format('opentype');
+  src: url(./public/fonts/MADETOMMY-Medium.otf) format('opentype');
 }
 
 @font-face{
   font-family: MadeTommyRegular;
   font-style: normal;
   font-weight: 400;
-  src: url(/public/fonts/MADETOMMY-Regular.otf) format('opentype');
+  src: url(./public/fonts/MADETOMMY-Regular.otf) format('opentype');
 }
 
 @theme {
 
-  --font-minecrafter: "Minecrafter", "sans serif";
-  --font-cherolina: "Cherolina", "sans serif";
-  --font-coolvetica: "Coolvetica", "sans serif";
   --font-madetommy-Medium: "MadeTommyMedium", "sans serif";
   --font-madetommy-regular: "MadeTommyRegular", "sans serif";
-  --font-nexa: "Nexa", "sans serif";
-  --font-superme: "Superme", "sans serif";
-  --font-creato: "CreatoDisplay", "sans serif";
-  --font-grostick: "Grostick", "sans serif";
-  --font-mogilite: "Mogilite", "sans serif";
-  --font-magules: "Magules", "sans serif";
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   --animate-fade-in: fade-in 1s ease-in-out;
   --animate-fade-in-fast: fade-in 700ms ease-in-out;
