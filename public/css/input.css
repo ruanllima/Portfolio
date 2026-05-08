@@ -6,14 +6,14 @@
   font-family: MadeTommyMedium;
   font-style: normal;
   font-weight: 400;
-  src: url(../public/fonts/MADETOMMY-Medium.otf) format('opentype');
+  src: url("../public/fonts/MADETOMMY-Medium.otf") format('opentype');
 }
 
 @font-face{
   font-family: MadeTommyRegular;
   font-style: normal;
   font-weight: 400;
-  src: url(../public/fonts/MADETOMMY-Regular.otf) format('opentype');
+  src: url("../public/fonts/MADETOMMY-Regular.otf") format('opentype');
 }
 
 @theme {
