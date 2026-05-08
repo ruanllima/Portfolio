@@ -5,14 +5,14 @@
   font-family: MadeTommyMedium;
   font-style: normal;
   font-weight: 400;
-  src: url(../public/fonts/MADETOMMY-Medium.otf) format('opentype');
+  src: url(/fonts/MADETOMMY-Medium.otf) format('opentype');
 }
 
 @font-face{
   font-family: MadeTommyRegular;
   font-style: normal;
   font-weight: 400;
-  src: url(../public/fonts/MADETOMMY-Regular.otf) format('opentype');
+  src: url(/fonts/MADETOMMY-Regular.otf) format('opentype');
 }
 
 @theme {
@@ -275,11 +275,11 @@
 }
 
 .header_text{
-  @apply text-lg font-madetommy-regular px-1 mx-2 transition hover:-translate-y-[1px] hover:border-b-2 hover:border-amber-400;
+  @apply text-lg font-madetommy-Medium px-1 mx-2 transition hover:-translate-y-[1px] hover:border-b-2 hover:border-amber-400;
 }
 
 .header_text2{
-  @apply text-slate-100 font-madetommy-regular px-3 py-1 hover:bg-indigo-800 rounded-lg hover:shadow-lg hover:shadow-black/10;
+  @apply text-slate-100 font-madetommy-Medium px-3 py-1 hover:bg-indigo-800 rounded-lg hover:shadow-lg hover:shadow-black/10;
 }
 
 .header_buttons{
